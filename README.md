@@ -37,7 +37,7 @@ Cloudflare Worker 호환 빌드를 사용하며 GitHub 저장소, Codespaces 또
 
 ## 1시간 자동 수집 설정
 
-배포 환경에 D1 바인딩 `DB`와 비밀값 `CRON_SECRET`을 설정합니다. GitHub 저장소의 Actions secrets에는 다음 두 값을 등록합니다.
+배포 환경에 D1 바인딩 `DB`와 비밀값 `CRON_SECRET`, `DELETE_PASSWORD`를 설정합니다. 삭제 비밀번호는 저장소에 기록하지 말고 배포 환경의 비밀값으로만 관리합니다. GitHub 저장소의 Actions secrets에는 다음 두 값을 등록합니다.
 
 - `CRAWL_ENDPOINT`: 배포된 사이트 주소
 - `CRON_SECRET`: 배포 환경과 동일한 임의의 긴 비밀값

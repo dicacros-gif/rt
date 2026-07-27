@@ -21,3 +21,8 @@ export const dismissedKeywords = sqliteTable("dismissed_keywords", {
 }, (table) => [
   uniqueIndex("dismissed_keywords_portal_normalized_idx").on(table.portal, table.normalizedKeyword),
 ]);
+
+export const crawlState = sqliteTable("crawl_state", {
+  id: integer("id").primaryKey(),
+  lastCrawledAt: text("last_crawled_at").notNull(),
+});

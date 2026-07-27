@@ -27,6 +27,10 @@ const schemaStatements = [
     dismissed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(portal, normalized_keyword)
   )`,
+  `CREATE TABLE IF NOT EXISTS crawl_state (
+    id INTEGER PRIMARY KEY CHECK (id = 1),
+    last_crawled_at TEXT NOT NULL
+  )`,
   "CREATE INDEX IF NOT EXISTS keywords_portal_seen_idx ON keywords(portal, first_seen_at DESC)",
 ];
 
@@ -37,9 +41,14 @@ export async function ensureSchema(db: D1Database = env.DB) {
 export async function crawlAndStore(db: D1Database = env.DB) {
   await ensureSchema(db);
   const collected = await collectAllTrends();
-  if (!collected.length) return { collected: 0, inserted: 0 };
-
   const now = new Date().toISOString();
+  if (!collected.length) {
+    await db.prepare(
+      "INSERT INTO crawl_state (id, last_crawled_at) VALUES (1, ?) ON CONFLICT(id) DO UPDATE SET last_crawled_at = excluded.last_crawled_at",
+    ).bind(now).run();
+    return { collected: 0, inserted: 0 };
+  }
+
   const statements = collected.map((item) => {
     const normalized = normalizeKeyword(item.keyword);
     return db.prepare(
@@ -55,10 +64,25 @@ export async function crawlAndStore(db: D1Database = env.DB) {
     ).bind(item.portal, normalized, item.keyword, item.link, now, now, normalized, normalized);
   });
   const results = await db.batch(statements);
+  await db.prepare(
+    "INSERT INTO crawl_state (id, last_crawled_at) VALUES (1, ?) ON CONFLICT(id) DO UPDATE SET last_crawled_at = excluded.last_crawled_at",
+  ).bind(now).run();
   return { collected: collected.length, inserted: results.filter((result) => result.meta.changes > 0).length };
 }
 
-export async function listKeywords(limit: number, db: D1Database = env.DB) {
+export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 * 1000) {
+  await ensureSchema(db);
+  const state = await db.prepare(
+    "SELECT last_crawled_at FROM crawl_state WHERE id = 1",
+  ).first<{ last_crawled_at: string }>();
+  const lastCrawled = state?.last_crawled_at ? new Date(state.last_crawled_at).getTime() : 0;
+  if (Number.isFinite(lastCrawled) && Date.now() - lastCrawled < intervalMs) {
+    return { collected: 0, inserted: 0, skipped: true };
+  }
+  return { ...await crawlAndStore(db), skipped: false };
+}
+
+export async function listKeywords(db: D1Database = env.DB) {
   await ensureSchema(db);
   const result = await db.prepare(
     `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
@@ -75,7 +99,7 @@ export async function listKeywords(limit: number, db: D1Database = env.DB) {
     if (seen.has(normalized)) continue;
     seen.add(normalized);
     const rows = grouped.get(row.portal);
-    if (rows && rows.length < limit) rows.push(row);
+    if (rows) rows.push(row);
   }
   return grouped;
 }

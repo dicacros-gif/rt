@@ -4,7 +4,14 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 type Portal = "daum" | "google" | "naver" | "signal";
 type RelatedSource = "naver" | "daum" | "google";
-type TrendItem = { id: number; rank: number; keyword: string; link: string };
+type TrendItem = {
+  id: number;
+  rank: number;
+  keyword: string;
+  link: string;
+  firstSeenAt: string;
+  lastSeenAt: string;
+};
 type RelatedItem = { keyword: string; sources: RelatedSource[] };
 type RelatedState = {
   open: boolean;
@@ -45,6 +52,29 @@ function formatDate(value: string) {
   }).format(new Date(value));
 }
 
+function formatCollectedAt(value: string) {
+  return new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(new Date(value));
+}
+
+function groupByCollectedAt(items: TrendItem[]) {
+  const groups = new Map<string, TrendItem[]>();
+  for (const item of items) {
+    const label = formatCollectedAt(item.firstSeenAt);
+    const group = groups.get(label) ?? [];
+    group.push(item);
+    groups.set(label, group);
+  }
+  return [...groups.entries()];
+}
+
 function LoadingCard({ portal }: { portal: Portal }) {
   return (
     <section className={`ranking-card ${portal}`}>
@@ -64,9 +94,10 @@ export default function TrendsDashboard() {
   const [data, setData] = useState<ApiData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [limit, setLimit] = useState(30);
-  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [deleting, setDeleting] = useState<number | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<{ portalId: Portal; item: TrendItem } | null>(null);
+  const [deletePassword, setDeletePassword] = useState("");
+  const [deleteError, setDeleteError] = useState("");
   const [related, setRelated] = useState<Record<string, RelatedState>>({});
   const [copiedKey, setCopiedKey] = useState("");
 
@@ -74,7 +105,7 @@ export default function TrendsDashboard() {
     setLoading(true);
     setError("");
     try {
-      const response = await fetch(`/api/trends?limit=${limit}`, { cache: "no-store" });
+      const response = await fetch("/api/trends", { cache: "no-store" });
       if (!response.ok) throw new Error("검색어를 불러오지 못했습니다.");
       setData(await response.json());
     } catch (reason) {
@@ -82,7 +113,7 @@ export default function TrendsDashboard() {
     } finally {
       setLoading(false);
     }
-  }, [limit]);
+  }, []);
 
   useEffect(() => {
     load();
@@ -92,15 +123,21 @@ export default function TrendsDashboard() {
 
   const portals = useMemo(() => data?.portals ?? [], [data]);
 
-  const removeKeyword = async (portalId: Portal, item: TrendItem) => {
+  const removeKeyword = async () => {
+    if (!deleteTarget) return;
+    const { portalId, item } = deleteTarget;
     setDeleting(item.id);
+    setDeleteError("");
     try {
       const response = await fetch("/api/trends", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: item.id }),
+        body: JSON.stringify({ id: item.id, password: deletePassword }),
       });
-      if (!response.ok) throw new Error("삭제하지 못했습니다.");
+      if (!response.ok) {
+        const result = await response.json().catch(() => null) as { error?: string } | null;
+        throw new Error(result?.error ?? "삭제하지 못했습니다.");
+      }
       setData((current) => current ? {
         ...current,
         portals: current.portals.map((portal) => portal.id === portalId
@@ -117,8 +154,10 @@ export default function TrendsDashboard() {
         delete next[`${portalId}-${item.id}`];
         return next;
       });
+      setDeleteTarget(null);
+      setDeletePassword("");
     } catch (reason) {
-      setError(reason instanceof Error ? reason.message : "삭제하지 못했습니다.");
+      setDeleteError(reason instanceof Error ? reason.message : "삭제하지 못했습니다.");
     } finally {
       setDeleting(null);
     }
@@ -196,21 +235,11 @@ export default function TrendsDashboard() {
   return (
     <main className="page-shell">
       <header className="page-heading">
-        <h1>실시간 인기 검색어</h1>
         <div className="heading-actions">
           <button onClick={load} disabled={loading}>
             <span className={loading ? "spin" : ""}>↻</span>
             {loading ? "업데이트 중" : "새로고침"}
           </button>
-          <label>
-            최대
-            <select value={limit} onChange={(event) => setLimit(Number(event.target.value))}>
-              <option value={20}>20개</option>
-              <option value={30}>30개</option>
-              <option value={40}>40개</option>
-              <option value={50}>50개</option>
-            </select>
-          </label>
         </div>
       </header>
 
@@ -222,18 +251,21 @@ export default function TrendsDashboard() {
             <LoadingCard key={portal} portal={portal} />
           ))
           : portals.map((portal) => {
-            const isExpanded = Boolean(expanded[portal.id]);
-            const visibleItems = isExpanded ? portal.items : portal.items.slice(0, 10);
+            const collectedGroups = groupByCollectedAt(portal.items);
             return (
               <section className={`ranking-card ${portal.id}`} key={portal.id}>
                 <div className="card-title">
                   <span className="portal-mark">{portalMeta[portal.id].mark}</span>
                   <h2>{portalMeta[portal.id].title}</h2>
                 </div>
-                <p className="updated-text">{data ? formatDate(data.updatedAt) : ""} 기준</p>
+                <p className="updated-text">누적 {portal.items.length}개 · {data ? formatDate(data.updatedAt) : ""} 확인</p>
 
-                <ol className="keyword-list">
-                  {visibleItems.map((item, index) => {
+                <div className="collection-groups">
+                  {collectedGroups.map(([collectedAt, items]) => (
+                    <section className="collection-group" key={collectedAt}>
+                      <h3><span>{collectedAt} 수집</span><small>{items.length}개</small></h3>
+                      <ol className="keyword-list">
+                  {items.map((item) => {
                     const itemKey = `${portal.id}-${item.id}`;
                     const relatedState = related[itemKey];
                     return (
@@ -249,14 +281,18 @@ export default function TrendsDashboard() {
                           >
                             <span aria-hidden="true">{relatedState?.open ? "✓" : ""}</span>
                           </button>
-                          <span className="rank-badge">{index + 1}</span>
+                          <span className="rank-badge">{item.rank}</span>
                           <a href={item.link} target="_blank" rel="noreferrer">{item.keyword}</a>
                           <button
                             className="remove-keyword"
                             aria-label={`${item.keyword} 삭제`}
                             title="이 키워드를 삭제하고 다시 수집하지 않기"
                             disabled={deleting === item.id}
-                            onClick={() => removeKeyword(portal.id, item)}
+                            onClick={() => {
+                              setDeleteTarget({ portalId: portal.id, item });
+                              setDeletePassword("");
+                              setDeleteError("");
+                            }}
                           >
                             ×
                           </button>
@@ -304,22 +340,46 @@ export default function TrendsDashboard() {
                       </li>
                     );
                   })}
-                </ol>
-
-                {portal.items.length > 10 && (
-                  <button
-                    className="more-button"
-                    onClick={() => setExpanded((current) => ({ ...current, [portal.id]: !isExpanded }))}
-                  >
-                    {isExpanded ? "상위 10개만 보기" : `${portal.items.length}개 전체 보기`}
-                  </button>
-                )}
+                      </ol>
+                    </section>
+                  ))}
+                </div>
                 <p className="source-text">{portal.source}</p>
               </section>
             );
           })}
       </section>
 
+      {deleteTarget && (
+        <div className="delete-overlay" role="presentation" onMouseDown={(event) => {
+          if (event.target === event.currentTarget) setDeleteTarget(null);
+        }}>
+          <form className="delete-dialog" onSubmit={(event) => {
+            event.preventDefault();
+            removeKeyword();
+          }}>
+            <h2>키워드 삭제</h2>
+            <p><strong>{deleteTarget.item.keyword}</strong>을 삭제하면 이후 수집에서도 제외됩니다.</p>
+            <label htmlFor="delete-password">삭제 비밀번호</label>
+            <input
+              id="delete-password"
+              type="password"
+              value={deletePassword}
+              onChange={(event) => setDeletePassword(event.target.value)}
+              autoComplete="current-password"
+              autoFocus
+              required
+            />
+            {deleteError && <p className="delete-error">{deleteError}</p>}
+            <div className="delete-actions">
+              <button type="button" onClick={() => setDeleteTarget(null)}>취소</button>
+              <button type="submit" className="danger" disabled={deleting === deleteTarget.item.id}>
+                {deleting === deleteTarget.item.id ? "삭제 중" : "삭제"}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
     </main>
   );
 }

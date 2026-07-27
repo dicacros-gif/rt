@@ -9,14 +9,14 @@
     :root{--navy:#06295f;--bg:#f7f8fa;--muted:#929292}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:#111;font-family:Arial,"Malgun Gothic",sans-serif}
     button,select,input{font:inherit}button{cursor:pointer}
-    header{min-height:230px;padding:55px 20px 35px;text-align:center}
-    h1{margin:9px 0 25px;font-size:clamp(36px,5vw,58px);letter-spacing:-3px}
+    header{min-height:105px;padding:42px 20px 23px;text-align:center}
     .actions{display:flex;justify-content:center;gap:10px}.actions button,.actions select{height:40px;border:1px solid #dce2ea;border-radius:7px;background:white;color:var(--navy);font-weight:800}.actions button{padding:0 15px}.actions select{padding:0 12px}
     main{display:grid;grid-template-columns:repeat(4,minmax(280px,1fr));gap:38px;max-width:1860px;margin:0 auto;padding:0 4vw 50px;align-items:start}
     .card{padding:42px 38px 30px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
     [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#34d499;color:#083e31}
     h2{margin:0;color:var(--navy);font-size:clamp(21px,1.55vw,30px);font-weight:950;letter-spacing:-2px;white-space:nowrap}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
+    .collection-groups{display:grid;gap:18px}.collection-group h3{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px;padding:8px 10px;border-radius:6px;background:#eef3f8;color:var(--navy);font-size:12px;font-weight:900}.collection-group h3 small{color:#76869a;font-size:10px}
     ol{list-style:none;margin:0;padding:0}.keyword-entry{display:block}.keyword-row{display:flex;align-items:center;min-height:54px}.rank{display:grid;place-items:center;width:40px;height:40px;flex:0 0 auto;border-radius:5px;color:white;font-size:18px;font-weight:900}
     [data-portal=daum] .rank{background:#ffb70a}[data-portal=google] .rank{background:#4285ed}[data-portal=naver] .rank{background:#2cad59}[data-portal=signal] .rank{background:#26b993}
     .keyword-row a{min-width:0;flex:1;margin-left:24px;overflow:hidden;color:#070707;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;font-size:18px;font-weight:850;letter-spacing:-1px}.keyword-row a:hover{color:#315eaa;text-decoration:underline}
@@ -25,18 +25,30 @@
     .related-panel{margin:5px 0 15px 32px;padding:14px;border:1px solid #dfe7f0;border-radius:8px;background:#f8fafc}.related-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--navy);font-size:14px}.related-head button{padding:6px 9px;border:1px solid #cbd9e9;border-radius:5px;background:#fff;color:var(--navy);font-size:11px;font-weight:850}.related-head button:hover{border-color:var(--navy);background:var(--navy);color:#fff}
     .related-list{list-style:none;margin:11px 0 0;padding:0}.related-list li{display:flex;align-items:center;gap:8px;min-height:32px;padding:3px 0;border-top:1px solid #e9eef4}.copy-keyword{min-width:0;flex:1;padding:2px 0;overflow:hidden;border:0;background:none;color:#18212c;text-align:left;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:750}.copy-keyword:hover{color:#315eaa;text-decoration:underline}.related-sources{display:flex;gap:3px;flex:0 0 auto}.source-badge{padding:2px 4px;border-radius:3px;color:#fff;font-size:9px;font-weight:850}.source-badge.naver{background:#19b85b}.source-badge.daum{background:#f0a600}.source-badge.google{background:#4285ed}.related-status{margin:12px 0 1px;color:#77808b;font-size:12px}.related-status.error{color:#b63731}
     .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
-    @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:190px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px;white-space:normal}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.related-panel{margin-left:30px}.remove{opacity:1}}
+    .delete-overlay[hidden]{display:none}.delete-overlay{position:fixed;z-index:100;inset:0;display:grid;place-items:center;padding:20px;background:rgba(9,25,46,.48);backdrop-filter:blur(3px)}.delete-dialog{width:min(400px,100%);padding:28px;border-radius:12px;background:#fff;box-shadow:0 24px 70px rgba(0,0,0,.24)}.delete-dialog h2{margin:0;font-size:22px}.delete-dialog p{margin:12px 0 20px;color:#606975;font-size:14px;line-height:1.55}.delete-dialog label{display:block;margin-bottom:7px;color:#303947;font-size:13px;font-weight:850}.delete-dialog input{width:100%;height:44px;padding:0 12px;border:1px solid #cbd5e1;border-radius:7px;outline:none}.delete-dialog input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(6,41,95,.1)}.delete-error{min-height:18px;margin:7px 0 0!important;color:#c53631!important;font-size:12px!important;font-weight:800}.delete-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.delete-actions button{height:40px;padding:0 16px;border:1px solid #d7dee8;border-radius:7px;background:#fff;color:#475466;font-weight:850}.delete-actions .danger{border-color:#df453f;background:#df453f;color:#fff}
+    @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:85px;padding-top:30px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px;white-space:normal}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.related-panel{margin-left:30px}.remove{opacity:1}}
   </style>
 </head>
 <body>
   <header>
-    <h1>실시간 인기 검색어</h1>
     <div class="actions">
       <button id="refresh">↻ 새로고침</button>
-      <select id="limit"><option value="20">20개</option><option value="30" selected>30개</option><option value="40">40개</option><option value="50">50개</option></select>
     </div>
   </header>
   <main id="grid"><div class="empty">검색어를 불러오는 중입니다.</div></main>
+  <div class="delete-overlay" id="delete-modal" hidden>
+    <form class="delete-dialog" id="delete-form">
+      <h2>키워드 삭제</h2>
+      <p><strong id="delete-keyword"></strong>을 삭제하면 이후 수집에서도 제외됩니다.</p>
+      <label for="delete-password">삭제 비밀번호</label>
+      <input id="delete-password" type="password" autocomplete="current-password" required>
+      <p class="delete-error" id="delete-error"></p>
+      <div class="delete-actions">
+        <button type="button" id="delete-cancel">취소</button>
+        <button type="submit" class="danger">삭제</button>
+      </div>
+    </form>
+  </div>
   <script>
     const META={
       daum:{title:"다음 실시간 검색어",mark:"D"},
@@ -45,9 +57,19 @@
       signal:{title:"Signal.bz 실시간 검색어",mark:"S"}
     };
     const grid=document.getElementById("grid");
+    const deleteModal=document.getElementById("delete-modal");
+    const deletePassword=document.getElementById("delete-password");
+    const deleteError=document.getElementById("delete-error");
+    let pendingDelete=null;
     const RELATED_SOURCE={naver:"네이버",daum:"다음",google:"구글"};
     const escapeHtml=value=>{const node=document.createElement("span");node.textContent=value;return node.innerHTML};
     const date=value=>new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
+    const collectedDate=value=>new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
+    const groupedItems=items=>{
+      const groups=new Map();
+      items.forEach(item=>{const label=collectedDate(item.firstSeenAt);const group=groups.get(label)||[];group.push(item);groups.set(label,group)});
+      return [...groups.entries()];
+    };
     async function copyText(value){
       if(navigator.clipboard?.writeText)return navigator.clipboard.writeText(value);
       const textarea=document.createElement("textarea");textarea.value=value;textarea.style.cssText="position:fixed;opacity:0";
@@ -57,7 +79,7 @@
     async function load(){
       const refresh=document.getElementById("refresh");refresh.disabled=true;refresh.textContent="업데이트 중";
       try{
-        const response=await fetch(`/api/trends?limit=${document.getElementById("limit").value}`,{cache:"no-store"});
+        const response=await fetch("/api/trends",{cache:"no-store"});
         if(!response.ok)throw new Error();
         const data=await response.json();render(data.portals,data.updatedAt);
       }catch{
@@ -68,8 +90,8 @@
     function render(portals,updatedAt){
       grid.innerHTML=portals.map(portal=>`<section class="card" data-portal="${portal.id}">
         <div class="card-head"><span class="logo">${META[portal.id].mark}</span><h2>${META[portal.id].title}</h2></div>
-        <p class="date">${date(updatedAt)} 기준</p>
-        <ol>${portal.items.map((item,index)=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-keyword="${escapeHtml(item.keyword)}" aria-label="${escapeHtml(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${index+1}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" aria-label="${escapeHtml(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol>
+        <p class="date">누적 ${portal.items.length}개 · ${date(updatedAt)} 확인</p>
+        <div class="collection-groups">${groupedItems(portal.items).map(([collectedAt,items])=>`<section class="collection-group"><h3><span>${collectedAt} 수집</span><small>${items.length}개</small></h3><ol>${items.map(item=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-keyword="${escapeHtml(item.keyword)}" aria-label="${escapeHtml(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${item.rank}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" data-keyword="${escapeHtml(item.keyword)}" aria-label="${escapeHtml(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol></section>`).join("")}</div>
         <p class="source">${escapeHtml(portal.source)}</p>
       </section>`).join("");
     }
@@ -77,9 +99,9 @@
     grid.addEventListener("click",async event=>{
       const removeButton=event.target.closest(".remove");
       if(removeButton){
-        removeButton.disabled=true;
-        const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(removeButton.dataset.id)})});
-        if(response.ok)removeButton.closest(".keyword-entry").remove();else removeButton.disabled=false;
+        pendingDelete={id:Number(removeButton.dataset.id),entry:removeButton.closest(".keyword-entry")};
+        document.getElementById("delete-keyword").textContent=removeButton.dataset.keyword;
+        deletePassword.value="";deleteError.textContent="";deleteModal.hidden=false;deletePassword.focus();
         return;
       }
 
@@ -128,8 +150,23 @@
         setTimeout(()=>copyKeyword.textContent=original,1000);
       }
     });
+    document.getElementById("delete-form").addEventListener("submit",async event=>{
+      event.preventDefault();
+      if(!pendingDelete)return;
+      const submit=event.currentTarget.querySelector('[type="submit"]');submit.disabled=true;deleteError.textContent="";
+      try{
+        const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:pendingDelete.id,password:deletePassword.value})});
+        const result=await response.json().catch(()=>({}));
+        if(!response.ok)throw new Error(result.error||"삭제하지 못했습니다.");
+        pendingDelete.entry.remove();deleteModal.hidden=true;pendingDelete=null;
+      }catch(error){
+        deleteError.textContent=error.message;deletePassword.select();
+      }finally{submit.disabled=false}
+    });
+    const closeDelete=()=>{deleteModal.hidden=true;pendingDelete=null;deletePassword.value="";deleteError.textContent=""};
+    document.getElementById("delete-cancel").onclick=closeDelete;
+    deleteModal.addEventListener("mousedown",event=>{if(event.target===deleteModal)closeDelete()});
     document.getElementById("refresh").onclick=load;
-    document.getElementById("limit").onchange=load;
     load();
     setInterval(load,60*60*1000);
   </script>
