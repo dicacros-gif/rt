@@ -10,10 +10,8 @@
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:#111;font-family:Arial,"Malgun Gothic",sans-serif}
     button,select,input{font:inherit}button{cursor:pointer}
     header{min-height:230px;padding:55px 20px 35px;text-align:center}
-    header small{color:#566ca9;font-weight:900;letter-spacing:2px}h1{margin:9px 0 25px;font-size:clamp(36px,5vw,58px);letter-spacing:-3px}
+    h1{margin:9px 0 25px;font-size:clamp(36px,5vw,58px);letter-spacing:-3px}
     .actions{display:flex;justify-content:center;gap:10px}.actions button,.actions select{height:40px;border:1px solid #dce2ea;border-radius:7px;background:white;color:var(--navy);font-weight:800}.actions button{padding:0 15px}.actions select{padding:0 12px}
-    .setup{display:none;max-width:780px;margin:0 auto 25px;padding:15px;border-radius:7px;background:#fff0ef;color:#96322c;text-align:center}
-    .setup input{width:min(450px,75%);margin-top:8px;padding:9px;border:1px solid #d5a4a0}.setup button{padding:10px;border:0;background:#96322c;color:#fff}
     main{display:grid;grid-template-columns:repeat(4,minmax(280px,1fr));gap:38px;max-width:1860px;margin:0 auto;padding:0 4vw 50px;align-items:start}
     .card{padding:42px 38px 30px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
@@ -24,22 +22,18 @@
     li a{min-width:0;flex:1;margin-left:24px;overflow:hidden;color:#070707;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;font-size:18px;font-weight:850;letter-spacing:-1px}li a:hover{color:#315eaa;text-decoration:underline}
     .remove{width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:#c0c5cc;font-size:22px;opacity:0}li:hover .remove,.remove:focus{opacity:1}.remove:hover{background:#ef5350;color:white}
     .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
-    footer{padding:10px 20px 40px;color:#999;text-align:center;font-size:12px}
     @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:190px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px;white-space:normal}.remove{opacity:1}}
   </style>
 </head>
 <body>
   <header>
-    <small>REAL-TIME KEYWORDS</small>
     <h1>실시간 인기 검색어</h1>
     <div class="actions">
       <button id="refresh">↻ 새로고침</button>
       <select id="limit"><option value="20">20개</option><option value="30" selected>30개</option><option value="40">40개</option><option value="50">50개</option></select>
     </div>
   </header>
-  <aside class="setup" id="setup">배포된 API 서버 주소를 입력하세요.<br><input id="apiInput" placeholder="https://example.com"><button id="saveApi">연결</button></aside>
   <main id="grid"><div class="empty">검색어를 불러오는 중입니다.</div></main>
-  <footer>중복을 제거한 새로운 키워드를 매시간 누적합니다.</footer>
   <script>
     const META={
       daum:{title:"다음 실시간 검색어",mark:"D"},
@@ -47,21 +41,18 @@
       naver:{title:"크리에이터 어드바이저 검색어",mark:"C"},
       signal:{title:"Signal.bz 실시간 검색어",mark:"S"}
     };
-    const params=new URLSearchParams(location.search);
-    let apiBase=(params.get("api")||localStorage.getItem("trendApiBase")||"").replace(/\/$/,"");
-    const grid=document.getElementById("grid"),setup=document.getElementById("setup");
+    const grid=document.getElementById("grid");
     const escapeHtml=value=>{const node=document.createElement("span");node.textContent=value;return node.innerHTML};
-    const api=path=>`${apiBase}${path}`;
     const date=value=>new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
 
     async function load(){
       const refresh=document.getElementById("refresh");refresh.disabled=true;refresh.textContent="업데이트 중";
       try{
-        const response=await fetch(api(`/api/trends?limit=${document.getElementById("limit").value}`),{cache:"no-store"});
+        const response=await fetch(`/api/trends?limit=${document.getElementById("limit").value}`,{cache:"no-store"});
         if(!response.ok)throw new Error();
-        const data=await response.json();setup.style.display="none";render(data.portals,data.updatedAt);
+        const data=await response.json();render(data.portals,data.updatedAt);
       }catch{
-        setup.style.display="block";grid.innerHTML='<div class="empty">API 서버에 연결하면 검색어가 표시됩니다.</div>';
+        grid.innerHTML='<div class="empty">수집된 키워드를 불러오고 있습니다.</div>';
       }finally{refresh.disabled=false;refresh.textContent="↻ 새로고침"}
     }
 
@@ -77,13 +68,11 @@
     grid.addEventListener("click",async event=>{
       const button=event.target.closest(".remove");if(!button)return;
       button.disabled=true;
-      const response=await fetch(api("/api/trends"),{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(button.dataset.id)})});
+      const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(button.dataset.id)})});
       if(response.ok)button.closest("li").remove();else button.disabled=false;
     });
     document.getElementById("refresh").onclick=load;
     document.getElementById("limit").onchange=load;
-    document.getElementById("saveApi").onclick=()=>{apiBase=document.getElementById("apiInput").value.trim().replace(/\/$/,"");localStorage.setItem("trendApiBase",apiBase);load()};
-    if(location.protocol==="file:")setup.style.display="block";
     load();
     setInterval(load,60*60*1000);
   </script>

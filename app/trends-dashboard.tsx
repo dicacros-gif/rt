@@ -106,7 +106,6 @@ export default function TrendsDashboard() {
   return (
     <main className="page-shell">
       <header className="page-heading">
-        <p>REAL-TIME KEYWORDS</p>
         <h1>실시간 인기 검색어</h1>
         <div className="heading-actions">
           <button onClick={load} disabled={loading}>
@@ -175,9 +174,6 @@ export default function TrendsDashboard() {
           })}
       </section>
 
-      <footer className="page-footer">
-        중복을 제거한 새로운 키워드를 매시간 누적합니다.
-      </footer>
     </main>
   );
 }
