@@ -17,12 +17,15 @@
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
     [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#34d499;color:#083e31}
     h2{margin:0;color:var(--navy);font-size:clamp(21px,1.55vw,30px);font-weight:950;letter-spacing:-2px;white-space:nowrap}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
-    ol{list-style:none;margin:0;padding:0}li{display:flex;align-items:center;min-height:54px}.rank{display:grid;place-items:center;width:40px;height:40px;flex:0 0 auto;border-radius:5px;color:white;font-size:18px;font-weight:900}
+    ol{list-style:none;margin:0;padding:0}.keyword-entry{display:block}.keyword-row{display:flex;align-items:center;min-height:54px}.rank{display:grid;place-items:center;width:40px;height:40px;flex:0 0 auto;border-radius:5px;color:white;font-size:18px;font-weight:900}
     [data-portal=daum] .rank{background:#ffb70a}[data-portal=google] .rank{background:#4285ed}[data-portal=naver] .rank{background:#2cad59}[data-portal=signal] .rank{background:#26b993}
-    li a{min-width:0;flex:1;margin-left:24px;overflow:hidden;color:#070707;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;font-size:18px;font-weight:850;letter-spacing:-1px}li a:hover{color:#315eaa;text-decoration:underline}
-    .remove{width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:#c0c5cc;font-size:22px;opacity:0}li:hover .remove,.remove:focus{opacity:1}.remove:hover{background:#ef5350;color:white}
+    .keyword-row a{min-width:0;flex:1;margin-left:24px;overflow:hidden;color:#070707;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;font-size:18px;font-weight:850;letter-spacing:-1px}.keyword-row a:hover{color:#315eaa;text-decoration:underline}
+    .related-toggle{display:grid;place-items:center;width:22px;height:22px;margin-right:10px;flex:0 0 auto;border:2px solid #cbd3dd;border-radius:5px;background:#fff;color:#fff;font-size:15px;font-weight:950;line-height:1}.related-toggle:hover{border-color:#6682a7;background:#f2f6fb}.related-toggle.checked{border-color:var(--navy);background:var(--navy)}
+    .remove{width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:#c0c5cc;font-size:22px;opacity:0}.keyword-row:hover .remove,.remove:focus{opacity:1}.remove:hover{background:#ef5350;color:white}
+    .related-panel{margin:5px 0 15px 32px;padding:14px;border:1px solid #dfe7f0;border-radius:8px;background:#f8fafc}.related-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--navy);font-size:14px}.related-head button{padding:6px 9px;border:1px solid #cbd9e9;border-radius:5px;background:#fff;color:var(--navy);font-size:11px;font-weight:850}.related-head button:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+    .related-list{list-style:none;margin:11px 0 0;padding:0}.related-list li{display:flex;align-items:center;gap:8px;min-height:32px;padding:3px 0;border-top:1px solid #e9eef4}.copy-keyword{min-width:0;flex:1;padding:2px 0;overflow:hidden;border:0;background:none;color:#18212c;text-align:left;text-overflow:ellipsis;white-space:nowrap;font-size:13px;font-weight:750}.copy-keyword:hover{color:#315eaa;text-decoration:underline}.related-sources{display:flex;gap:3px;flex:0 0 auto}.source-badge{padding:2px 4px;border-radius:3px;color:#fff;font-size:9px;font-weight:850}.source-badge.naver{background:#19b85b}.source-badge.daum{background:#f0a600}.source-badge.google{background:#4285ed}.related-status{margin:12px 0 1px;color:#77808b;font-size:12px}.related-status.error{color:#b63731}
     .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
-    @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:190px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px;white-space:normal}.remove{opacity:1}}
+    @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:190px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px;white-space:normal}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.related-panel{margin-left:30px}.remove{opacity:1}}
   </style>
 </head>
 <body>
@@ -42,8 +45,14 @@
       signal:{title:"Signal.bz 실시간 검색어",mark:"S"}
     };
     const grid=document.getElementById("grid");
+    const RELATED_SOURCE={naver:"네이버",daum:"다음",google:"구글"};
     const escapeHtml=value=>{const node=document.createElement("span");node.textContent=value;return node.innerHTML};
     const date=value=>new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
+    async function copyText(value){
+      if(navigator.clipboard?.writeText)return navigator.clipboard.writeText(value);
+      const textarea=document.createElement("textarea");textarea.value=value;textarea.style.cssText="position:fixed;opacity:0";
+      document.body.appendChild(textarea);textarea.select();document.execCommand("copy");textarea.remove();
+    }
 
     async function load(){
       const refresh=document.getElementById("refresh");refresh.disabled=true;refresh.textContent="업데이트 중";
@@ -60,16 +69,64 @@
       grid.innerHTML=portals.map(portal=>`<section class="card" data-portal="${portal.id}">
         <div class="card-head"><span class="logo">${META[portal.id].mark}</span><h2>${META[portal.id].title}</h2></div>
         <p class="date">${date(updatedAt)} 기준</p>
-        <ol>${portal.items.slice(0,10).map((item,index)=>`<li><span class="rank">${index+1}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" aria-label="${escapeHtml(item.keyword)} 삭제">×</button></li>`).join("")}</ol>
+        <ol>${portal.items.map((item,index)=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-keyword="${escapeHtml(item.keyword)}" aria-label="${escapeHtml(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${index+1}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" aria-label="${escapeHtml(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol>
         <p class="source">${escapeHtml(portal.source)}</p>
       </section>`).join("");
     }
 
     grid.addEventListener("click",async event=>{
-      const button=event.target.closest(".remove");if(!button)return;
-      button.disabled=true;
-      const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(button.dataset.id)})});
-      if(response.ok)button.closest("li").remove();else button.disabled=false;
+      const removeButton=event.target.closest(".remove");
+      if(removeButton){
+        removeButton.disabled=true;
+        const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(removeButton.dataset.id)})});
+        if(response.ok)removeButton.closest(".keyword-entry").remove();else removeButton.disabled=false;
+        return;
+      }
+
+      const toggle=event.target.closest(".related-toggle");
+      if(toggle){
+        const entry=toggle.closest(".keyword-entry");
+        const existing=entry.querySelector(".related-panel");
+        if(existing){
+          const opening=existing.hidden;
+          existing.hidden=!opening;toggle.classList.toggle("checked",opening);toggle.setAttribute("aria-checked",String(opening));
+          toggle.querySelector("span").textContent=opening?"✓":"";
+          return;
+        }
+
+        toggle.classList.add("checked");toggle.setAttribute("aria-checked","true");toggle.querySelector("span").textContent="✓";
+        const panel=document.createElement("div");panel.className="related-panel";
+        panel.innerHTML='<div class="related-head"><strong>연관 검색어</strong></div><p class="related-status">네이버·다음·구글에서 찾는 중…</p>';
+        entry.appendChild(panel);
+        try{
+          const response=await fetch(`/api/related?q=${encodeURIComponent(toggle.dataset.keyword)}`);
+          if(!response.ok)throw new Error();
+          const result=await response.json();
+          if(!result.items?.length){
+            panel.innerHTML='<div class="related-head"><strong>연관 검색어</strong></div><p class="related-status">표시할 연관 검색어가 없습니다.</p>';
+            return;
+          }
+          panel.innerHTML=`<div class="related-head"><strong>연관 검색어</strong><button class="copy-all">전체 복사 (${result.items.length})</button></div><ul class="related-list">${result.items.map(item=>`<li><button class="copy-keyword" data-keyword="${escapeHtml(item.keyword)}" title="클릭해서 이 검색어 복사">${escapeHtml(item.keyword)}</button><span class="related-sources">${item.sources.map(source=>`<span class="source-badge ${source}">${RELATED_SOURCE[source]}</span>`).join("")}</span></li>`).join("")}</ul>`;
+        }catch{
+          panel.innerHTML='<div class="related-head"><strong>연관 검색어</strong></div><p class="related-status error">연관 검색어를 불러오지 못했습니다.</p>';
+        }
+        return;
+      }
+
+      const copyAll=event.target.closest(".copy-all");
+      if(copyAll){
+        const keywords=[...copyAll.closest(".related-panel").querySelectorAll(".copy-keyword")].map(button=>button.dataset.keyword);
+        await copyText(keywords.join("\n"));copyAll.textContent="복사됨 ✓";
+        setTimeout(()=>copyAll.textContent=`전체 복사 (${keywords.length})`,1600);
+        return;
+      }
+
+      const copyKeyword=event.target.closest(".copy-keyword");
+      if(copyKeyword){
+        await copyText(copyKeyword.dataset.keyword);
+        const original=copyKeyword.textContent;copyKeyword.textContent="복사됨 ✓";
+        setTimeout(()=>copyKeyword.textContent=original,1000);
+      }
     });
     document.getElementById("refresh").onclick=load;
     document.getElementById("limit").onchange=load;
