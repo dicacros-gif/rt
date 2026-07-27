@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-type Portal = "naver" | "google" | "daum" | "signal";
-type TrendItem = { id: number; rank: number; keyword: string; traffic?: string; link: string };
+type Portal = "daum" | "google" | "naver" | "signal";
+type TrendItem = { id: number; rank: number; keyword: string; link: string };
 type PortalData = {
   id: Portal;
   name: string;
@@ -11,24 +11,36 @@ type PortalData = {
   source: string;
   items: TrendItem[];
 };
-type ApiData = { updatedAt: string; portals: PortalData[]; partial: boolean };
+type ApiData = { updatedAt: string; portals: PortalData[] };
 
-const portalMeta: Record<Portal, { name: string; letter: string }> = {
-  naver: { name: "크리에이터 어드바이저", letter: "N" },
-  google: { name: "구글", letter: "G" },
-  daum: { name: "다음", letter: "D" },
-  signal: { name: "Signal.bz", letter: "S" },
+const portalMeta: Record<Portal, { title: string; mark: string }> = {
+  daum: { title: "다음 실시간 검색어", mark: "D" },
+  google: { title: "구글 실시간 검색어", mark: "G" },
+  naver: { title: "크리에이터 어드바이저 검색어", mark: "C" },
+  signal: { title: "Signal.bz 실시간 검색어", mark: "S" },
 };
 
-function SkeletonCard({ portal }: { portal: Portal }) {
+function formatDate(value: string) {
+  return new Intl.DateTimeFormat("ko-KR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(new Date(value));
+}
+
+function LoadingCard({ portal }: { portal: Portal }) {
   return (
-    <section className={`trend-card ${portal}`}>
-      <div className="card-head">
-        <span className="portal-logo">{portalMeta[portal].letter}</span>
-        <div><h2>{portalMeta[portal].name}</h2><p>순위를 불러오는 중입니다</p></div>
+    <section className={`ranking-card ${portal}`}>
+      <div className="card-title">
+        <span className="portal-mark">{portalMeta[portal].mark}</span>
+        <h2>{portalMeta[portal].title}</h2>
       </div>
-      <div className="skeleton-list">
-        {Array.from({ length: 10 }, (_, i) => <span key={i} />)}
+      <p className="updated-text">검색어를 불러오는 중입니다</p>
+      <div className="loading-rows">
+        {Array.from({ length: 10 }, (_, index) => <span key={index} />)}
       </div>
     </section>
   );
@@ -39,18 +51,18 @@ export default function TrendsDashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [limit, setLimit] = useState(30);
-  const [active, setActive] = useState<Portal | "all">("all");
-  const [deleting, setDeleting] = useState("");
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [deleting, setDeleting] = useState<number | null>(null);
 
   const load = useCallback(async () => {
     setLoading(true);
     setError("");
     try {
       const response = await fetch(`/api/trends?limit=${limit}`, { cache: "no-store" });
-      if (!response.ok) throw new Error("데이터를 불러오지 못했습니다.");
+      if (!response.ok) throw new Error("검색어를 불러오지 못했습니다.");
       setData(await response.json());
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "잠시 후 다시 시도해 주세요.");
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "잠시 후 다시 시도해 주세요.");
     } finally {
       setLoading(false);
     }
@@ -58,22 +70,14 @@ export default function TrendsDashboard() {
 
   useEffect(() => {
     load();
-    const timer = window.setInterval(load, 5 * 60 * 1000);
+    const timer = window.setInterval(load, 60 * 60 * 1000);
     return () => window.clearInterval(timer);
   }, [load]);
 
-  const visible = useMemo(
-    () => data?.portals.filter((portal) => active === "all" || portal.id === active) ?? [],
-    [data, active],
-  );
+  const portals = useMemo(() => data?.portals ?? [], [data]);
 
-  const updated = data
-    ? new Intl.DateTimeFormat("ko-KR", { hour: "2-digit", minute: "2-digit", second: "2-digit" }).format(new Date(data.updatedAt))
-    : "--:--:--";
-
-  const removeKeyword = async (portal: Portal, item: TrendItem) => {
-    const key = `${portal}:${item.id}`;
-    setDeleting(key);
+  const removeKeyword = async (portalId: Portal, item: TrendItem) => {
+    setDeleting(item.id);
     try {
       const response = await fetch("/api/trends", {
         method: "DELETE",
@@ -83,104 +87,96 @@ export default function TrendsDashboard() {
       if (!response.ok) throw new Error("삭제하지 못했습니다.");
       setData((current) => current ? {
         ...current,
-        portals: current.portals.map((portalData) => portalData.id === portal
-          ? { ...portalData, items: portalData.items.filter((entry) => entry.id !== item.id).map((entry, index) => ({ ...entry, rank: index + 1 })) }
-          : portalData),
+        portals: current.portals.map((portal) => portal.id === portalId
+          ? {
+            ...portal,
+            items: portal.items
+              .filter((entry) => entry.id !== item.id)
+              .map((entry, index) => ({ ...entry, rank: index + 1 })),
+          }
+          : portal),
       } : current);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "삭제하지 못했습니다.");
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : "삭제하지 못했습니다.");
     } finally {
-      setDeleting("");
+      setDeleting(null);
     }
   };
 
   return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="/" aria-label="트렌드 나우 홈">
-          <span className="brand-mark"><i /><i /><i /></span>
-          <span>TREND <b>NOW</b></span>
-        </a>
-        <div className="live-status"><span /> LIVE · {updated} 업데이트</div>
-      </header>
-
-      <section className="hero">
-        <p className="eyebrow">REAL-TIME SEARCH INSIGHT</p>
-        <h1>지금, 사람들이<br /><em>무엇을 찾고 있을까요?</em></h1>
-        <p className="hero-copy">다음·구글·크리에이터 어드바이저·Signal.bz의 인기 흐름을 한 화면에서 확인하세요.<br />중복을 제거한 새로운 키워드를 매시간 누적합니다.</p>
-        <div className="hero-controls">
-          <button className="refresh" onClick={load} disabled={loading} aria-label="순위 새로고침">
-            <span className={loading ? "spinning" : ""}>↻</span> {loading ? "업데이트 중" : "지금 새로고침"}
+    <main className="page-shell">
+      <header className="page-heading">
+        <p>REAL-TIME KEYWORDS</p>
+        <h1>실시간 인기 검색어</h1>
+        <div className="heading-actions">
+          <button onClick={load} disabled={loading}>
+            <span className={loading ? "spin" : ""}>↻</span>
+            {loading ? "업데이트 중" : "새로고침"}
           </button>
-          <label>표시 개수
-            <select value={limit} onChange={(e) => setLimit(Number(e.target.value))}>
-              <option value={20}>20위</option>
-              <option value={30}>30위</option>
-              <option value={40}>40위</option>
-              <option value={50}>50위</option>
+          <label>
+            최대
+            <select value={limit} onChange={(event) => setLimit(Number(event.target.value))}>
+              <option value={20}>20개</option>
+              <option value={30}>30개</option>
+              <option value={40}>40개</option>
+              <option value={50}>50개</option>
             </select>
           </label>
         </div>
-      </section>
+      </header>
 
-      <nav className="portal-tabs" aria-label="포털 선택">
-        {(["all", "daum", "google", "naver", "signal"] as const).map((id) => (
-          <button key={id} className={active === id ? "active" : ""} onClick={() => setActive(id)}>
-            {id === "all" ? "전체 보기" : portalMeta[id].name}
-          </button>
-        ))}
-      </nav>
+      {error && <div className="error-message">{error} <button onClick={load}>다시 시도</button></div>}
 
-      {error && <div className="error-box">{error} <button onClick={load}>다시 시도</button></div>}
-
-      <section className={`trend-grid ${active !== "all" ? "single" : ""}`}>
+      <section className="cards-grid">
         {loading && !data
-          ? (["daum", "google", "naver", "signal"] as Portal[]).map((p) => <SkeletonCard portal={p} key={p} />)
-          : visible.map((portal) => (
-            <section className={`trend-card ${portal.id}`} key={portal.id}>
-              <div className="card-head">
-                <span className="portal-logo">{portalMeta[portal.id].letter}</span>
-                <div>
-                  <h2>{portal.name}</h2>
-                  <p>{portal.description}</p>
+          ? (["daum", "google", "naver", "signal"] as Portal[]).map((portal) => (
+            <LoadingCard key={portal} portal={portal} />
+          ))
+          : portals.map((portal) => {
+            const isExpanded = Boolean(expanded[portal.id]);
+            const visibleItems = isExpanded ? portal.items : portal.items.slice(0, 10);
+            return (
+              <section className={`ranking-card ${portal.id}`} key={portal.id}>
+                <div className="card-title">
+                  <span className="portal-mark">{portalMeta[portal.id].mark}</span>
+                  <h2>{portalMeta[portal.id].title}</h2>
                 </div>
-                <span className="count">{portal.items.length}</span>
-              </div>
-              <ol className="ranking-list">
-                {portal.items.map((item) => (
-                  <li key={`${portal.id}-${item.rank}-${item.keyword}`}>
-                    <div className="rank-row">
-                      <a href={item.link} target="_blank" rel="noreferrer">
-                      <span className="rank">{String(item.rank).padStart(2, "0")}</span>
-                      <span className="keyword">{item.keyword}</span>
-                      {item.traffic && <small>{item.traffic}</small>}
-                      <span className="arrow">↗</span>
-                      </a>
+                <p className="updated-text">{data ? formatDate(data.updatedAt) : ""} 기준</p>
+
+                <ol className="keyword-list">
+                  {visibleItems.map((item, index) => (
+                    <li key={item.id}>
+                      <span className="rank-badge">{index + 1}</span>
+                      <a href={item.link} target="_blank" rel="noreferrer">{item.keyword}</a>
                       <button
-                        className="dismiss"
+                        className="remove-keyword"
                         aria-label={`${item.keyword} 삭제`}
-                        title="이 키워드를 영구 삭제"
-                        disabled={deleting === `${portal.id}:${item.id}`}
+                        title="이 키워드를 삭제하고 다시 수집하지 않기"
+                        disabled={deleting === item.id}
                         onClick={() => removeKeyword(portal.id, item)}
-                      >×</button>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <footer><span>출처</span> {portal.source}</footer>
-            </section>
-          ))}
+                      >
+                        ×
+                      </button>
+                    </li>
+                  ))}
+                </ol>
+
+                {portal.items.length > 10 && (
+                  <button
+                    className="more-button"
+                    onClick={() => setExpanded((current) => ({ ...current, [portal.id]: !isExpanded }))}
+                  >
+                    {isExpanded ? "상위 10개만 보기" : `${portal.items.length}개 전체 보기`}
+                  </button>
+                )}
+                <p className="source-text">{portal.source}</p>
+              </section>
+            );
+          })}
       </section>
 
-      <aside className="notice">
-        <strong>데이터 안내</strong>
-        <p>네이버와 다음은 공식 실시간 검색어 서비스를 종료했습니다. 두 포털은 현재 많이 읽히는 뉴스 제목에서 화제어를 추출하며, 구글은 Google Trends 공개 피드를 사용합니다. 순위는 여론조사나 절대 검색량이 아닙니다.</p>
-      </aside>
-
-      <footer className="site-footer">
-        <span>TREND NOW</span>
-        <p>흩어진 관심의 흐름을 한곳에.</p>
-        <small>공개 데이터 기반 비공식 트렌드 대시보드</small>
+      <footer className="page-footer">
+        중복을 제거한 새로운 키워드를 매시간 누적합니다.
       </footer>
     </main>
   );
