@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="네이버·구글·다음 실시간 키워드 누적 대시보드">
+  <title>TREND NOW | 실시간 키워드</title>
+  <style>
+    :root{--ink:#161616;--paper:#f4f1eb;--line:#d8d3ca;--muted:#77736e;--red:#ff4b3e}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Malgun Gothic",sans-serif}
+    header{height:72px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-weight:900;letter-spacing:-1px}.brand b{color:var(--red)}.live{font:12px monospace;color:var(--muted)}
+    .live i{display:inline-block;width:7px;height:7px;margin-right:7px;border-radius:50%;background:var(--red)}
+    .hero{padding:70px 7vw 48px;border-bottom:1px solid var(--line)}.hero small{color:var(--red);font:bold 12px monospace;letter-spacing:2px}
+    h1{max-width:900px;margin:20px 0;font-size:clamp(42px,6vw,78px);line-height:1;letter-spacing:-5px}h1 em{color:var(--red);font-style:normal}
+    .hero p{color:var(--muted);line-height:1.7}.actions{display:flex;gap:10px;align-items:center;margin-top:28px}
+    button,select,input{font:inherit}.refresh{border:0;padding:12px 17px;background:var(--ink);color:#fff;border-radius:3px;font-weight:bold}
+    select{padding:11px;border:1px solid var(--line);background:transparent}.setup{display:none;margin:22px 5vw 0;padding:16px;background:#fff0ee;color:#8d241c}
+    .setup input{width:min(500px,100%);margin:8px 5px 0 0;padding:9px;border:1px solid #d8a39f}.setup button{padding:9px;border:0;background:#8d241c;color:white}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+    .card{min-width:0;background:#faf9f6}.head{height:98px;padding:22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+    .logo{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;color:white;font-weight:900;background:#111}
+    [data-portal=naver] .logo{background:#03c75a}[data-portal=google] .logo{background:#4285f4}[data-portal=daum] .logo{background:#516dff}
+    .head h2{margin:0 0 4px}.head p{margin:0;color:var(--muted);font-size:12px}.count{margin-left:auto;color:var(--muted);font:12px monospace}
+    ol{list-style:none;margin:0;padding:0}.row{min-height:55px;display:flex;align-items:center;border-bottom:1px solid #e7e3dc}
+    .row a{min-width:0;flex:1;display:flex;align-items:center;padding:0 8px 0 22px;color:inherit;text-decoration:none}.rank{width:38px;color:#aaa;font:12px monospace}
+    .word{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:14px;font-weight:650}.remove{width:34px;height:34px;margin-right:12px;border:0;border-radius:50%;background:none;color:#aaa;font-size:21px}
+    .remove:hover{background:var(--red);color:white}.empty{padding:50px 20px;text-align:center;color:var(--muted)}footer{padding:35px 5vw;color:var(--muted);font-size:12px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}h1{letter-spacing:-3px}}@media(max-width:520px){header{padding:0 20px}.hero{padding:48px 22px}.actions{align-items:stretch;flex-direction:column}.actions>*{width:100%}}
+  </style>
+</head>
+<body>
+  <header><div class="brand">TREND <b>NOW</b></div><div class="live"><i></i><span id="updated">연결 중</span></div></header>
+  <section class="hero">
+    <small>HOURLY SEARCH INSIGHT</small>
+    <h1>새로운 키워드만<br><em>차곡차곡 쌓입니다.</em></h1>
+    <p>중복 키워드는 저장하지 않습니다. ×로 지운 키워드는 DB에서도 삭제되고 이후 수집에서도 제외됩니다.</p>
+    <div class="actions"><button class="refresh" id="refresh">지금 새로고침</button><select id="limit"><option>20</option><option selected>30</option><option>40</option><option>50</option></select></div>
+  </section>
+  <aside class="setup" id="setup">
+    API 서버 주소를 입력하면 DB의 실시간 데이터를 표시합니다.<br>
+    <input id="apiInput" placeholder="예: https://your-site.example.com"><button id="saveApi">연결</button>
+  </aside>
+  <main class="grid" id="grid"></main>
+  <footer>공개 데이터 기반 비공식 트렌드 대시보드 · 1시간 간격 자동 수집</footer>
+  <script>
+    const META = {
+      naver:{name:"네이버",letter:"N",desc:"뉴스 기반 누적 화제어"},
+      google:{name:"구글",letter:"G",desc:"대한민국 누적 급상승 검색"},
+      daum:{name:"다음",letter:"D",desc:"주요 뉴스 기반 누적 화제어"}
+    };
+    const params = new URLSearchParams(location.search);
+    let apiBase = (params.get("api") || localStorage.getItem("trendApiBase") || "").replace(/\/$/,"");
+    const setup = document.getElementById("setup"), grid = document.getElementById("grid");
+
+    function normalized(value){return value.normalize("NFKC").toLocaleLowerCase("ko-KR").replace(/\s+/g," ").trim()}
+    function escapeHtml(value){const el=document.createElement("span");el.textContent=value;return el.innerHTML}
+    function api(path){return `${apiBase}${path}`}
+
+    async function load(){
+      const button=document.getElementById("refresh");button.disabled=true;button.textContent="업데이트 중";
+      try{
+        const response=await fetch(api(`/api/trends?limit=${document.getElementById("limit").value}`),{cache:"no-store"});
+        if(!response.ok)throw new Error();
+        const data=await response.json();
+        setup.style.display="none";
+        render(data.portals);
+        document.getElementById("updated").textContent=new Date(data.updatedAt).toLocaleTimeString("ko-KR")+" 업데이트";
+      }catch{
+        setup.style.display="block";
+        grid.innerHTML='<div class="empty">API 서버에 연결하면 누적 키워드가 표시됩니다.</div>';
+      }finally{button.disabled=false;button.textContent="지금 새로고침"}
+    }
+
+    function render(portals){
+      grid.innerHTML=portals.map(portal=>{
+        const seen=new Set();
+        const items=portal.items.filter(item=>{const key=normalized(item.keyword);if(seen.has(key))return false;seen.add(key);return true});
+        return `<section class="card" data-portal="${portal.id}"><div class="head"><span class="logo">${META[portal.id].letter}</span><div><h2>${META[portal.id].name}</h2><p>${META[portal.id].desc}</p></div><span class="count">${items.length}</span></div><ol>${items.map((item,index)=>`<li class="row" data-id="${item.id}"><a href="${item.link}" target="_blank" rel="noreferrer"><span class="rank">${String(index+1).padStart(2,"0")}</span><span class="word">${escapeHtml(item.keyword)}</span></a><button class="remove" title="영구 삭제" aria-label="${escapeHtml(item.keyword)} 삭제" data-id="${item.id}">×</button></li>`).join("")}</ol></section>`
+      }).join("");
+    }
+
+    grid.addEventListener("click",async event=>{
+      const button=event.target.closest(".remove");if(!button)return;
+      button.disabled=true;
+      const response=await fetch(api("/api/trends"),{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(button.dataset.id)})});
+      if(response.ok)button.closest("li").remove();else button.disabled=false;
+    });
+    document.getElementById("refresh").onclick=load;
+    document.getElementById("limit").onchange=load;
+    document.getElementById("saveApi").onclick=()=>{apiBase=document.getElementById("apiInput").value.trim().replace(/\/$/,"");localStorage.setItem("trendApiBase",apiBase);load()};
+    if(location.protocol==="file:")setup.style.display="block";
+    load();setInterval(load,60*60*1000);
+  </script>
+</body>
+</html>
