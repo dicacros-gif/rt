@@ -25,7 +25,9 @@ async function fetchText(url: string) {
     headers: { "User-Agent": "Mozilla/5.0 (compatible; TrendNow/1.0; +https://github.com/dicacros-gif/rt)" },
   });
   if (!response.ok) throw new Error(`Source returned ${response.status}`);
-  return response.text();
+  const charset = response.headers.get("content-type")?.match(/charset=([^;]+)/i)?.[1]?.trim() ?? "utf-8";
+  const encoding = /euc-?kr|ks_c_5601/i.test(charset) ? "euc-kr" : "utf-8";
+  return new TextDecoder(encoding).decode(await response.arrayBuffer());
 }
 
 async function collectGoogle(): Promise<CollectedItem[]> {

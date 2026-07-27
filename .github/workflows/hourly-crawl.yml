@@ -8,14 +8,19 @@ on:
 jobs:
   crawl:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Collect new keywords
-        env:
-          CRAWL_ENDPOINT: ${{ secrets.CRAWL_ENDPOINT }}
-          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Collect and accumulate new keywords
+        run: node scripts/crawl-static.mjs
+      - name: Save collected keywords
         run: |
-          test -n "$CRAWL_ENDPOINT"
-          test -n "$CRON_SECRET"
-          curl --fail-with-body --retry 3 \
-            -X POST "$CRAWL_ENDPOINT/api/crawl" \
-            -H "Authorization: Bearer $CRON_SECRET"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trends.json
+          git diff --cached --quiet || git commit -m "data: update hourly keywords"
+          git push

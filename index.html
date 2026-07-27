@@ -79,7 +79,8 @@
     async function load(){
       const refresh=document.getElementById("refresh");refresh.disabled=true;refresh.textContent="업데이트 중";
       try{
-        const response=await fetch("/api/trends",{cache:"no-store"});
+        let response=await fetch("/api/trends",{cache:"no-store"});
+        if(!response.ok)response=await fetch(`./data/trends.json?t=${Date.now()}`,{cache:"no-store"});
         if(!response.ok)throw new Error();
         const data=await response.json();render(data.portals,data.updatedAt);
       }catch{
