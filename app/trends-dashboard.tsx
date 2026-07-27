@@ -14,7 +14,7 @@ type PortalData = {
 type ApiData = { updatedAt: string; portals: PortalData[]; partial: boolean };
 
 const portalMeta: Record<Portal, { name: string; letter: string }> = {
-  naver: { name: "네이버", letter: "N" },
+  naver: { name: "크리에이터 어드바이저", letter: "N" },
   google: { name: "구글", letter: "G" },
   daum: { name: "다음", letter: "D" },
   signal: { name: "Signal.bz", letter: "S" },
@@ -107,7 +107,7 @@ export default function TrendsDashboard() {
       <section className="hero">
         <p className="eyebrow">REAL-TIME SEARCH INSIGHT</p>
         <h1>지금, 사람들이<br /><em>무엇을 찾고 있을까요?</em></h1>
-        <p className="hero-copy">네이버·구글·다음의 인기 흐름을 한 화면에서 확인하세요.<br />최대 50위까지, 5분마다 새로운 화제어를 모아드립니다.</p>
+        <p className="hero-copy">다음·구글·크리에이터 어드바이저·Signal.bz의 인기 흐름을 한 화면에서 확인하세요.<br />중복을 제거한 새로운 키워드를 매시간 누적합니다.</p>
         <div className="hero-controls">
           <button className="refresh" onClick={load} disabled={loading} aria-label="순위 새로고침">
             <span className={loading ? "spinning" : ""}>↻</span> {loading ? "업데이트 중" : "지금 새로고침"}
@@ -124,7 +124,7 @@ export default function TrendsDashboard() {
       </section>
 
       <nav className="portal-tabs" aria-label="포털 선택">
-        {(["all", "signal", "naver", "google", "daum"] as const).map((id) => (
+        {(["all", "daum", "google", "naver", "signal"] as const).map((id) => (
           <button key={id} className={active === id ? "active" : ""} onClick={() => setActive(id)}>
             {id === "all" ? "전체 보기" : portalMeta[id].name}
           </button>
@@ -135,7 +135,7 @@ export default function TrendsDashboard() {
 
       <section className={`trend-grid ${active !== "all" ? "single" : ""}`}>
         {loading && !data
-          ? (["signal", "naver", "google", "daum"] as Portal[]).map((p) => <SkeletonCard portal={p} key={p} />)
+          ? (["daum", "google", "naver", "signal"] as Portal[]).map((p) => <SkeletonCard portal={p} key={p} />)
           : visible.map((portal) => (
             <section className={`trend-card ${portal.id}`} key={portal.id}>
               <div className="card-head">

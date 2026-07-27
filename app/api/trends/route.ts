@@ -6,10 +6,10 @@ export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 const portalInfo = {
-  signal: { name: "Signal.bz", description: "실시간 검색어 TOP 10", source: "Signal.bz 공개 API" },
-  naver: { name: "크리에이터 어드바이저", description: "네이버 공개 인기 주제 기반", source: "네이버 공개 인기 주제" },
-  google: { name: "구글", description: "대한민국 누적 급상승 검색", source: "Google Trends" },
   daum: { name: "다음", description: "주요 뉴스 기반 누적 화제어", source: "다음" },
+  google: { name: "구글", description: "대한민국 실시간 급상승 검색어", source: "Google Trends" },
+  naver: { name: "크리에이터 어드바이저", description: "네이버 인기 유입 검색어 참고", source: "네이버 공개 인기 주제" },
+  signal: { name: "Signal.bz", description: "실시간 검색어 TOP 10", source: "Signal.bz 공개 API" },
 } satisfies Record<PortalId, { name: string; description: string; source: string }>;
 
 export async function GET(request: NextRequest) {
