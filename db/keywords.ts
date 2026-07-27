@@ -1,0 +1,91 @@
+import { env } from "cloudflare:workers";
+import { collectAllTrends, normalizeKeyword, type CollectedItem, type PortalId } from "../lib/trend-sources";
+
+type KeywordRow = {
+  id: number;
+  portal: PortalId;
+  keyword: string;
+  link: string;
+  first_seen_at: string;
+  last_seen_at: string;
+};
+
+const schemaStatements = [
+  `CREATE TABLE IF NOT EXISTS keywords (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    portal TEXT NOT NULL,
+    normalized_keyword TEXT NOT NULL,
+    keyword TEXT NOT NULL,
+    link TEXT NOT NULL,
+    first_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    last_seen_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(portal, normalized_keyword)
+  )`,
+  `CREATE TABLE IF NOT EXISTS dismissed_keywords (
+    portal TEXT NOT NULL,
+    normalized_keyword TEXT NOT NULL,
+    dismissed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(portal, normalized_keyword)
+  )`,
+  "CREATE INDEX IF NOT EXISTS keywords_portal_seen_idx ON keywords(portal, first_seen_at DESC)",
+];
+
+export async function ensureSchema(db: D1Database = env.DB) {
+  await db.batch(schemaStatements.map((sql) => db.prepare(sql)));
+}
+
+export async function crawlAndStore(db: D1Database = env.DB) {
+  await ensureSchema(db);
+  const collected = await collectAllTrends();
+  if (!collected.length) return { collected: 0, inserted: 0 };
+
+  const now = new Date().toISOString();
+  const statements = collected.map((item) => {
+    const normalized = normalizeKeyword(item.keyword);
+    return db.prepare(
+      `INSERT INTO keywords (portal, normalized_keyword, keyword, link, first_seen_at, last_seen_at)
+       SELECT ?, ?, ?, ?, ?, ?
+       WHERE NOT EXISTS (
+         SELECT 1 FROM dismissed_keywords WHERE portal = ? AND normalized_keyword = ?
+       )
+       ON CONFLICT(portal, normalized_keyword) DO UPDATE SET last_seen_at = excluded.last_seen_at, link = excluded.link`,
+    ).bind(item.portal, normalized, item.keyword, item.link, now, now, item.portal, normalized);
+  });
+  const results = await db.batch(statements);
+  return { collected: collected.length, inserted: results.filter((result) => result.meta.changes > 0).length };
+}
+
+export async function listKeywords(limit: number, db: D1Database = env.DB) {
+  await ensureSchema(db);
+  const result = await db.prepare(
+    `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
+     FROM keywords
+     ORDER BY first_seen_at DESC, id DESC`,
+  ).all<KeywordRow>();
+
+  const grouped = new Map<PortalId, KeywordRow[]>([
+    ["naver", []], ["google", []], ["daum", []],
+  ]);
+  for (const row of result.results) {
+    const rows = grouped.get(row.portal);
+    if (rows && rows.length < limit) rows.push(row);
+  }
+  return grouped;
+}
+
+export async function dismissKeyword(id: number, db: D1Database = env.DB) {
+  await ensureSchema(db);
+  await db.batch([
+    db.prepare(
+      `INSERT OR IGNORE INTO dismissed_keywords (portal, normalized_keyword)
+       SELECT portal, normalized_keyword FROM keywords WHERE id = ?`,
+    ).bind(id),
+    db.prepare(
+      "DELETE FROM keywords WHERE id = ?",
+    ).bind(id),
+  ]);
+}
+
+export function toCollectedItem(row: KeywordRow): CollectedItem {
+  return { portal: row.portal, keyword: row.keyword, link: row.link };
+}

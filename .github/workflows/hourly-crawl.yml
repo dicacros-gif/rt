@@ -1,0 +1,21 @@
+name: Hourly trend crawl
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Collect new keywords
+        env:
+          CRAWL_ENDPOINT: ${{ secrets.CRAWL_ENDPOINT }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          test -n "$CRAWL_ENDPOINT"
+          test -n "$CRON_SECRET"
+          curl --fail-with-body --retry 3 \
+            -X POST "$CRAWL_ENDPOINT/api/crawl" \
+            -H "Authorization: Bearer $CRON_SECRET"
