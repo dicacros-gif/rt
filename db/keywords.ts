@@ -46,10 +46,13 @@ export async function crawlAndStore(db: D1Database = env.DB) {
       `INSERT INTO keywords (portal, normalized_keyword, keyword, link, first_seen_at, last_seen_at)
        SELECT ?, ?, ?, ?, ?, ?
        WHERE NOT EXISTS (
-         SELECT 1 FROM dismissed_keywords WHERE portal = ? AND normalized_keyword = ?
+         SELECT 1 FROM dismissed_keywords WHERE normalized_keyword = ?
+       )
+       AND NOT EXISTS (
+         SELECT 1 FROM keywords WHERE normalized_keyword = ?
        )
        ON CONFLICT(portal, normalized_keyword) DO UPDATE SET last_seen_at = excluded.last_seen_at, link = excluded.link`,
-    ).bind(item.portal, normalized, item.keyword, item.link, now, now, item.portal, normalized);
+    ).bind(item.portal, normalized, item.keyword, item.link, now, now, normalized, normalized);
   });
   const results = await db.batch(statements);
   return { collected: collected.length, inserted: results.filter((result) => result.meta.changes > 0).length };
@@ -64,9 +67,13 @@ export async function listKeywords(limit: number, db: D1Database = env.DB) {
   ).all<KeywordRow>();
 
   const grouped = new Map<PortalId, KeywordRow[]>([
-    ["naver", []], ["google", []], ["daum", []],
+    ["signal", []], ["naver", []], ["google", []], ["daum", []],
   ]);
+  const seen = new Set<string>();
   for (const row of result.results) {
+    const normalized = normalizeKeyword(row.keyword);
+    if (seen.has(normalized)) continue;
+    seen.add(normalized);
     const rows = grouped.get(row.portal);
     if (rows && rows.length < limit) rows.push(row);
   }
@@ -75,14 +82,17 @@ export async function listKeywords(limit: number, db: D1Database = env.DB) {
 
 export async function dismissKeyword(id: number, db: D1Database = env.DB) {
   await ensureSchema(db);
+  const row = await db.prepare(
+    "SELECT normalized_keyword FROM keywords WHERE id = ?",
+  ).bind(id).first<{ normalized_keyword: string }>();
+  if (!row) return;
   await db.batch([
     db.prepare(
-      `INSERT OR IGNORE INTO dismissed_keywords (portal, normalized_keyword)
-       SELECT portal, normalized_keyword FROM keywords WHERE id = ?`,
-    ).bind(id),
+      "INSERT OR IGNORE INTO dismissed_keywords (portal, normalized_keyword) VALUES ('all', ?)",
+    ).bind(row.normalized_keyword),
     db.prepare(
-      "DELETE FROM keywords WHERE id = ?",
-    ).bind(id),
+      "DELETE FROM keywords WHERE normalized_keyword = ?",
+    ).bind(row.normalized_keyword),
   ]);
 }
 

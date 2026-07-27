@@ -17,10 +17,10 @@
     button,select,input{font:inherit}.refresh{border:0;padding:12px 17px;background:var(--ink);color:#fff;border-radius:3px;font-weight:bold}
     select{padding:11px;border:1px solid var(--line);background:transparent}.setup{display:none;margin:22px 5vw 0;padding:16px;background:#fff0ee;color:#8d241c}
     .setup input{width:min(500px,100%);margin:8px 5px 0 0;padding:9px;border:1px solid #d8a39f}.setup button{padding:9px;border:0;background:#8d241c;color:white}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
     .card{min-width:0;background:#faf9f6}.head{height:98px;padding:22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
     .logo{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;color:white;font-weight:900;background:#111}
-    [data-portal=naver] .logo{background:#03c75a}[data-portal=google] .logo{background:#4285f4}[data-portal=daum] .logo{background:#516dff}
+    [data-portal=naver] .logo{background:#03c75a}[data-portal=google] .logo{background:#4285f4}[data-portal=daum] .logo{background:#516dff}[data-portal=signal] .logo{background:#34d499;color:#10251d}
     .head h2{margin:0 0 4px}.head p{margin:0;color:var(--muted);font-size:12px}.count{margin-left:auto;color:var(--muted);font:12px monospace}
     ol{list-style:none;margin:0;padding:0}.row{min-height:55px;display:flex;align-items:center;border-bottom:1px solid #e7e3dc}
     .row a{min-width:0;flex:1;display:flex;align-items:center;padding:0 8px 0 22px;color:inherit;text-decoration:none}.rank{width:38px;color:#aaa;font:12px monospace}
@@ -45,7 +45,8 @@
   <footer>공개 데이터 기반 비공식 트렌드 대시보드 · 1시간 간격 자동 수집</footer>
   <script>
     const META = {
-      naver:{name:"네이버",letter:"N",desc:"뉴스 기반 누적 화제어"},
+      signal:{name:"Signal.bz",letter:"S",desc:"실시간 검색어 TOP 10"},
+      naver:{name:"크리에이터 어드바이저",letter:"N",desc:"네이버 공개 인기 주제 기반"},
       google:{name:"구글",letter:"G",desc:"대한민국 누적 급상승 검색"},
       daum:{name:"다음",letter:"D",desc:"주요 뉴스 기반 누적 화제어"}
     };

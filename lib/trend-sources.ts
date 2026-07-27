@@ -1,4 +1,4 @@
-export type PortalId = "naver" | "google" | "daum";
+export type PortalId = "naver" | "google" | "daum" | "signal";
 export type CollectedItem = { portal: PortalId; keyword: string; link: string };
 
 const decode = (value: string) => value
@@ -15,6 +15,7 @@ const unique = (values: string[]) =>
 const searchLink = (portal: PortalId, keyword: string) => {
   const base = portal === "naver" ? "https://search.naver.com/search.naver?query="
     : portal === "daum" ? "https://search.daum.net/search?q="
+      : portal === "signal" ? "https://search.naver.com/search.naver?query="
       : "https://www.google.com/search?q=";
   return `${base}${encodeURIComponent(keyword)}`;
 };
@@ -52,8 +53,19 @@ async function collectHeadlines(portal: "naver" | "daum", url: string): Promise<
   }));
 }
 
+async function collectSignal(): Promise<CollectedItem[]> {
+  const response = await fetch("https://api.signal.bz/news/realtime", {
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; TrendNow/1.0; +https://github.com/dicacros-gif/rt)" },
+  });
+  if (!response.ok) throw new Error(`Signal returned ${response.status}`);
+  const data = await response.json() as { top10?: Array<{ keyword?: string }> };
+  return unique((data.top10 ?? []).slice(0, 10).map((item) => item.keyword ?? ""))
+    .map((keyword) => ({ portal: "signal", keyword, link: searchLink("signal", keyword) }));
+}
+
 export async function collectAllTrends(): Promise<CollectedItem[]> {
   const results = await Promise.allSettled([
+    collectSignal(),
     collectHeadlines("naver", "https://news.naver.com/main/ranking/popularDay.naver"),
     collectGoogle(),
     collectHeadlines("daum", "https://www.daum.net/"),

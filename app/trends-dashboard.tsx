@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-type Portal = "naver" | "google" | "daum";
+type Portal = "naver" | "google" | "daum" | "signal";
 type TrendItem = { id: number; rank: number; keyword: string; traffic?: string; link: string };
 type PortalData = {
   id: Portal;
@@ -17,6 +17,7 @@ const portalMeta: Record<Portal, { name: string; letter: string }> = {
   naver: { name: "네이버", letter: "N" },
   google: { name: "구글", letter: "G" },
   daum: { name: "다음", letter: "D" },
+  signal: { name: "Signal.bz", letter: "S" },
 };
 
 function SkeletonCard({ portal }: { portal: Portal }) {
@@ -123,7 +124,7 @@ export default function TrendsDashboard() {
       </section>
 
       <nav className="portal-tabs" aria-label="포털 선택">
-        {(["all", "naver", "google", "daum"] as const).map((id) => (
+        {(["all", "signal", "naver", "google", "daum"] as const).map((id) => (
           <button key={id} className={active === id ? "active" : ""} onClick={() => setActive(id)}>
             {id === "all" ? "전체 보기" : portalMeta[id].name}
           </button>
@@ -134,7 +135,7 @@ export default function TrendsDashboard() {
 
       <section className={`trend-grid ${active !== "all" ? "single" : ""}`}>
         {loading && !data
-          ? (["naver", "google", "daum"] as Portal[]).map((p) => <SkeletonCard portal={p} key={p} />)
+          ? (["signal", "naver", "google", "daum"] as Portal[]).map((p) => <SkeletonCard portal={p} key={p} />)
           : visible.map((portal) => (
             <section className={`trend-card ${portal.id}`} key={portal.id}>
               <div className="card-head">
