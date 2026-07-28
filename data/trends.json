@@ -1,6 +1,6 @@
 {
   "dataVersion": "keyword-only-v2",
-  "updatedAt": "2026-07-28T11:01:09.325Z",
+  "updatedAt": "2026-07-28T11:03:30.572Z",
   "portals": [
     {
       "id": "daum",
@@ -9,12 +9,228 @@
       "source": "다음 검색 제안",
       "items": [
         {
+          "id": 65,
+          "keyword": "김성균 프로필",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%ED%94%84%EB%A1%9C%ED%95%84",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 1
+        },
+        {
+          "id": 66,
+          "keyword": "김성균 배우",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EB%B0%B0%EC%9A%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 2
+        },
+        {
+          "id": 67,
+          "keyword": "김성균 영화배우",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%98%81%ED%99%94%EB%B0%B0%EC%9A%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 3
+        },
+        {
+          "id": 68,
+          "keyword": "김성균 음악교육 연구소",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%9D%8C%EC%95%85%EA%B5%90%EC%9C%A1%20%EC%97%B0%EA%B5%AC%EC%86%8C",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 4
+        },
+        {
+          "id": 69,
+          "keyword": "김성규내과 의원",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%9C%EB%82%B4%EA%B3%BC%20%EC%9D%98%EC%9B%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 5
+        },
+        {
+          "id": 70,
+          "keyword": "김성균 한의원",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%ED%95%9C%EC%9D%98%EC%9B%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 6
+        },
+        {
+          "id": 71,
+          "keyword": "김성규 널 떠올리면",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%9C%20%EB%84%90%20%EB%96%A0%EC%98%AC%EB%A6%AC%EB%A9%B4",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 7
+        },
+        {
+          "id": 72,
+          "keyword": "김성균 영화",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%98%81%ED%99%94",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 8
+        },
+        {
+          "id": 73,
+          "keyword": "김성균 수육 레시피",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%88%98%EC%9C%A1%20%EB%A0%88%EC%8B%9C%ED%94%BC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 9
+        },
+        {
+          "id": 74,
+          "keyword": "김성균 출신학교",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%B6%9C%EC%8B%A0%ED%95%99%EA%B5%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 10
+        },
+        {
+          "id": 75,
+          "keyword": "김성균 집",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%A7%91",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 11
+        },
+        {
+          "id": 76,
+          "keyword": "김성균 고등학교",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 12
+        },
+        {
+          "id": 77,
+          "keyword": "김성균 작곡가",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0%20%EC%9E%91%EA%B3%A1%EA%B0%80",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 13
+        },
+        {
+          "id": 78,
+          "keyword": "범죄와의 전쟁 김성균",
+          "link": "https://search.daum.net/search?q=%EB%B2%94%EC%A3%84%EC%99%80%EC%9D%98%20%EC%A0%84%EC%9F%81%20%EA%B9%80%EC%84%B1%EA%B7%A0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 14
+        },
+        {
+          "id": 79,
+          "keyword": "소문난 칠공주 등장인물",
+          "link": "https://search.daum.net/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC%20%EB%93%B1%EC%9E%A5%EC%9D%B8%EB%AC%BC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 15
+        },
+        {
+          "id": 80,
+          "keyword": "소문난 칠공주 최정원",
+          "link": "https://search.daum.net/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC%20%EC%B5%9C%EC%A0%95%EC%9B%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 16
+        },
+        {
+          "id": 81,
+          "keyword": "소문난 칠공주 미칠이",
+          "link": "https://search.daum.net/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC%20%EB%AF%B8%EC%B9%A0%EC%9D%B4",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 17
+        },
+        {
+          "id": 82,
+          "keyword": "핵무기 보유국",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%20%EB%B3%B4%EC%9C%A0%EA%B5%AD",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 18
+        },
+        {
+          "id": 83,
+          "keyword": "핵무기 보유국가",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%20%EB%B3%B4%EC%9C%A0%EA%B5%AD%EA%B0%80",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 19
+        },
+        {
+          "id": 84,
+          "keyword": "핵무기 위력",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%20%EC%9C%84%EB%A0%A5",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 20
+        },
+        {
+          "id": 85,
+          "keyword": "핵무기도 만들어드릴까요",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%EB%8F%84%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%93%9C%EB%A6%B4%EA%B9%8C%EC%9A%94",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 21
+        },
+        {
+          "id": 86,
+          "keyword": "핵무기 관련주",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%20%EA%B4%80%EB%A0%A8%EC%A3%BC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 22
+        },
+        {
+          "id": 87,
+          "keyword": "이란 핵무기",
+          "link": "https://search.daum.net/search?q=%EC%9D%B4%EB%9E%80%20%ED%95%B5%EB%AC%B4%EA%B8%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 23
+        },
+        {
+          "id": 88,
+          "keyword": "이스라엘 핵무기",
+          "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%8A%A4%EB%9D%BC%EC%97%98%20%ED%95%B5%EB%AC%B4%EA%B8%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 24
+        },
+        {
+          "id": 89,
+          "keyword": "우크라이나 핵무기",
+          "link": "https://search.daum.net/search?q=%EC%9A%B0%ED%81%AC%EB%9D%BC%EC%9D%B4%EB%82%98%20%ED%95%B5%EB%AC%B4%EA%B8%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 25
+        },
+        {
+          "id": 90,
+          "keyword": "프랑스 핵무기",
+          "link": "https://search.daum.net/search?q=%ED%94%84%EB%9E%91%EC%8A%A4%20%ED%95%B5%EB%AC%B4%EA%B8%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 26
+        },
+        {
+          "id": 91,
+          "keyword": "핵무기 개발자",
+          "link": "https://search.daum.net/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0%20%EA%B0%9C%EB%B0%9C%EC%9E%90",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 27
+        },
+        {
           "id": 29,
           "keyword": "광주공항 운항시간표",
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EC%9A%B4%ED%95%AD%EC%8B%9C%EA%B0%84%ED%91%9C",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 1
+          "rank": 28
         },
         {
           "id": 30,
@@ -22,7 +238,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EC%9D%B4%EC%A0%84",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 2
+          "rank": 29
         },
         {
           "id": 31,
@@ -30,7 +246,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%9A%94%EA%B8%88",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 3
+          "rank": 30
         },
         {
           "id": 32,
@@ -38,7 +254,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EC%A3%BC%EC%B0%A8%EC%9E%A5",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 4
+          "rank": 31
         },
         {
           "id": 33,
@@ -46,7 +262,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EB%B0%98%EB%8F%84%EC%B2%B4",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 5
+          "rank": 32
         },
         {
           "id": 34,
@@ -54,7 +270,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EB%A0%8C%ED%8A%B8%EC%B9%B4",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 6
+          "rank": 33
         },
         {
           "id": 35,
@@ -62,7 +278,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EA%B7%BC%EC%B2%98%20%EB%A7%9B%EC%A7%91",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 7
+          "rank": 34
         },
         {
           "id": 36,
@@ -70,7 +286,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EB%A9%B4%EC%A0%81",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 8
+          "rank": 35
         },
         {
           "id": 37,
@@ -78,7 +294,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EA%B5%AD%EC%A0%9C%EC%84%A0",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 9
+          "rank": 36
         },
         {
           "id": 38,
@@ -86,7 +302,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EB%B6%80%EC%A7%80",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 10
+          "rank": 37
         },
         {
           "id": 39,
@@ -94,7 +310,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EB%A1%AF%EB%8D%B0%EB%A0%8C%ED%8A%B8%EC%B9%B4",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 11
+          "rank": 38
         },
         {
           "id": 40,
@@ -102,7 +318,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EA%B3%A8%ED%94%84%EC%9E%A5",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 12
+          "rank": 39
         },
         {
           "id": 41,
@@ -110,7 +326,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%20%EA%B3%B5%ED%95%AD%EC%97%AD",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 13
+          "rank": 40
         },
         {
           "id": 42,
@@ -118,7 +334,7 @@
           "link": "https://search.daum.net/search?q=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD%20%EC%82%AC%EC%84%A4%20%EC%A3%BC%EC%B0%A8%EC%9E%A5",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 14
+          "rank": 41
         },
         {
           "id": 43,
@@ -126,7 +342,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%A3%BC%EA%B0%80",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 15
+          "rank": 42
         },
         {
           "id": 44,
@@ -134,7 +350,7 @@
           "link": "https://search.daum.net/search?q=jyp%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%86%8C%EC%86%8D%20%EC%97%B0%EC%98%88%EC%9D%B8",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 16
+          "rank": 43
         },
         {
           "id": 45,
@@ -142,7 +358,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%B1%84%EC%9A%A9",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 17
+          "rank": 44
         },
         {
           "id": 46,
@@ -150,7 +366,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EB%B0%B0%EB%8B%B9%EA%B8%88",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 18
+          "rank": 45
         },
         {
           "id": 47,
@@ -158,7 +374,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%8B%A0%EC%82%AC%EC%98%A5",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 19
+          "rank": 46
         },
         {
           "id": 48,
@@ -166,7 +382,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EA%B0%A4%EB%9F%AC%EB%A6%AC",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 20
+          "rank": 47
         },
         {
           "id": 49,
@@ -174,7 +390,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%8B%A4%EC%A0%81%20%EB%B0%9C%ED%91%9C",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 21
+          "rank": 48
         },
         {
           "id": 50,
@@ -182,7 +398,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%98%A4%EB%94%94%EC%85%98",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 22
+          "rank": 49
         },
         {
           "id": 51,
@@ -190,7 +406,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%A3%BC%EA%B0%80%20%EC%A0%84%EB%A7%9D",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 23
+          "rank": 50
         },
         {
           "id": 52,
@@ -198,7 +414,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%82%AC%EC%98%A5",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 24
+          "rank": 51
         },
         {
           "id": 53,
@@ -206,7 +422,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EB%8C%80%ED%91%9C",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 25
+          "rank": 52
         },
         {
           "id": 54,
@@ -214,7 +430,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%97%B0%EB%B4%89",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 26
+          "rank": 53
         },
         {
           "id": 55,
@@ -222,7 +438,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EB%B0%95%EC%A7%84%EC%98%81",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 27
+          "rank": 54
         },
         {
           "id": 56,
@@ -230,7 +446,7 @@
           "link": "https://search.daum.net/search?q=jyp%20%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8%20%EC%82%AC%EC%98%A5%20%EC%9C%84%EC%B9%98",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 28
+          "rank": 55
         }
       ]
     },
@@ -241,12 +457,28 @@
       "source": "Google Trends 급상승 검색어",
       "items": [
         {
+          "id": 63,
+          "keyword": "충주시장",
+          "link": "https://www.google.com/search?q=%EC%B6%A9%EC%A3%BC%EC%8B%9C%EC%9E%A5",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 1
+        },
+        {
+          "id": 64,
+          "keyword": "올러",
+          "link": "https://www.google.com/search?q=%EC%98%AC%EB%9F%AC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 2
+        },
+        {
           "id": 21,
           "keyword": "chelsea vs western sydney wanderers fc",
           "link": "https://www.google.com/search?q=chelsea%20vs%20western%20sydney%20wanderers%20fc",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 1
+          "rank": 3
         },
         {
           "id": 22,
@@ -254,7 +486,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%EC%84%B1%EA%B7%A0",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 2
+          "rank": 4
         },
         {
           "id": 23,
@@ -262,7 +494,7 @@
           "link": "https://www.google.com/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 3
+          "rank": 5
         },
         {
           "id": 24,
@@ -270,7 +502,7 @@
           "link": "https://www.google.com/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 4
+          "rank": 6
         },
         {
           "id": 25,
@@ -278,7 +510,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%ED%98%84%ED%83%9C",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 5
+          "rank": 7
         },
         {
           "id": 26,
@@ -286,7 +518,7 @@
           "link": "https://www.google.com/search?q=%EC%95%BC%EA%B5%AC%EC%97%AC%EC%99%95",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 6
+          "rank": 8
         },
         {
           "id": 27,
@@ -294,7 +526,7 @@
           "link": "https://www.google.com/search?q=%EC%82%B0%EB%B6%88",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 7
+          "rank": 9
         },
         {
           "id": 28,
@@ -302,7 +534,7 @@
           "link": "https://www.google.com/search?q=%ED%99%A9%EC%B9%98%EC%97%B4",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 8
+          "rank": 10
         }
       ]
     },
@@ -401,12 +633,60 @@
       "source": "Signal.bz",
       "items": [
         {
+          "id": 57,
+          "keyword": "평택 백린 누출 대피",
+          "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%8C%80%ED%94%BC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 1
+        },
+        {
+          "id": 58,
+          "keyword": "일본 지진에 부산 신고 폭주",
+          "link": "https://search.naver.com/search.naver?query=%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84%EC%97%90%20%EB%B6%80%EC%82%B0%20%EC%8B%A0%EA%B3%A0%20%ED%8F%AD%EC%A3%BC",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 2
+        },
+        {
+          "id": 59,
+          "keyword": "킥플립 동화 엘린이 출신 아이돌",
+          "link": "https://search.naver.com/search.naver?query=%ED%82%A5%ED%94%8C%EB%A6%BD%20%EB%8F%99%ED%99%94%20%EC%97%98%EB%A6%B0%EC%9D%B4%20%EC%B6%9C%EC%8B%A0%20%EC%95%84%EC%9D%B4%EB%8F%8C",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 3
+        },
+        {
+          "id": 60,
+          "keyword": "기준 중위소득 692만원 인상",
+          "link": "https://search.naver.com/search.naver?query=%EA%B8%B0%EC%A4%80%20%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D%20692%EB%A7%8C%EC%9B%90%20%EC%9D%B8%EC%83%81",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 4
+        },
+        {
+          "id": 61,
+          "keyword": "조정식 대통령 연임 국민 선택 문제",
+          "link": "https://search.naver.com/search.naver?query=%EC%A1%B0%EC%A0%95%EC%8B%9D%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%97%B0%EC%9E%84%20%EA%B5%AD%EB%AF%BC%20%EC%84%A0%ED%83%9D%20%EB%AC%B8%EC%A0%9C",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 5
+        },
+        {
+          "id": 62,
+          "keyword": "KIA 하주석 몸부터",
+          "link": "https://search.naver.com/search.naver?query=KIA%20%ED%95%98%EC%A3%BC%EC%84%9D%20%EB%AA%B8%EB%B6%80%ED%84%B0",
+          "firstSeenAt": "2026-07-28T11:03:30.572Z",
+          "lastSeenAt": "2026-07-28T11:03:30.572Z",
+          "rank": 6
+        },
+        {
           "id": 1,
           "keyword": "평택 미군기지 백린 누출 상황",
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EC%83%81%ED%99%A9",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 1
+          "rank": 7
         },
         {
           "id": 2,
@@ -414,7 +694,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B6%80%EC%82%B0%EC%84%9C%20%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84%20%EA%B2%BD%EA%B3%A0",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 2
+          "rank": 8
         },
         {
           "id": 3,
@@ -422,7 +702,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B0%9C%ED%97%8C%20%EC%9E%85%EC%9E%A5%20%ED%91%9C%EB%AA%85",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 3
+          "rank": 9
         },
         {
           "id": 4,
@@ -430,7 +710,7 @@
           "link": "https://search.naver.com/search.naver?query=KIA%20%ED%95%98%EC%A3%BC%EC%84%9D%20%EB%AA%B8%20%ED%92%80%EA%B8%B0",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 4
+          "rank": 10
         },
         {
           "id": 5,
@@ -438,7 +718,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B4%91%EC%A3%BC%EA%B3%B5%ED%95%AD",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 5
+          "rank": 11
         },
         {
           "id": 6,
@@ -446,7 +726,7 @@
           "link": "https://search.naver.com/search.naver?query=jyp%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 6
+          "rank": 12
         },
         {
           "id": 7,
@@ -454,7 +734,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B2%BC%EC%8B%9C",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 7
+          "rank": 13
         },
         {
           "id": 8,
@@ -462,7 +742,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B0%A8%EA%B0%80%EC%9B%90%20%EA%B5%AC%EC%86%8D%EC%98%81%EC%9E%A5%20%EC%B2%AD%EA%B5%AC",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 8
+          "rank": 14
         },
         {
           "id": 9,
@@ -470,7 +750,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%82%B4%EB%85%84%20%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D%206.7%25%20%EC%9D%B8%EC%83%81",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 9
+          "rank": 15
         },
         {
           "id": 10,
@@ -478,7 +758,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B0%84%ED%98%B8%EC%82%AC",
           "firstSeenAt": "2026-07-28T11:01:09.325Z",
           "lastSeenAt": "2026-07-28T11:01:09.325Z",
-          "rank": 10
+          "rank": 16
         }
       ]
     }
@@ -4148,6 +4428,841 @@
     ],
     "54": [],
     "55": [],
-    "56": []
+    "56": [],
+    "57": [],
+    "58": [],
+    "59": [],
+    "60": [],
+    "61": [],
+    "62": [],
+    "63": [
+      {
+        "keyword": "충주시장 재검표 결과",
+        "sources": [
+          "naver",
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 재검표",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 이동석",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주 시장 맛집",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "충주시장 맹정섭",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "전 충주시장",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이동석 충주시장",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "충주시장 당선인",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "충주시장 개표",
+        "sources": [
+          "naver",
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 당선자",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 후보",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 여론조사",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 선거 재검표",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 민주당 후보",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 재개표",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 국민의 힘 후보",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 선거",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 재개표 결과",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "충주시장 조길형",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "충주시장 논란",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "64": [
+      {
+        "keyword": "기아 올러",
+        "sources": [
+          "naver",
+          "daum"
+        ]
+      },
+      {
+        "keyword": "아담 올러",
+        "sources": [
+          "naver",
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 나무위키",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "애덤 올러",
+        "sources": [
+          "naver",
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올리브올러브",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "올럭",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "올러브띵즈",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "올러 문신",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "올러 연봉",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 완봉승",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 부상",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러고향",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 완봉",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 김태형",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러국적",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러로이우",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 태어난 지역",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러핑",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 수염",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "올러 기아",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 기록",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 재계약",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 결혼",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올러 오리탕",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올럭표도",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "올럭표도 템세팅",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "65": [],
+    "66": [
+      {
+        "keyword": "김성균 배우자",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 배우 나이",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 닮은 배우",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 여자 배우",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "영화배우 김성균",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "배우 김성균 고향",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "67": [
+      {
+        "keyword": "영화배우 김성균",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "68": [],
+    "69": [],
+    "70": [],
+    "71": [
+      {
+        "keyword": "김성규 널 떠올리면 (when i think about you) (inst.)",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성규 널 떠올리면 (when i think about you)",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성규 널 떠올리면 가사",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성규 널 떠올리면 (when i think about you) (inst.) 가사",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성규 널 떠올리면mp3",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "72": [
+      {
+        "keyword": "김성균 영화배우",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "김성균 영화 및 방송",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 참여 영화 및 tv 프로그램",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 참여 영화",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "김성균 출연 영화",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "마동석 김성균 영화",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "정웅인 김성균 영화",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "영화배우 김성균",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "73": [],
+    "74": [],
+    "75": [],
+    "76": [],
+    "77": [],
+    "78": [
+      {
+        "keyword": "범죄와의 전쟁 김성균 노래",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "범죄와의 전쟁 김성균 대사",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "범죄와의 전쟁 김성균 머리",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "79": [],
+    "80": [
+      {
+        "keyword": "소문난 칠공주 최정원 근황",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "81": [],
+    "82": [
+      {
+        "keyword": "핵무기 보유국 순서",
+        "sources": [
+          "naver",
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 순위",
+        "sources": [
+          "naver",
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국가",
+        "sources": [
+          "daum"
+        ]
+      },
+      {
+        "keyword": "세계 핵무기 보유국",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 현황",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 개수",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 이란",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 영어로",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 보유국",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "현재 핵무기 보유국",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "83": [
+      {
+        "keyword": "핵무기 보유국",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 순위",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 현황",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 보유국 개수",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "84": [
+      {
+        "keyword": "핵무기 위력 순위",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 위력 사이트",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 위력 과장",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 위력 비교",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "핵무기 위력 디시",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "전술 핵무기 위력",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "현대 핵무기 위력",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "미국 핵무기 위력",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "북한 핵무기 위력",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "85": [
+      {
+        "keyword": "핵무기도 만들어드릴까요 소설",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "86": [
+      {
+        "keyword": "한국 핵무기 관련주",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "87": [
+      {
+        "keyword": "이란 핵무기 보유량",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 보유",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 개발",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 보유 유무",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 보유 여부",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 포기",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 보유국",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 보유 현황",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 있나",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 시설",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 발사",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 포기 동의",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이란 핵무기 개발 이유",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "88": [
+      {
+        "keyword": "이스라엘 핵무기 보유",
+        "sources": [
+          "naver",
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 갯수",
+        "sources": [
+          "naver"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 보유수",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 보유 현황",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 보유국인가",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 보유국",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 있나요",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘핵무기 있는가",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 사용",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "이스라엘 핵무기 있나",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "89": [
+      {
+        "keyword": "우크라이나 핵무기 포기",
+        "sources": [
+          "daum",
+          "google"
+        ]
+      },
+      {
+        "keyword": "우크라이나 핵무기 보유",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "우크라이나 핵무기 폐기",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "90": [
+      {
+        "keyword": "프랑스 핵무기 보유량",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "프랑스 핵무기 개수",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "프랑스 핵무기 개발",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "프랑스 핵무기 보유",
+        "sources": [
+          "google"
+        ]
+      },
+      {
+        "keyword": "영국 프랑스 핵무기",
+        "sources": [
+          "google"
+        ]
+      }
+    ],
+    "91": []
   }
 }
