@@ -280,15 +280,6 @@ export default function TrendsDashboard() {
 
   return (
     <main className="page-shell">
-      <header className="page-heading">
-        <div className="heading-actions">
-          <button onClick={load} disabled={loading}>
-            <span className={loading ? "spin" : ""}>↻</span>
-            {loading ? "업데이트 중" : "새로고침"}
-          </button>
-        </div>
-      </header>
-
       {error && <div className="error-message">{error} <button onClick={load}>다시 시도</button></div>}
 
       <div className="dashboard-layout">
@@ -358,7 +349,16 @@ export default function TrendsDashboard() {
             })}
         </section>
 
-        <aside className="related-drawer" aria-label="연관 검색어">
+        {activeRelated && (
+          <button
+            type="button"
+            className="related-mobile-backdrop"
+            aria-label="연관 검색어 닫기"
+            onClick={() => setActiveRelated(null)}
+          />
+        )}
+
+        <aside className={`related-drawer ${activeRelated ? "open" : ""}`} aria-label="연관 검색어">
           {!activeRelated ? (
             <div className="related-placeholder">
               <strong>연관 검색어</strong>
