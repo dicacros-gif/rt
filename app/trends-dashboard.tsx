@@ -35,12 +35,6 @@ const portalMeta: Record<Portal, { title: string; mark: string }> = {
   signal: { title: "Signal.bz 실시간 검색어", mark: "S" },
 };
 
-const relatedSourceName: Record<RelatedSource, string> = {
-  naver: "네이버",
-  daum: "다음",
-  google: "구글",
-};
-
 function formatDate(value: string) {
   return new Intl.DateTimeFormat("ko-KR", {
     year: "numeric",
@@ -324,13 +318,6 @@ export default function TrendsDashboard() {
                                     >
                                       {relatedItem.keyword}
                                     </button>
-                                    <span className="related-sources">
-                                      {relatedItem.sources.map((source) => (
-                                        <span className={`source-badge ${source}`} key={source}>
-                                          {relatedSourceName[source]}
-                                        </span>
-                                      ))}
-                                    </span>
                                   </li>
                                 ))}
                               </ul>
