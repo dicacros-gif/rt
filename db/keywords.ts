@@ -10,6 +10,8 @@ type KeywordRow = {
   last_seen_at: string;
 };
 
+const keywordSourceVersion = "keyword-only-v2";
+
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -31,6 +33,10 @@ const schemaStatements = [
     id INTEGER PRIMARY KEY CHECK (id = 1),
     last_crawled_at TEXT NOT NULL
   )`,
+  `CREATE TABLE IF NOT EXISTS app_meta (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+  )`,
   "CREATE INDEX IF NOT EXISTS keywords_portal_seen_idx ON keywords(portal, first_seen_at DESC)",
 ];
 
@@ -38,8 +44,25 @@ export async function ensureSchema(db: D1Database = env.DB) {
   await db.batch(schemaStatements.map((sql) => db.prepare(sql)));
 }
 
+async function ensureKeywordSourceVersion(db: D1Database) {
+  const current = await db.prepare(
+    "SELECT value FROM app_meta WHERE key = 'keyword_source_version'",
+  ).first<{ value: string }>();
+  if (current?.value === keywordSourceVersion) return false;
+
+  await db.batch([
+    db.prepare("DELETE FROM keywords"),
+    db.prepare(
+      `INSERT INTO app_meta (key, value) VALUES ('keyword_source_version', ?)
+       ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+    ).bind(keywordSourceVersion),
+  ]);
+  return true;
+}
+
 export async function crawlAndStore(db: D1Database = env.DB) {
   await ensureSchema(db);
+  await ensureKeywordSourceVersion(db);
   const collected = await collectAllTrends();
   const now = new Date().toISOString();
   if (!collected.length) {
@@ -72,11 +95,12 @@ export async function crawlAndStore(db: D1Database = env.DB) {
 
 export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 * 1000) {
   await ensureSchema(db);
+  const reset = await ensureKeywordSourceVersion(db);
   const state = await db.prepare(
     "SELECT last_crawled_at FROM crawl_state WHERE id = 1",
   ).first<{ last_crawled_at: string }>();
   const lastCrawled = state?.last_crawled_at ? new Date(state.last_crawled_at).getTime() : 0;
-  if (Number.isFinite(lastCrawled) && Date.now() - lastCrawled < intervalMs) {
+  if (!reset && Number.isFinite(lastCrawled) && Date.now() - lastCrawled < intervalMs) {
     return { collected: 0, inserted: 0, skipped: true };
   }
   return { ...await crawlAndStore(db), skipped: false };
@@ -84,6 +108,7 @@ export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 *
 
 export async function listKeywords(db: D1Database = env.DB) {
   await ensureSchema(db);
+  await ensureKeywordSourceVersion(db);
   const result = await db.prepare(
     `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
      FROM keywords

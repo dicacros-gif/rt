@@ -26,3 +26,8 @@ export const crawlState = sqliteTable("crawl_state", {
   id: integer("id").primaryKey(),
   lastCrawledAt: text("last_crawled_at").notNull(),
 });
+
+export const appMeta = sqliteTable("app_meta", {
+  key: text("key").primaryKey(),
+  value: text("value").notNull(),
+});

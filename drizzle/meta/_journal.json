@@ -15,6 +15,13 @@
       "when": 1785159324144,
       "tag": "0001_silent_prima",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1785236493788,
+      "tag": "0002_parched_ravenous",
+      "breakpoints": true
     }
   ]
 }

@@ -344,7 +344,6 @@ export default function TrendsDashboard() {
                     </section>
                   ))}
                 </div>
-                <p className="source-text">{portal.source}</p>
               </section>
             );
           })}
