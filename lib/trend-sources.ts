@@ -1,4 +1,5 @@
 import { isMatchupKeyword } from "./keyword-filter.mjs";
+import { extractDaumRealtimeKeywords } from "./daum-trends.mjs";
 
 export type PortalId = "naver" | "google" | "daum" | "signal";
 export type CollectedItem = { portal: PortalId; keyword: string; link: string };
@@ -68,19 +69,7 @@ async function collectNaverPopular(): Promise<CollectedItem[]> {
 
 async function collectDaumRealtime(): Promise<CollectedItem[]> {
   const html = await fetchText("https://www.daum.net/");
-  const marker = html.indexOf('"uiType":"REALTIME_TREND_TOP"');
-  if (marker < 0) return [];
-  const block = html.slice(marker, marker + 24_000);
-  const keywords = unique(
-    [...block.matchAll(/"keyword":"((?:\\.|[^"])*)","rank":/g)]
-      .map((match) => {
-        try {
-          return JSON.parse(`"${match[1]}"`) as string;
-        } catch {
-          return "";
-        }
-      }),
-  ).slice(0, 10);
+  const keywords = unique(extractDaumRealtimeKeywords(html)).slice(0, 10);
   return keywords.map((keyword) => ({
     portal: "daum", keyword, link: searchLink("daum", keyword),
   }));

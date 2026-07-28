@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { extractDaumRealtimeKeywords } from "../lib/daum-trends.mjs";
 import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
 
 const outputPath = resolve("data/trends.json");
@@ -88,19 +89,7 @@ async function collectSignal() {
 
 async function collectDaumRealtime() {
   const html = await fetchText("https://www.daum.net/");
-  const marker = html.indexOf('"uiType":"REALTIME_TREND_TOP"');
-  if (marker < 0) return [];
-  const block = html.slice(marker, marker + 24_000);
-  return unique(
-    [...block.matchAll(/"keyword":"((?:\\.|[^"])*)","rank":/g)]
-      .map((match) => {
-        try {
-          return JSON.parse(`"${match[1]}"`);
-        } catch {
-          return "";
-        }
-      }),
-  )
+  return unique(extractDaumRealtimeKeywords(html))
     .slice(0, 10)
     .map((keyword) => ({ portal: "daum", keyword }));
 }
