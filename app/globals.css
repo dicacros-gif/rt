@@ -89,7 +89,7 @@ button { cursor: pointer; }
 .daum .portal-mark { border-radius: 4px; background: linear-gradient(135deg, #ffbf00 15%, #4e8cff 55%, #f15c5c 85%); }
 .google .portal-mark { background: conic-gradient(#4285f4 0 25%, #34a853 0 50%, #fbbc05 0 72%, #ea4335 0); }
 .naver .portal-mark { background: #13c965; }
-.signal .portal-mark { background: #34d499; color: #083e31; }
+.signal .portal-mark { background: #03c75a; color: #fff; }
 
 .updated-text {
   margin: 23px 0 18px;
@@ -189,7 +189,7 @@ button { cursor: pointer; }
 .daum .rank-badge { background: #ffb70a; }
 .google .rank-badge { background: #4285ed; }
 .naver .rank-badge { background: #2cad59; }
-.signal .rank-badge { background: #26b993; }
+.signal .rank-badge { background: #03c75a; }
 
 .keyword-list a {
   max-width: 100%;

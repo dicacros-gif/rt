@@ -35,7 +35,7 @@ const portalMeta: Record<ViewId, { portalId: Portal; title: string; mark: string
   daum: { portalId: "daum", title: "다음 실시간 검색어", mark: "D" },
   google: { portalId: "google", title: "구글 실시간 검색어", mark: "G" },
   naver: { portalId: "naver", title: "크리에이터 어드바이저 검색어", mark: "C" },
-  signal: { portalId: "signal", title: "Signal.bz 실시간 검색어", mark: "S" },
+  signal: { portalId: "signal", title: "네이버 실시간 검색어", mark: "N" },
   daumMore: { portalId: "daum", title: "다음 추가 실시간 순위", mark: "D" },
   googleMore: { portalId: "google", title: "구글 추가 실시간 순위", mark: "G" },
 };

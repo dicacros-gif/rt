@@ -10,7 +10,7 @@ const portalInfo = {
   daum: { name: "다음", description: "다음 첫 화면 실시간 트렌드 순위", source: "다음 실시간 트렌드" },
   google: { name: "구글", description: "대한민국 실시간 급상승 검색어", source: "Google Trends 실시간 순위" },
   naver: { name: "크리에이터 어드바이저", description: "크리에이터 어드바이저 공개 순위", source: "크리에이터 어드바이저 공개 순위" },
-  signal: { name: "Signal.bz", description: "실시간 검색어 TOP 10", source: "Signal.bz" },
+  signal: { name: "네이버", description: "네이버 실시간 검색어 TOP 10", source: "네이버 실시간 검색어" },
 };
 
 const decode = (value) => String(value ?? "")

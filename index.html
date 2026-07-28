@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="다음, 구글, 크리에이터 어드바이저, Signal.bz 실시간 검색어">
+  <meta name="description" content="다음, 구글, 네이버, 크리에이터 어드바이저 실시간 검색어">
   <title>실시간 인기 검색어</title>
   <style>
     :root{--navy:#06295f;--bg:#f7f8fa;--muted:#929292}
@@ -12,11 +12,11 @@
     .dashboard-layout{display:grid;grid-template-columns:minmax(0,1fr) clamp(320px,24vw,390px);gap:clamp(16px,1.6vw,28px);align-items:start;width:100%;padding:24px 2vw 50px}main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.4vw,26px);width:100%;max-width:100%;margin:0 auto;align-items:start}
     .card{width:100%;max-width:100%;min-width:0;overflow:hidden;padding:34px 22px 28px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
-    [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#34d499;color:#083e31}
+    [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#03c75a;color:#fff}
     h2{max-width:100%;margin:0;color:var(--navy);font-size:clamp(18px,1.35vw,27px);font-weight:950;letter-spacing:-2px;text-align:center;overflow-wrap:anywhere;word-break:keep-all}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
     .collection-groups{display:grid;gap:18px}.collection-group h3{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px;padding:8px 10px;border-radius:6px;background:#eef3f8;color:var(--navy);font-size:12px;font-weight:900}.collection-group h3 small{color:#76869a;font-size:10px}
     ol{list-style:none;margin:0;padding:0}.keyword-entry{display:block}.keyword-row{display:flex;align-items:flex-start;min-height:54px;padding:7px 0}.rank{display:grid;place-items:center;width:40px;height:40px;flex:0 0 auto;border-radius:5px;color:white;font-size:18px;font-weight:900}
-    [data-portal=daum] .rank{background:#ffb70a}[data-portal=google] .rank{background:#4285ed}[data-portal=naver] .rank{background:#2cad59}[data-portal=signal] .rank{background:#26b993}
+    [data-portal=daum] .rank{background:#ffb70a}[data-portal=google] .rank{background:#4285ed}[data-portal=naver] .rank{background:#2cad59}[data-portal=signal] .rank{background:#03c75a}
     .keyword-row a{max-width:100%;min-width:0;flex:1;margin-left:24px;padding:7px 0;color:#070707;text-decoration:none;line-height:1.45;overflow-wrap:anywhere;word-break:keep-all;font-size:18px;font-weight:850;letter-spacing:-1px}.keyword-row a:hover{color:#315eaa;text-decoration:underline}
     .related-toggle{display:grid;place-items:center;width:22px;height:22px;margin:9px 10px 0 0;flex:0 0 auto;border:2px solid #cbd3dd;border-radius:5px;background:#fff;color:#fff;font-size:15px;font-weight:950;line-height:1}.related-toggle:hover{border-color:#6682a7;background:#f2f6fb}.related-toggle.checked{border-color:var(--navy);background:var(--navy)}
     .remove{width:32px;height:32px;margin-top:4px;border:0;border-radius:50%;background:transparent;color:#c0c5cc;font-size:22px;opacity:0}.keyword-row:hover .remove,.remove:focus{opacity:1}.remove:hover{background:#ef5350;color:white}
@@ -54,7 +54,7 @@
       daum:{portalId:"daum",title:"다음 실시간 검색어",mark:"D"},
       google:{portalId:"google",title:"구글 실시간 검색어",mark:"G"},
       naver:{portalId:"naver",title:"크리에이터 어드바이저 검색어",mark:"C"},
-      signal:{portalId:"signal",title:"Signal.bz 실시간 검색어",mark:"S"},
+      signal:{portalId:"signal",title:"네이버 실시간 검색어",mark:"N"},
       daumMore:{portalId:"daum",title:"다음 추가 실시간 순위",mark:"D"},
       googleMore:{portalId:"google",title:"구글 추가 실시간 순위",mark:"G"}
     };

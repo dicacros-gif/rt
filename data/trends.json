@@ -484,9 +484,9 @@
     },
     {
       "id": "signal",
-      "name": "Signal.bz",
-      "description": "실시간 검색어 TOP 10",
-      "source": "Signal.bz",
+      "name": "네이버",
+      "description": "네이버 실시간 검색어 TOP 10",
+      "source": "네이버 실시간 검색어",
       "items": [
         {
           "id": 63,
