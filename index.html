@@ -11,7 +11,7 @@
     button,select,input{font:inherit}button{cursor:pointer}
     header{min-height:105px;padding:42px 20px 23px;text-align:center}
     .actions{display:flex;justify-content:center;gap:10px}.actions button,.actions select{height:40px;border:1px solid #dce2ea;border-radius:7px;background:white;color:var(--navy);font-weight:800}.actions button{padding:0 15px}.actions select{padding:0 12px}
-    main{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,1.4vw,26px);width:100%;max-width:100%;margin:0 auto;padding:0 2vw 50px;align-items:start}
+    .dashboard-layout{display:grid;grid-template-columns:minmax(0,1fr) clamp(320px,24vw,390px);gap:clamp(16px,1.6vw,28px);align-items:start;width:100%;padding:0 2vw 50px}main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.4vw,26px);width:100%;max-width:100%;margin:0 auto;align-items:start}
     .card{width:100%;max-width:100%;min-width:0;overflow:hidden;padding:34px 22px 28px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
     [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#34d499;color:#083e31}
@@ -24,10 +24,10 @@
     .remove{width:32px;height:32px;margin-top:4px;border:0;border-radius:50%;background:transparent;color:#c0c5cc;font-size:22px;opacity:0}.keyword-row:hover .remove,.remove:focus{opacity:1}.remove:hover{background:#ef5350;color:white}
     .related-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--navy);font-size:14px}.related-head>div{display:grid;min-width:0;gap:3px}.related-head>div span{color:#7a8798;font-size:11px;font-weight:800}.related-head>div strong{max-width:100%;overflow-wrap:anywhere;word-break:keep-all}.related-head button{padding:6px 9px;border:1px solid #cbd9e9;border-radius:5px;background:#fff;color:var(--navy);font-size:11px;font-weight:850}.related-head button:hover{border-color:var(--navy);background:var(--navy);color:#fff}.related-head button:disabled{opacity:.45;cursor:default}
     .related-list{list-style:none;margin:11px 0 0;padding:0}.related-list li{display:flex;align-items:center;min-height:32px;padding:3px 0;border-top:1px solid #e9eef4}.copy-keyword{min-width:0;flex:1;padding:2px 0;border:0;background:none;color:#18212c;text-align:left;line-height:1.45;overflow-wrap:anywhere;word-break:keep-all;font-size:13px;font-weight:750}.copy-keyword:hover{color:#315eaa;text-decoration:underline}.related-status{margin:12px 0 1px;color:#77808b;font-size:12px}.related-status.error{color:#b63731}
-    .related-drawer[hidden]{display:none}.related-drawer{position:fixed;z-index:60;top:24px;right:24px;display:flex;flex-direction:column;width:min(460px,calc(100vw - 48px));height:min(820px,calc(100vh - 48px));max-width:100%;overflow:hidden;border:1px solid #cfd9e6;border-radius:12px;background:#fff;box-shadow:0 24px 70px rgba(15,40,72,.24)}.related-drawer-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border-bottom:1px solid #dfe7f0;background:var(--navy);color:#fff}.related-drawer-title>div{display:grid;min-width:0;gap:4px}.related-drawer-title span{color:#c7d8ee;font-size:11px;font-weight:800}.related-drawer-title strong{max-width:100%;overflow-wrap:anywhere;word-break:keep-all}.related-drawer-title>button{width:36px;height:36px;flex:0 0 auto;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:24px}.related-drawer>.related-status{margin:24px}.related-drawer-sections{display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);min-height:0;flex:1}.related-result-section{min-height:0;overflow:auto;padding:17px 20px}.related-result-section+.related-result-section{border-top:4px solid #e7edf4}
+    .related-drawer{position:sticky;top:0;display:flex;flex-direction:column;width:100%;height:100vh;max-height:100vh;max-width:100%;min-width:0;overflow:hidden;border:1px solid #cfd9e6;border-radius:12px;background:#fff;box-shadow:0 8px 28px rgba(15,40,72,.14)}.related-placeholder{display:grid;place-content:center;min-height:100%;padding:36px 28px;color:#778394;text-align:center}.related-placeholder strong{color:var(--navy);font-size:20px}.related-placeholder p{max-width:260px;margin:12px auto 0;font-size:13px;line-height:1.7}.related-drawer-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border-bottom:1px solid #dfe7f0;background:var(--navy);color:#fff}.related-drawer-title>div{display:grid;min-width:0;gap:4px}.related-drawer-title span{color:#c7d8ee;font-size:11px;font-weight:800}.related-drawer-title strong{max-width:100%;overflow-wrap:anywhere;word-break:keep-all}.related-drawer-title>button{width:36px;height:36px;flex:0 0 auto;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:24px}.related-drawer>.related-status{margin:24px}.related-drawer-sections{display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);min-height:0;flex:1}.related-result-section{min-height:0;overflow:auto;padding:17px 20px}.related-result-section+.related-result-section{border-top:4px solid #e7edf4}
     .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.rank-empty{margin:18px 0 0;padding:22px 12px;border-radius:7px;background:#f5f8fb;color:#7b8795;text-align:center;font-size:12px;line-height:1.6}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
     .delete-overlay[hidden]{display:none}.delete-overlay{position:fixed;z-index:100;inset:0;display:grid;place-items:center;padding:20px;background:rgba(9,25,46,.48);backdrop-filter:blur(3px)}.delete-dialog{width:min(400px,100%);padding:28px;border-radius:12px;background:#fff;box-shadow:0 24px 70px rgba(0,0,0,.24)}.delete-dialog h2{margin:0;font-size:22px}.delete-dialog p{margin:12px 0 20px;color:#606975;font-size:14px;line-height:1.55}.delete-dialog label{display:block;margin-bottom:7px;color:#303947;font-size:13px;font-weight:850}.delete-dialog input{width:100%;height:44px;padding:0 12px;border:1px solid #cbd5e1;border-radius:7px;outline:none}.delete-dialog input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(6,41,95,.1)}.delete-error{min-height:18px;margin:7px 0 0!important;color:#c53631!important;font-size:12px!important;font-weight:800}.delete-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.delete-actions button{height:40px;padding:0 16px;border:1px solid #d7dee8;border-radius:7px;background:#fff;color:#475466;font-weight:850}.delete-actions .danger{border-color:#df453f;background:#df453f;color:#fff}
-    @media(max-width:1500px){main{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1280px}}@media(max-width:1050px){main{grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px}}@media(max-width:700px){header{min-height:85px;padding-top:30px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.remove{opacity:1}.related-drawer{top:auto;right:10px;bottom:10px;left:10px;width:auto;height:min(76vh,720px);max-width:calc(100% - 20px)}}
+    @media(max-width:1500px){main{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:1100px){main{grid-template-columns:1fr;max-width:560px}}@media(max-width:820px){.dashboard-layout{grid-template-columns:1fr}main{max-width:520px}.related-drawer{position:static;height:100vh;max-height:100vh}}@media(max-width:700px){header{min-height:85px;padding-top:30px}.dashboard-layout{padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.remove{opacity:1}}
   </style>
 </head>
 <body>
@@ -36,8 +36,12 @@
       <button id="refresh">↻ 새로고침</button>
     </div>
   </header>
-  <main id="grid"><div class="empty">검색어를 불러오는 중입니다.</div></main>
-  <aside class="related-drawer" id="related-drawer" hidden aria-live="polite"></aside>
+  <div class="dashboard-layout">
+    <main id="grid"><div class="empty">검색어를 불러오는 중입니다.</div></main>
+    <aside class="related-drawer" id="related-drawer" aria-live="polite">
+      <div class="related-placeholder"><strong>연관 검색어</strong><p>왼쪽 체크 버튼을 누르면 전체 문구와 첫 단어의 연관 검색어가 이곳에 표시됩니다.</p></div>
+    </aside>
+  </div>
   <div class="delete-overlay" id="delete-modal" hidden>
     <form class="delete-dialog" id="delete-form">
       <h2>키워드 삭제</h2>
@@ -122,7 +126,7 @@
         <div class="related-drawer-sections">${relatedSection("전체 문구",result.seed,result.fullItems,"full")}${relatedSection("첫 단어",result.prefix,result.prefixItems,"prefix")}</div>`;
     }
     function closeRelatedDrawer(){
-      relatedDrawer.hidden=true;relatedDrawer.innerHTML="";activeRelatedId="";activeRelatedResult=null;
+      relatedDrawer.innerHTML='<div class="related-placeholder"><strong>연관 검색어</strong><p>왼쪽 체크 버튼을 누르면 전체 문구와 첫 단어의 연관 검색어가 이곳에 표시됩니다.</p></div>';activeRelatedId="";activeRelatedResult=null;
       grid.querySelectorAll(".related-toggle.checked").forEach(button=>{button.classList.remove("checked");button.setAttribute("aria-checked","false");button.querySelector("span").textContent=""});
     }
 
@@ -159,14 +163,13 @@
       const toggle=event.target.closest(".related-toggle");
       if(toggle){
         const requestId=String(toggle.dataset.id);
-        if(activeRelatedId===requestId&&!relatedDrawer.hidden){
+        if(activeRelatedId===requestId){
           closeRelatedDrawer();
           return;
         }
         closeRelatedDrawer();
         activeRelatedId=requestId;
         toggle.classList.add("checked");toggle.setAttribute("aria-checked","true");toggle.querySelector("span").textContent="✓";
-        relatedDrawer.hidden=false;
         relatedDrawer.innerHTML=`<div class="related-drawer-title"><div><span>선택한 검색어</span><strong>${escapeHtml(toggle.dataset.keyword)}</strong></div><button class="close-related" aria-label="연관 검색어 닫기">×</button></div><p class="related-status">네이버·다음·구글에서 찾는 중…</p>`;
         try{
           let result;

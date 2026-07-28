@@ -291,15 +291,16 @@ export default function TrendsDashboard() {
 
       {error && <div className="error-message">{error} <button onClick={load}>다시 시도</button></div>}
 
-      <section className="cards-grid">
-        {loading && !data
-          ? (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => (
-            <LoadingCard key={viewId} viewId={viewId} />
-          ))
-          : portalViews.map((view) => {
-            const collectedGroups = groupByCollectedAt(view.items);
-            return (
-              <section className={`ranking-card ${view.portalId}`} key={view.viewId}>
+      <div className="dashboard-layout">
+        <section className="cards-grid">
+          {loading && !data
+            ? (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => (
+              <LoadingCard key={viewId} viewId={viewId} />
+            ))
+            : portalViews.map((view) => {
+              const collectedGroups = groupByCollectedAt(view.items);
+              return (
+                <section className={`ranking-card ${view.portalId}`} key={view.viewId}>
                 <div className="card-title">
                   <span className="portal-mark">{view.mark}</span>
                   <h2>{view.title}</h2>
@@ -352,17 +353,23 @@ export default function TrendsDashboard() {
                     </section>
                   ))}
                 </div>
-              </section>
-            );
-          })}
-      </section>
+                </section>
+              );
+            })}
+        </section>
 
-      {activeRelated && (() => {
-        const state = related[activeRelated.key];
-        const fullItems = state?.fullItems ?? [];
-        const prefixItems = state?.prefixItems ?? [];
-        return (
-          <aside className="related-drawer" aria-label={`${activeRelated.keyword} 연관 검색어`}>
+        <aside className="related-drawer" aria-label="연관 검색어">
+          {!activeRelated ? (
+            <div className="related-placeholder">
+              <strong>연관 검색어</strong>
+              <p>왼쪽 체크 버튼을 누르면 전체 문구와 첫 단어의 연관 검색어가 이곳에 표시됩니다.</p>
+            </div>
+          ) : (() => {
+            const state = related[activeRelated.key];
+            const fullItems = state?.fullItems ?? [];
+            const prefixItems = state?.prefixItems ?? [];
+            return (
+              <>
             <div className="related-drawer-title">
               <div>
                 <span>선택한 검색어</span>
@@ -422,9 +429,11 @@ export default function TrendsDashboard() {
                 </section>
               </div>
             )}
-          </aside>
-        );
-      })()}
+              </>
+            );
+          })()}
+        </aside>
+      </div>
 
       {deleteTarget && (
         <div className="delete-overlay" role="presentation" onMouseDown={(event) => {
