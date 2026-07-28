@@ -162,6 +162,27 @@ async function collectRelated(seed) {
   return [...merged.values()].slice(0, 30);
 }
 
+async function collectRelatedSet(seed) {
+  const parts = decode(seed).split(/\s+/);
+  const prefix = parts.length > 1 ? parts[0] : "";
+  const [fullItems, rawPrefixItems] = await Promise.all([
+    collectRelated(seed),
+    prefix ? collectRelated(prefix) : Promise.resolve([]),
+  ]);
+  const seen = new Set([
+    comparisonKey(seed),
+    comparisonKey(prefix),
+    ...fullItems.map((item) => comparisonKey(item.keyword)),
+  ].filter(Boolean));
+  const prefixItems = rawPrefixItems.filter((item) => {
+    const key = comparisonKey(item.keyword);
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  return { seed: decode(seed), prefix, fullItems, prefixItems };
+}
+
 async function mapLimit(values, limit, callback) {
   const results = new Array(values.length);
   let cursor = 0;
@@ -222,10 +243,17 @@ const portals = Object.entries(portalInfo).map(([id, info]) => {
 });
 
 const related = { ...(existing.related ?? {}) };
-await mapLimit(newItems, 4, async (item) => {
-  related[String(item.id)] = await collectRelated(item.keyword).catch(() => []);
+const allItems = portals.flatMap((portal) => portal.items);
+const relatedTargets = allItems.filter((item) => {
+  const value = related[String(item.id)];
+  return !value || Array.isArray(value)
+    || !Array.isArray(value.fullItems) || !Array.isArray(value.prefixItems);
+});
+await mapLimit(relatedTargets, 4, async (item) => {
+  related[String(item.id)] = await collectRelatedSet(item.keyword)
+    .catch(() => ({ seed: item.keyword, prefix: "", fullItems: [], prefixItems: [] }));
 });
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify({ dataVersion, updatedAt: now, portals, related }, null, 2)}\n`, "utf8");
-console.log(`Collected ${collected.length}, inserted ${inserted}, total ${portals.reduce((sum, portal) => sum + portal.items.length, 0)}, related ${Object.keys(related).length}`);
+console.log(`Collected ${collected.length}, inserted ${inserted}, total ${allItems.length}, related ${Object.keys(related).length}`);

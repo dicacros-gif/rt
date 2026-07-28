@@ -57,25 +57,26 @@ async function fetchGoogle(seed: string) {
   return (Array.isArray(data[1]) ? data[1] : []).map(normalize).filter(Boolean).slice(0, 15);
 }
 
-export async function GET(request: NextRequest) {
-  const seed = normalize(request.nextUrl.searchParams.get("q"));
-  if (!seed || seed.length > 100) {
-    return NextResponse.json({ error: "검색어가 필요합니다." }, { status: 400 });
-  }
-
-  const sourceEntries = await Promise.all([
+async function fetchSources(seed: string) {
+  return Promise.all([
     fetchNaver(seed).then((items) => ["naver", items] as const).catch(() => ["naver", []] as const),
     fetchDaum(seed).then((items) => ["daum", items] as const).catch(() => ["daum", []] as const),
     fetchGoogle(seed).then((items) => ["google", items] as const).catch(() => ["google", []] as const),
   ]);
+}
 
+function mergeRelated(
+  seed: string,
+  sourceEntries: ReadonlyArray<readonly [SourceName, string[]]>,
+  excluded = new Set<string>(),
+) {
   const seedKey = comparisonKey(seed);
   const unique = new Map<string, RelatedResult>();
   for (const [source, items] of sourceEntries) {
     for (const value of items) {
       const keyword = normalize(value);
       const key = comparisonKey(keyword);
-      if (!key || key === seedKey) continue;
+      if (!key || key === seedKey || excluded.has(key)) continue;
       const existing = unique.get(key);
       if (existing) {
         if (!existing.sources.includes(source)) existing.sources.push(source);
@@ -84,11 +85,38 @@ export async function GET(request: NextRequest) {
       }
     }
   }
+  return [...unique.values()].slice(0, 30);
+}
+
+export async function GET(request: NextRequest) {
+  const seed = normalize(request.nextUrl.searchParams.get("q"));
+  if (!seed || seed.length > 100) {
+    return NextResponse.json({ error: "검색어가 필요합니다." }, { status: 400 });
+  }
+
+  const parts = seed.split(/\s+/);
+  const prefix = parts.length > 1 ? parts[0] : "";
+  const [fullSources, prefixSources] = await Promise.all([
+    fetchSources(seed),
+    prefix ? fetchSources(prefix) : Promise.resolve([]),
+  ]);
+  const fullItems = mergeRelated(seed, fullSources);
+  const excluded = new Set([
+    comparisonKey(seed),
+    comparisonKey(prefix),
+    ...fullItems.map((item) => comparisonKey(item.keyword)),
+  ].filter(Boolean));
+  const prefixItems = prefix
+    ? mergeRelated(prefix, prefixSources, excluded)
+    : [];
 
   return NextResponse.json({
     seed,
-    count: unique.size,
-    items: [...unique.values()],
-    sources: Object.fromEntries(sourceEntries.map(([source, items]) => [source, items.length])),
+    prefix,
+    count: fullItems.length + prefixItems.length,
+    items: fullItems,
+    fullItems,
+    prefixItems,
+    sources: Object.fromEntries(fullSources.map(([source, items]) => [source, items.length])),
   }, { headers: { "Cache-Control": "public, max-age=300, s-maxage=3600" } });
 }

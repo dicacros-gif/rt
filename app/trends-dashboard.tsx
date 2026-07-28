@@ -14,10 +14,12 @@ type TrendItem = {
 };
 type RelatedItem = { keyword: string; sources: RelatedSource[] };
 type RelatedState = {
-  open: boolean;
   loading: boolean;
   error: string;
-  items: RelatedItem[];
+  seed: string;
+  prefix: string;
+  fullItems: RelatedItem[];
+  prefixItems: RelatedItem[];
 };
 type PortalData = {
   id: Portal;
@@ -93,6 +95,7 @@ export default function TrendsDashboard() {
   const [deletePassword, setDeletePassword] = useState("");
   const [deleteError, setDeleteError] = useState("");
   const [related, setRelated] = useState<Record<string, RelatedState>>({});
+  const [activeRelated, setActiveRelated] = useState<{ key: string; keyword: string } | null>(null);
   const [copiedKey, setCopiedKey] = useState("");
 
   const load = useCallback(async () => {
@@ -148,6 +151,7 @@ export default function TrendsDashboard() {
         delete next[`${portalId}-${item.id}`];
         return next;
       });
+      setActiveRelated((current) => current?.key === `${portalId}-${item.id}` ? null : current);
       setDeleteTarget(null);
       setDeletePassword("");
     } catch (reason) {
@@ -161,37 +165,59 @@ export default function TrendsDashboard() {
     const key = `${portalId}-${item.id}`;
     const current = related[key];
 
-    if (current?.open) {
-      setRelated((states) => ({ ...states, [key]: { ...states[key], open: false } }));
+    if (activeRelated?.key === key) {
+      setActiveRelated(null);
       return;
     }
 
-    if (current?.items.length || current?.loading) {
-      setRelated((states) => ({ ...states, [key]: { ...states[key], open: true } }));
+    setActiveRelated({ key, keyword: item.keyword });
+    if (current?.fullItems.length || current?.prefixItems.length || current?.loading) {
       return;
     }
 
     setRelated((states) => ({
       ...states,
-      [key]: { open: true, loading: true, error: "", items: [] },
+      [key]: {
+        loading: true,
+        error: "",
+        seed: item.keyword,
+        prefix: "",
+        fullItems: [],
+        prefixItems: [],
+      },
     }));
 
     try {
       const response = await fetch(`/api/related?q=${encodeURIComponent(item.keyword)}`);
       if (!response.ok) throw new Error("연관 검색어를 불러오지 못했습니다.");
-      const result = await response.json() as { items?: RelatedItem[] };
+      const result = await response.json() as {
+        seed?: string;
+        prefix?: string;
+        items?: RelatedItem[];
+        fullItems?: RelatedItem[];
+        prefixItems?: RelatedItem[];
+      };
       setRelated((states) => ({
         ...states,
-        [key]: { open: true, loading: false, error: "", items: result.items ?? [] },
+        [key]: {
+          loading: false,
+          error: "",
+          seed: result.seed ?? item.keyword,
+          prefix: result.prefix ?? "",
+          fullItems: result.fullItems ?? result.items ?? [],
+          prefixItems: result.prefixItems ?? [],
+        },
       }));
     } catch (reason) {
       setRelated((states) => ({
         ...states,
         [key]: {
-          open: true,
           loading: false,
           error: reason instanceof Error ? reason.message : "연관 검색어를 불러오지 못했습니다.",
-          items: [],
+          seed: item.keyword,
+          prefix: "",
+          fullItems: [],
+          prefixItems: [],
         },
       }));
     }
@@ -199,8 +225,12 @@ export default function TrendsDashboard() {
 
   const copyText = async (text: string) => {
     if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(text);
-      return;
+      try {
+        await navigator.clipboard.writeText(text);
+        return;
+      } catch {
+        // 브라우저 권한이 없으면 아래의 선택 복사 방식으로 대체합니다.
+      }
     }
     const textarea = document.createElement("textarea");
     textarea.value = text;
@@ -219,9 +249,10 @@ export default function TrendsDashboard() {
       setCopiedKey(key);
       window.setTimeout(() => setCopiedKey((current) => current === key ? "" : current), 1600);
     } catch {
+      const stateKey = key.replace(/-(full|prefix)$/, "");
       setRelated((states) => ({
         ...states,
-        [key]: { ...states[key], error: "클립보드에 복사하지 못했습니다." },
+        [stateKey]: { ...states[stateKey], error: "클립보드에 복사하지 못했습니다." },
       }));
     }
   };
@@ -261,19 +292,19 @@ export default function TrendsDashboard() {
                       <ol className="keyword-list">
                   {items.map((item) => {
                     const itemKey = `${portal.id}-${item.id}`;
-                    const relatedState = related[itemKey];
+                    const isRelatedOpen = activeRelated?.key === itemKey;
                     return (
                       <li className="keyword-entry" key={item.id}>
                         <div className="keyword-row">
                           <button
-                            className={`related-toggle ${relatedState?.open ? "checked" : ""}`}
+                            className={`related-toggle ${isRelatedOpen ? "checked" : ""}`}
                             role="checkbox"
-                            aria-checked={Boolean(relatedState?.open)}
-                            aria-label={`${item.keyword} 연관 검색어 ${relatedState?.open ? "닫기" : "보기"}`}
+                            aria-checked={isRelatedOpen}
+                            aria-label={`${item.keyword} 연관 검색어 ${isRelatedOpen ? "닫기" : "보기"}`}
                             title="네이버·다음·구글 연관 검색어 보기"
                             onClick={() => toggleRelated(portal.id, item)}
                           >
-                            <span aria-hidden="true">{relatedState?.open ? "✓" : ""}</span>
+                            <span aria-hidden="true">{isRelatedOpen ? "✓" : ""}</span>
                           </button>
                           <span className="rank-badge">{item.rank}</span>
                           <a href={item.link} target="_blank" rel="noreferrer">{item.keyword}</a>
@@ -292,38 +323,6 @@ export default function TrendsDashboard() {
                           </button>
                         </div>
 
-                        {relatedState?.open && (
-                          <div className="related-panel">
-                            <div className="related-heading">
-                              <strong>연관 검색어</strong>
-                              {!relatedState.loading && relatedState.items.length > 0 && (
-                                <button onClick={() => copyRelated(itemKey, relatedState.items)}>
-                                  {copiedKey === itemKey ? "복사됨 ✓" : `전체 복사 (${relatedState.items.length})`}
-                                </button>
-                              )}
-                            </div>
-                            {relatedState.loading && <p className="related-status">네이버·다음·구글에서 찾는 중…</p>}
-                            {relatedState.error && <p className="related-status error">{relatedState.error}</p>}
-                            {!relatedState.loading && !relatedState.error && relatedState.items.length === 0 && (
-                              <p className="related-status">표시할 연관 검색어가 없습니다.</p>
-                            )}
-                            {relatedState.items.length > 0 && (
-                              <ul className="related-list">
-                                {relatedState.items.map((relatedItem) => (
-                                  <li key={relatedItem.keyword}>
-                                    <button
-                                      className="related-keyword"
-                                      title="클릭해서 이 검색어 복사"
-                                      onClick={() => copyText(relatedItem.keyword)}
-                                    >
-                                      {relatedItem.keyword}
-                                    </button>
-                                  </li>
-                                ))}
-                              </ul>
-                            )}
-                          </div>
-                        )}
                       </li>
                     );
                   })}
@@ -335,6 +334,75 @@ export default function TrendsDashboard() {
             );
           })}
       </section>
+
+      {activeRelated && (() => {
+        const state = related[activeRelated.key];
+        const fullItems = state?.fullItems ?? [];
+        const prefixItems = state?.prefixItems ?? [];
+        return (
+          <aside className="related-drawer" aria-label={`${activeRelated.keyword} 연관 검색어`}>
+            <div className="related-drawer-title">
+              <div>
+                <span>선택한 검색어</span>
+                <strong>{activeRelated.keyword}</strong>
+              </div>
+              <button type="button" onClick={() => setActiveRelated(null)} aria-label="연관 검색어 닫기">×</button>
+            </div>
+            {state?.loading && <p className="related-status">네이버·다음·구글에서 찾는 중…</p>}
+            {state?.error && <p className="related-status error">{state.error}</p>}
+            {!state?.loading && !state?.error && (
+              <div className="related-drawer-sections">
+                <section className="related-result-section">
+                  <div className="related-heading">
+                    <div><span>전체 문구</span><strong>{state?.seed ?? activeRelated.keyword}</strong></div>
+                    <button
+                      type="button"
+                      disabled={!fullItems.length}
+                      onClick={() => copyRelated(`${activeRelated.key}-full`, fullItems)}
+                    >
+                      {copiedKey === `${activeRelated.key}-full` ? "복사됨 ✓" : `복사 (${fullItems.length})`}
+                    </button>
+                  </div>
+                  {fullItems.length ? (
+                    <ul className="related-list">
+                      {fullItems.map((relatedItem) => (
+                        <li key={relatedItem.keyword}>
+                          <button className="related-keyword" onClick={() => copyText(relatedItem.keyword)}>
+                            {relatedItem.keyword}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : <p className="related-status">표시할 연관 검색어가 없습니다.</p>}
+                </section>
+                <section className="related-result-section">
+                  <div className="related-heading">
+                    <div><span>첫 단어</span><strong>{state?.prefix || "추가 검색 없음"}</strong></div>
+                    <button
+                      type="button"
+                      disabled={!prefixItems.length}
+                      onClick={() => copyRelated(`${activeRelated.key}-prefix`, prefixItems)}
+                    >
+                      {copiedKey === `${activeRelated.key}-prefix` ? "복사됨 ✓" : `복사 (${prefixItems.length})`}
+                    </button>
+                  </div>
+                  {prefixItems.length ? (
+                    <ul className="related-list">
+                      {prefixItems.map((relatedItem) => (
+                        <li key={relatedItem.keyword}>
+                          <button className="related-keyword" onClick={() => copyText(relatedItem.keyword)}>
+                            {relatedItem.keyword}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : <p className="related-status">여러 단어 검색어에서 첫 단어 결과를 표시합니다.</p>}
+                </section>
+              </div>
+            )}
+          </aside>
+        );
+      })()}
 
       {deleteTarget && (
         <div className="delete-overlay" role="presentation" onMouseDown={(event) => {
