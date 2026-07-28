@@ -195,9 +195,15 @@ async function mapLimit(values, limit, callback) {
 async function readExisting() {
   try {
     const parsed = JSON.parse(await readFile(outputPath, "utf8"));
-    return parsed.dataVersion === dataVersion
-      ? parsed
-      : { dataVersion, updatedAt: null, portals: [], related: {} };
+    if (!Array.isArray(parsed?.portals)) {
+      return { dataVersion, updatedAt: null, portals: [], related: {} };
+    }
+    // 데이터 형식 버전이 바뀌어도 날짜·시간별 누적 기록은 유지한다.
+    return {
+      ...parsed,
+      dataVersion,
+      related: parsed.related && typeof parsed.related === "object" ? parsed.related : {},
+    };
   } catch {
     return { dataVersion, updatedAt: null, portals: [], related: {} };
   }

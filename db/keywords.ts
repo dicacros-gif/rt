@@ -52,13 +52,11 @@ async function ensureKeywordSourceVersion(db: D1Database) {
   ).first<{ value: string }>();
   if (current?.value === keywordSourceVersion) return false;
 
-  await db.batch([
-    db.prepare("DELETE FROM keywords"),
-    db.prepare(
-      `INSERT INTO app_meta (key, value) VALUES ('keyword_source_version', ?)
-       ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
-    ).bind(keywordSourceVersion),
-  ]);
+  // 수집 방식이 바뀌어도 기존 누적 기록은 보존한다.
+  await db.prepare(
+    `INSERT INTO app_meta (key, value) VALUES ('keyword_source_version', ?)
+     ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+  ).bind(keywordSourceVersion).run();
   return true;
 }
 
