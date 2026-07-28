@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { type FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 
 type Portal = "daum" | "google" | "naver" | "signal";
 type ViewId = Portal | "daumMore" | "googleMore";
@@ -101,6 +101,7 @@ export default function TrendsDashboard() {
   const [related, setRelated] = useState<Record<string, RelatedState>>({});
   const [activeRelated, setActiveRelated] = useState<{ key: string; keyword: string } | null>(null);
   const [copiedKey, setCopiedKey] = useState("");
+  const [searchKeyword, setSearchKeyword] = useState("");
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -182,16 +183,9 @@ export default function TrendsDashboard() {
     }
   };
 
-  const toggleRelated = async (portalId: Portal, item: TrendItem) => {
-    const key = `${portalId}-${item.id}`;
+  const openRelated = async (key: string, keyword: string) => {
     const current = related[key];
-
-    if (activeRelated?.key === key) {
-      setActiveRelated(null);
-      return;
-    }
-
-    setActiveRelated({ key, keyword: item.keyword });
+    setActiveRelated({ key, keyword });
     if (current?.fullItems.length || current?.prefixItems.length || current?.loading) {
       return;
     }
@@ -201,7 +195,7 @@ export default function TrendsDashboard() {
       [key]: {
         loading: true,
         error: "",
-        seed: item.keyword,
+        seed: keyword,
         prefix: "",
         fullItems: [],
         prefixItems: [],
@@ -209,7 +203,7 @@ export default function TrendsDashboard() {
     }));
 
     try {
-      const response = await fetch(`/api/related?q=${encodeURIComponent(item.keyword)}`);
+      const response = await fetch(`/api/related?q=${encodeURIComponent(keyword)}`);
       if (!response.ok) throw new Error("연관 검색어를 불러오지 못했습니다.");
       const result = await response.json() as {
         seed?: string;
@@ -223,7 +217,7 @@ export default function TrendsDashboard() {
         [key]: {
           loading: false,
           error: "",
-          seed: result.seed ?? item.keyword,
+          seed: result.seed ?? keyword,
           prefix: result.prefix ?? "",
           fullItems: result.fullItems ?? result.items ?? [],
           prefixItems: result.prefixItems ?? [],
@@ -235,13 +229,29 @@ export default function TrendsDashboard() {
         [key]: {
           loading: false,
           error: reason instanceof Error ? reason.message : "연관 검색어를 불러오지 못했습니다.",
-          seed: item.keyword,
+          seed: keyword,
           prefix: "",
           fullItems: [],
           prefixItems: [],
         },
       }));
     }
+  };
+
+  const toggleRelated = async (portalId: Portal, item: TrendItem) => {
+    const key = `${portalId}-${item.id}`;
+    if (activeRelated?.key === key) {
+      setActiveRelated(null);
+      return;
+    }
+    await openRelated(key, item.keyword);
+  };
+
+  const searchRelated = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const keyword = searchKeyword.replace(/\s+/g, " ").trim();
+    if (!keyword) return;
+    void openRelated(`manual-${keyword.normalize("NFKC").toLocaleLowerCase("ko-KR")}`, keyword);
   };
 
   const copyText = async (text: string) => {
@@ -280,6 +290,19 @@ export default function TrendsDashboard() {
 
   return (
     <main className="page-shell">
+      <form className="keyword-search" onSubmit={searchRelated}>
+        <label htmlFor="related-search">연관 검색어 검색</label>
+        <input
+          id="related-search"
+          type="search"
+          value={searchKeyword}
+          onChange={(event) => setSearchKeyword(event.target.value)}
+          placeholder="키워드를 입력하고 엔터를 누르세요"
+          autoComplete="off"
+        />
+        <button type="submit">검색</button>
+      </form>
+
       {error && <div className="error-message">{error} <button onClick={load}>다시 시도</button></div>}
 
       <div className="dashboard-layout">
@@ -362,7 +385,7 @@ export default function TrendsDashboard() {
           {!activeRelated ? (
             <div className="related-placeholder">
               <strong>연관 검색어</strong>
-              <p>왼쪽 체크 버튼을 누르면 전체 문구와 첫 단어의 연관 검색어가 이곳에 표시됩니다.</p>
+              <p>상단에 키워드를 입력하거나 왼쪽 체크 버튼을 누르면 연관 검색어가 표시됩니다.</p>
             </div>
           ) : (() => {
             const state = related[activeRelated.key];

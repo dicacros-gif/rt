@@ -26,6 +26,56 @@ button { cursor: pointer; }
   padding: 24px clamp(20px, 4vw, 72px) 36px;
 }
 
+.keyword-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  width: min(680px, 100%);
+  margin: 0 auto 22px;
+  overflow: hidden;
+  border: 2px solid var(--navy);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(20, 53, 91, .1);
+}
+
+.keyword-search label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.keyword-search input {
+  min-width: 0;
+  height: 50px;
+  padding: 0 17px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #142033;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.keyword-search input::placeholder {
+  color: #8b96a5;
+  font-weight: 650;
+}
+
+.keyword-search button {
+  min-width: 74px;
+  border: 0;
+  background: var(--navy);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.keyword-search:focus-within {
+  box-shadow: 0 0 0 4px rgba(6, 41, 95, .12), 0 5px 18px rgba(20, 53, 91, .1);
+}
+
 .dashboard-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(320px, 24vw, 390px);
@@ -606,6 +656,9 @@ button { cursor: pointer; }
 
 @media (max-width: 720px) {
   .page-shell { padding: 16px 14px 28px; }
+  .keyword-search { margin-bottom: 16px; }
+  .keyword-search input { height: 48px; padding: 0 13px; font-size: 15px; }
+  .keyword-search button { min-width: 64px; }
   .cards-grid { gap: 22px; }
   .ranking-card { padding: 34px 25px 26px; }
   .card-title h2 { font-size: 23px; }
