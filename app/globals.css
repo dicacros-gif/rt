@@ -61,10 +61,11 @@ button { cursor: pointer; }
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(280px, 1fr));
-  gap: clamp(22px, 3vw, 52px);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(14px, 1.4vw, 26px);
   align-items: start;
-  max-width: 1860px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -73,7 +74,7 @@ button { cursor: pointer; }
   max-width: 100%;
   min-width: 0;
   overflow: hidden;
-  padding: 42px 40px 30px;
+  padding: 34px 22px 28px;
   border: 1px solid #e3eaf2;
   border-radius: 9px;
   background: #fff;
@@ -91,7 +92,7 @@ button { cursor: pointer; }
   max-width: 100%;
   margin: 0;
   color: var(--navy);
-  font-size: clamp(21px, 1.65vw, 31px);
+  font-size: clamp(18px, 1.35vw, 27px);
   font-weight: 950;
   letter-spacing: -.055em;
   text-align: center;
@@ -344,6 +345,17 @@ button { cursor: pointer; }
 
 .related-status.error { color: #b63731; }
 
+.rank-empty {
+  margin: 18px 0 0;
+  padding: 22px 12px;
+  border-radius: 7px;
+  background: #f5f8fb;
+  color: #7b8795;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 .related-drawer {
   position: fixed;
   z-index: 60;
@@ -552,7 +564,11 @@ button { cursor: pointer; }
 .error-message button { border: 0; background: none; color: inherit; font-weight: 900; text-decoration: underline; }
 
 @media (max-width: 1500px) {
-  .cards-grid { grid-template-columns: repeat(2, minmax(300px, 1fr)); max-width: 1100px; }
+  .cards-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1280px; }
+}
+
+@media (max-width: 1050px) {
+  .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 860px; }
 }
 
 @media (max-width: 720px) {

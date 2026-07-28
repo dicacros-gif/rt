@@ -2,10 +2,10 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const outputPath = resolve("data/trends.json");
-const dataVersion = "keyword-only-v2";
+const dataVersion = "realtime-rank-only-v4";
 const portalInfo = {
-  daum: { name: "다음", description: "다음 검색 제안 키워드", source: "다음 검색 제안" },
-  google: { name: "구글", description: "대한민국 실시간 급상승 검색어", source: "Google Trends 급상승 검색어" },
+  daum: { name: "다음", description: "다음 첫 화면 실시간 트렌드 순위", source: "다음 실시간 트렌드" },
+  google: { name: "구글", description: "대한민국 실시간 급상승 검색어", source: "Google Trends 실시간 순위" },
   naver: { name: "크리에이터 어드바이저", description: "네이버 데이터랩 인기 검색어", source: "네이버 데이터랩" },
   signal: { name: "Signal.bz", description: "실시간 검색어 TOP 10", source: "Signal.bz" },
 };
@@ -52,10 +52,15 @@ async function fetchText(url) {
 }
 
 async function collectGoogle() {
-  const xml = await fetchText("https://trends.google.com/trending/rss?geo=KR");
-  const keywords = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)]
-    .map((match) => decode(match[1].match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? ""));
-  return unique(keywords).map((keyword) => ({ portal: "google", keyword }));
+  const page = await fetchText("https://trends.google.com/trending?geo=KR&hl=ko");
+  let keywords = [...page.matchAll(/<div class="mZ3RIc">([\s\S]*?)<\/div>/gi)]
+    .map((match) => decode(match[1]));
+  if (!keywords.length) {
+    const xml = await fetchText("https://trends.google.com/trending/rss?geo=KR");
+    keywords = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)]
+      .map((match) => decode(match[1].match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? ""));
+  }
+  return unique(keywords).slice(0, 25).map((keyword) => ({ portal: "google", keyword }));
 }
 
 async function collectNaverPopular() {
@@ -80,31 +85,33 @@ async function collectSignal() {
     .map((keyword) => ({ portal: "signal", keyword }));
 }
 
-async function collectDaumSuggestions(seeds) {
-  const responses = await Promise.allSettled(seeds.slice(0, 12).map(async (seed) => {
-    const url = new URL("https://suggest.search.daum.net/sushi/opensearch/pc");
-    url.searchParams.set("q", seed);
-    url.searchParams.set("DA", "JU2");
-    const data = JSON.parse(await fetchText(url.toString()));
-    return Array.isArray(data[1]) ? data[1] : [];
-  }));
-  return unique(responses.flatMap((result) => result.status === "fulfilled" ? result.value : []))
-    .slice(0, 30)
+async function collectDaumRealtime() {
+  const html = await fetchText("https://www.daum.net/");
+  const marker = html.indexOf('"uiType":"REALTIME_TREND_TOP"');
+  if (marker < 0) return [];
+  const block = html.slice(marker, marker + 24_000);
+  return unique(
+    [...block.matchAll(/"keyword":"((?:\\.|[^"])*)","rank":/g)]
+      .map((match) => {
+        try {
+          return JSON.parse(`"${match[1]}"`);
+        } catch {
+          return "";
+        }
+      }),
+  )
+    .slice(0, 10)
     .map((keyword) => ({ portal: "daum", keyword }));
 }
 
 async function collectAll() {
   const results = await Promise.allSettled([
+    collectDaumRealtime(),
+    collectGoogle(),
     collectSignal(),
     collectNaverPopular(),
-    collectGoogle(),
   ]);
-  const primary = results.flatMap((result) => result.status === "fulfilled" ? result.value : []);
-  const seeds = primary
-    .filter((item) => item.portal === "signal" || item.portal === "google")
-    .map((item) => item.keyword);
-  const daum = await collectDaumSuggestions(seeds).catch(() => []);
-  return [...primary, ...daum];
+  return results.flatMap((result) => result.status === "fulfilled" ? result.value : []);
 }
 
 async function fetchNaverRelated(seed) {

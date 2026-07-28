@@ -11,11 +11,11 @@
     button,select,input{font:inherit}button{cursor:pointer}
     header{min-height:105px;padding:42px 20px 23px;text-align:center}
     .actions{display:flex;justify-content:center;gap:10px}.actions button,.actions select{height:40px;border:1px solid #dce2ea;border-radius:7px;background:white;color:var(--navy);font-weight:800}.actions button{padding:0 15px}.actions select{padding:0 12px}
-    main{display:grid;grid-template-columns:repeat(4,minmax(280px,1fr));gap:38px;width:100%;max-width:100%;margin:0 auto;padding:0 2vw 50px;align-items:start}
-    .card{width:100%;max-width:100%;min-width:0;overflow:hidden;padding:42px 38px 30px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
+    main{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(14px,1.4vw,26px);width:100%;max-width:100%;margin:0 auto;padding:0 2vw 50px;align-items:start}
+    .card{width:100%;max-width:100%;min-width:0;overflow:hidden;padding:34px 22px 28px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
     .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
     [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#34d499;color:#083e31}
-    h2{max-width:100%;margin:0;color:var(--navy);font-size:clamp(21px,1.55vw,30px);font-weight:950;letter-spacing:-2px;text-align:center;overflow-wrap:anywhere;word-break:keep-all}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
+    h2{max-width:100%;margin:0;color:var(--navy);font-size:clamp(18px,1.35vw,27px);font-weight:950;letter-spacing:-2px;text-align:center;overflow-wrap:anywhere;word-break:keep-all}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
     .collection-groups{display:grid;gap:18px}.collection-group h3{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px;padding:8px 10px;border-radius:6px;background:#eef3f8;color:var(--navy);font-size:12px;font-weight:900}.collection-group h3 small{color:#76869a;font-size:10px}
     ol{list-style:none;margin:0;padding:0}.keyword-entry{display:block}.keyword-row{display:flex;align-items:flex-start;min-height:54px;padding:7px 0}.rank{display:grid;place-items:center;width:40px;height:40px;flex:0 0 auto;border-radius:5px;color:white;font-size:18px;font-weight:900}
     [data-portal=daum] .rank{background:#ffb70a}[data-portal=google] .rank{background:#4285ed}[data-portal=naver] .rank{background:#2cad59}[data-portal=signal] .rank{background:#26b993}
@@ -25,9 +25,9 @@
     .related-head{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--navy);font-size:14px}.related-head>div{display:grid;min-width:0;gap:3px}.related-head>div span{color:#7a8798;font-size:11px;font-weight:800}.related-head>div strong{max-width:100%;overflow-wrap:anywhere;word-break:keep-all}.related-head button{padding:6px 9px;border:1px solid #cbd9e9;border-radius:5px;background:#fff;color:var(--navy);font-size:11px;font-weight:850}.related-head button:hover{border-color:var(--navy);background:var(--navy);color:#fff}.related-head button:disabled{opacity:.45;cursor:default}
     .related-list{list-style:none;margin:11px 0 0;padding:0}.related-list li{display:flex;align-items:center;min-height:32px;padding:3px 0;border-top:1px solid #e9eef4}.copy-keyword{min-width:0;flex:1;padding:2px 0;border:0;background:none;color:#18212c;text-align:left;line-height:1.45;overflow-wrap:anywhere;word-break:keep-all;font-size:13px;font-weight:750}.copy-keyword:hover{color:#315eaa;text-decoration:underline}.related-status{margin:12px 0 1px;color:#77808b;font-size:12px}.related-status.error{color:#b63731}
     .related-drawer[hidden]{display:none}.related-drawer{position:fixed;z-index:60;top:24px;right:24px;display:flex;flex-direction:column;width:min(460px,calc(100vw - 48px));height:min(820px,calc(100vh - 48px));max-width:100%;overflow:hidden;border:1px solid #cfd9e6;border-radius:12px;background:#fff;box-shadow:0 24px 70px rgba(15,40,72,.24)}.related-drawer-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;border-bottom:1px solid #dfe7f0;background:var(--navy);color:#fff}.related-drawer-title>div{display:grid;min-width:0;gap:4px}.related-drawer-title span{color:#c7d8ee;font-size:11px;font-weight:800}.related-drawer-title strong{max-width:100%;overflow-wrap:anywhere;word-break:keep-all}.related-drawer-title>button{width:36px;height:36px;flex:0 0 auto;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:rgba(255,255,255,.08);color:#fff;font-size:24px}.related-drawer>.related-status{margin:24px}.related-drawer-sections{display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);min-height:0;flex:1}.related-result-section{min-height:0;overflow:auto;padding:17px 20px}.related-result-section+.related-result-section{border-top:4px solid #e7edf4}
-    .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
+    .empty{grid-column:1/-1;padding:70px;text-align:center;color:#888}.rank-empty{margin:18px 0 0;padding:22px 12px;border-radius:7px;background:#f5f8fb;color:#7b8795;text-align:center;font-size:12px;line-height:1.6}.source{margin:16px 0 0;color:#aaa;text-align:center;font-size:11px}
     .delete-overlay[hidden]{display:none}.delete-overlay{position:fixed;z-index:100;inset:0;display:grid;place-items:center;padding:20px;background:rgba(9,25,46,.48);backdrop-filter:blur(3px)}.delete-dialog{width:min(400px,100%);padding:28px;border-radius:12px;background:#fff;box-shadow:0 24px 70px rgba(0,0,0,.24)}.delete-dialog h2{margin:0;font-size:22px}.delete-dialog p{margin:12px 0 20px;color:#606975;font-size:14px;line-height:1.55}.delete-dialog label{display:block;margin-bottom:7px;color:#303947;font-size:13px;font-weight:850}.delete-dialog input{width:100%;height:44px;padding:0 12px;border:1px solid #cbd5e1;border-radius:7px;outline:none}.delete-dialog input:focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(6,41,95,.1)}.delete-error{min-height:18px;margin:7px 0 0!important;color:#c53631!important;font-size:12px!important;font-weight:800}.delete-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.delete-actions button{height:40px;padding:0 16px;border:1px solid #d7dee8;border-radius:7px;background:#fff;color:#475466;font-weight:850}.delete-actions .danger{border-color:#df453f;background:#df453f;color:#fff}
-    @media(max-width:1450px){main{grid-template-columns:repeat(2,minmax(300px,1fr));max-width:1100px}}@media(max-width:700px){header{min-height:85px;padding-top:30px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.remove{opacity:1}.related-drawer{top:auto;right:10px;bottom:10px;left:10px;width:auto;height:min(76vh,720px);max-width:calc(100% - 20px)}}
+    @media(max-width:1500px){main{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1280px}}@media(max-width:1050px){main{grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px}}@media(max-width:700px){header{min-height:85px;padding-top:30px}main{grid-template-columns:1fr;padding:0 14px 40px}.card{padding:34px 25px}h2{font-size:23px}.keyword-row a{margin-left:14px;font-size:17px}.related-toggle{margin-right:8px}.remove{opacity:1}.related-drawer{top:auto;right:10px;bottom:10px;left:10px;width:auto;height:min(76vh,720px);max-width:calc(100% - 20px)}}
   </style>
 </head>
 <body>
@@ -53,11 +53,14 @@
   </div>
   <script>
     const META={
-      daum:{title:"다음 실시간 검색어",mark:"D"},
-      google:{title:"구글 실시간 검색어",mark:"G"},
-      naver:{title:"크리에이터 어드바이저 검색어",mark:"C"},
-      signal:{title:"Signal.bz 실시간 검색어",mark:"S"}
+      daum:{portalId:"daum",title:"다음 실시간 검색어",mark:"D"},
+      google:{portalId:"google",title:"구글 실시간 검색어",mark:"G"},
+      naver:{portalId:"naver",title:"크리에이터 어드바이저 검색어",mark:"C"},
+      signal:{portalId:"signal",title:"Signal.bz 실시간 검색어",mark:"S"},
+      daumMore:{portalId:"daum",title:"다음 추가 실시간 순위",mark:"D"},
+      googleMore:{portalId:"google",title:"구글 추가 실시간 순위",mark:"G"}
     };
+    const VIEW_ORDER=["daum","google","naver","signal","daumMore","googleMore"];
     const grid=document.getElementById("grid");
     const relatedDrawer=document.getElementById("related-drawer");
     const deleteModal=document.getElementById("delete-modal");
@@ -75,6 +78,14 @@
       const groups=new Map();
       items.forEach(item=>{const label=collectedDate(item.firstSeenAt);const group=groups.get(label)||[];group.push(item);groups.set(label,group)});
       return [...groups.entries()];
+    };
+    const portalViews=portals=>{
+      const byId=new Map(portals.map(portal=>[portal.id,portal]));
+      return VIEW_ORDER.map(viewId=>{
+        const meta=META[viewId],portal=byId.get(meta.portalId),allItems=portal?.items||[];
+        const items=viewId==="daumMore"||viewId==="googleMore"?allItems.slice(10):viewId==="daum"||viewId==="google"?allItems.slice(0,10):allItems;
+        return{viewId,...meta,items};
+      });
     };
     async function copyText(value){
       if(navigator.clipboard?.writeText){
@@ -129,10 +140,10 @@
 
     function render(portals,updatedAt){
       closeRelatedDrawer();
-      grid.innerHTML=portals.map(portal=>`<section class="card" data-portal="${portal.id}">
-        <div class="card-head"><span class="logo">${META[portal.id].mark}</span><h2>${META[portal.id].title}</h2></div>
-        <p class="date">누적 ${portal.items.length}개 · ${date(updatedAt)} 확인</p>
-        <div class="collection-groups">${groupedItems(portal.items).map(([collectedAt,items])=>`<section class="collection-group"><h3><span>${collectedAt} 수집</span><small>${items.length}개</small></h3><ol>${items.map(item=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${item.rank}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol></section>`).join("")}</div>
+      grid.innerHTML=portalViews(portals).map(view=>`<section class="card" data-portal="${view.portalId}">
+        <div class="card-head"><span class="logo">${view.mark}</span><h2>${view.title}</h2></div>
+        <p class="date">실시간 순위 ${view.items.length}개 · ${date(updatedAt)} 확인</p>
+        <div class="collection-groups">${view.items.length?"":'<p class="rank-empty">새 실시간 순위가 수집되면 이 칸에 표시됩니다.</p>'}${groupedItems(view.items).map(([collectedAt,items])=>`<section class="collection-group"><h3><span>${collectedAt} 수집</span><small>${items.length}개</small></h3><ol>${items.map(item=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${item.rank}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol></section>`).join("")}</div>
       </section>`).join("");
     }
 

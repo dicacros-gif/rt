@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 type Portal = "daum" | "google" | "naver" | "signal";
+type ViewId = Portal | "daumMore" | "googleMore";
 type RelatedSource = "naver" | "daum" | "google";
 type TrendItem = {
   id: number;
@@ -30,11 +31,13 @@ type PortalData = {
 };
 type ApiData = { updatedAt: string; portals: PortalData[] };
 
-const portalMeta: Record<Portal, { title: string; mark: string }> = {
-  daum: { title: "다음 실시간 검색어", mark: "D" },
-  google: { title: "구글 실시간 검색어", mark: "G" },
-  naver: { title: "크리에이터 어드바이저 검색어", mark: "C" },
-  signal: { title: "Signal.bz 실시간 검색어", mark: "S" },
+const portalMeta: Record<ViewId, { portalId: Portal; title: string; mark: string }> = {
+  daum: { portalId: "daum", title: "다음 실시간 검색어", mark: "D" },
+  google: { portalId: "google", title: "구글 실시간 검색어", mark: "G" },
+  naver: { portalId: "naver", title: "크리에이터 어드바이저 검색어", mark: "C" },
+  signal: { portalId: "signal", title: "Signal.bz 실시간 검색어", mark: "S" },
+  daumMore: { portalId: "daum", title: "다음 추가 실시간 순위", mark: "D" },
+  googleMore: { portalId: "google", title: "구글 추가 실시간 순위", mark: "G" },
 };
 
 function formatDate(value: string) {
@@ -71,12 +74,13 @@ function groupByCollectedAt(items: TrendItem[]) {
   return [...groups.entries()];
 }
 
-function LoadingCard({ portal }: { portal: Portal }) {
+function LoadingCard({ viewId }: { viewId: ViewId }) {
+  const meta = portalMeta[viewId];
   return (
-    <section className={`ranking-card ${portal}`}>
+    <section className={`ranking-card ${meta.portalId}`}>
       <div className="card-title">
-        <span className="portal-mark">{portalMeta[portal].mark}</span>
-        <h2>{portalMeta[portal].title}</h2>
+        <span className="portal-mark">{meta.mark}</span>
+        <h2>{meta.title}</h2>
       </div>
       <p className="updated-text">검색어를 불러오는 중입니다</p>
       <div className="loading-rows">
@@ -119,6 +123,23 @@ export default function TrendsDashboard() {
   }, [load]);
 
   const portals = useMemo(() => data?.portals ?? [], [data]);
+  const portalViews = useMemo(() => {
+    const byId = new Map(portals.map((portal) => [portal.id, portal]));
+    return (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => {
+      const meta = portalMeta[viewId];
+      const portal = byId.get(meta.portalId);
+      const items = portal?.items ?? [];
+      return {
+        viewId,
+        portalId: meta.portalId,
+        title: meta.title,
+        mark: meta.mark,
+        items: viewId === "daumMore" || viewId === "googleMore" ? items.slice(10)
+          : viewId === "daum" || viewId === "google" ? items.slice(0, 10)
+            : items,
+      };
+    });
+  }, [portals]);
 
   const removeKeyword = async () => {
     if (!deleteTarget) return;
@@ -272,26 +293,27 @@ export default function TrendsDashboard() {
 
       <section className="cards-grid">
         {loading && !data
-          ? (["daum", "google", "naver", "signal"] as Portal[]).map((portal) => (
-            <LoadingCard key={portal} portal={portal} />
+          ? (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => (
+            <LoadingCard key={viewId} viewId={viewId} />
           ))
-          : portals.map((portal) => {
-            const collectedGroups = groupByCollectedAt(portal.items);
+          : portalViews.map((view) => {
+            const collectedGroups = groupByCollectedAt(view.items);
             return (
-              <section className={`ranking-card ${portal.id}`} key={portal.id}>
+              <section className={`ranking-card ${view.portalId}`} key={view.viewId}>
                 <div className="card-title">
-                  <span className="portal-mark">{portalMeta[portal.id].mark}</span>
-                  <h2>{portalMeta[portal.id].title}</h2>
+                  <span className="portal-mark">{view.mark}</span>
+                  <h2>{view.title}</h2>
                 </div>
-                <p className="updated-text">누적 {portal.items.length}개 · {data ? formatDate(data.updatedAt) : ""} 확인</p>
+                <p className="updated-text">실시간 순위 {view.items.length}개 · {data ? formatDate(data.updatedAt) : ""} 확인</p>
 
                 <div className="collection-groups">
+                  {!view.items.length && <p className="rank-empty">새 실시간 순위가 수집되면 이 칸에 표시됩니다.</p>}
                   {collectedGroups.map(([collectedAt, items]) => (
                     <section className="collection-group" key={collectedAt}>
                       <h3><span>{collectedAt} 수집</span><small>{items.length}개</small></h3>
                       <ol className="keyword-list">
                   {items.map((item) => {
-                    const itemKey = `${portal.id}-${item.id}`;
+                    const itemKey = `${view.portalId}-${item.id}`;
                     const isRelatedOpen = activeRelated?.key === itemKey;
                     return (
                       <li className="keyword-entry" key={item.id}>
@@ -302,7 +324,7 @@ export default function TrendsDashboard() {
                             aria-checked={isRelatedOpen}
                             aria-label={`${item.keyword} 연관 검색어 ${isRelatedOpen ? "닫기" : "보기"}`}
                             title="네이버·다음·구글 연관 검색어 보기"
-                            onClick={() => toggleRelated(portal.id, item)}
+                            onClick={() => toggleRelated(view.portalId, item)}
                           >
                             <span aria-hidden="true">{isRelatedOpen ? "✓" : ""}</span>
                           </button>
@@ -314,7 +336,7 @@ export default function TrendsDashboard() {
                             title="이 키워드를 삭제하고 다시 수집하지 않기"
                             disabled={deleting === item.id}
                             onClick={() => {
-                              setDeleteTarget({ portalId: portal.id, item });
+                              setDeleteTarget({ portalId: view.portalId, item });
                               setDeletePassword("");
                               setDeleteError("");
                             }}

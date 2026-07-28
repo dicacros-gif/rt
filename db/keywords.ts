@@ -10,7 +10,7 @@ type KeywordRow = {
   last_seen_at: string;
 };
 
-const keywordSourceVersion = "keyword-only-v2";
+const keywordSourceVersion = "realtime-rank-only-v4";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
@@ -72,7 +72,7 @@ export async function crawlAndStore(db: D1Database = env.DB) {
     return { collected: 0, inserted: 0 };
   }
 
-  const statements = collected.map((item) => {
+  const statements = [...collected].reverse().map((item) => {
     const normalized = normalizeKeyword(item.keyword);
     return db.prepare(
       `INSERT INTO keywords (portal, normalized_keyword, keyword, link, first_seen_at, last_seen_at)
