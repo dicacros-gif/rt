@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
 
 const outputPath = resolve("data/trends.json");
 const dataVersion = "realtime-rank-only-v4";
@@ -26,7 +27,7 @@ const unique = (values) => {
   return values.map(decode).filter((value) => {
     const key = comparisonKey(value);
     if (!key || value.length < 2 || value.length > 60 || value.includes("�")
-      || /^https?:\/\//i.test(value) || seen.has(key)) return false;
+      || /^https?:\/\//i.test(value) || isMatchupKeyword(value) || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
@@ -216,7 +217,16 @@ async function readExisting() {
 const existing = await readExisting();
 const collected = await collectAll();
 const now = new Date().toISOString();
-const existingItems = existing.portals?.flatMap((portal) => portal.items ?? []) ?? [];
+const removedItemIds = new Set();
+const sanitizedPortals = (existing.portals ?? []).map((portal) => ({
+  ...portal,
+  items: (portal.items ?? []).filter((item) => {
+    if (!isMatchupKeyword(item.keyword)) return true;
+    removedItemIds.add(String(item.id));
+    return false;
+  }),
+}));
+const existingItems = sanitizedPortals.flatMap((portal) => portal.items ?? []);
 const seen = new Set(existingItems.map((item) => comparisonKey(item.keyword)));
 let nextId = existingItems.reduce((max, item) => Math.max(max, Number(item.id) || 0), 0) + 1;
 let inserted = 0;
@@ -239,7 +249,7 @@ for (const item of collected) {
   inserted += 1;
 }
 
-const oldPortals = new Map((existing.portals ?? []).map((portal) => [portal.id, portal]));
+const oldPortals = new Map(sanitizedPortals.map((portal) => [portal.id, portal]));
 const portals = Object.entries(portalInfo).map(([id, info]) => {
   const items = [...(additions.get(id) ?? []), ...(oldPortals.get(id)?.items ?? [])];
   return {
@@ -249,7 +259,9 @@ const portals = Object.entries(portalInfo).map(([id, info]) => {
   };
 });
 
-const related = { ...(existing.related ?? {}) };
+const related = Object.fromEntries(
+  Object.entries(existing.related ?? {}).filter(([id]) => !removedItemIds.has(id)),
+);
 const allItems = portals.flatMap((portal) => portal.items);
 const relatedTargets = allItems.filter((item) => {
   const value = related[String(item.id)];

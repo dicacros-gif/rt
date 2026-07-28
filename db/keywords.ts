@@ -1,5 +1,6 @@
 import { env } from "cloudflare:workers";
 import { collectAllTrends, normalizeKeyword, type CollectedItem, type PortalId } from "../lib/trend-sources";
+import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
 
 type KeywordRow = {
   id: number;
@@ -11,6 +12,7 @@ type KeywordRow = {
 };
 
 const keywordSourceVersion = "realtime-rank-only-v4";
+const keywordFilterVersion = "exclude-matchups-v1";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
@@ -60,9 +62,36 @@ async function ensureKeywordSourceVersion(db: D1Database) {
   return true;
 }
 
+async function purgeBlockedKeywords(db: D1Database) {
+  const current = await db.prepare(
+    "SELECT value FROM app_meta WHERE key = 'keyword_filter_version'",
+  ).first<{ value: string }>();
+  if (current?.value === keywordFilterVersion) return 0;
+
+  const rows = await db.prepare(
+    "SELECT id, normalized_keyword, keyword FROM keywords",
+  ).all<{ id: number; normalized_keyword: string; keyword: string }>();
+  const blocked = rows.results.filter((row) => isMatchupKeyword(row.keyword));
+  const statements = blocked.flatMap((row) => [
+    db.prepare(
+      "INSERT OR IGNORE INTO dismissed_keywords (portal, normalized_keyword) VALUES ('all', ?)",
+    ).bind(row.normalized_keyword),
+    db.prepare("DELETE FROM keywords WHERE id = ?").bind(row.id),
+  ]);
+  statements.push(
+    db.prepare(
+      `INSERT INTO app_meta (key, value) VALUES ('keyword_filter_version', ?)
+       ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+    ).bind(keywordFilterVersion),
+  );
+  await db.batch(statements);
+  return blocked.length;
+}
+
 export async function crawlAndStore(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
+  await purgeBlockedKeywords(db);
   const collected = await collectAllTrends();
   const now = new Date().toISOString();
   if (!collected.length) {
@@ -96,6 +125,7 @@ export async function crawlAndStore(db: D1Database = env.DB) {
 export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 * 1000) {
   await ensureSchema(db);
   const reset = await ensureKeywordSourceVersion(db);
+  await purgeBlockedKeywords(db);
   const state = await db.prepare(
     "SELECT last_crawled_at FROM crawl_state WHERE id = 1",
   ).first<{ last_crawled_at: string }>();
@@ -109,6 +139,7 @@ export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 *
 export async function listKeywords(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
+  await purgeBlockedKeywords(db);
   const result = await db.prepare(
     `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
      FROM keywords

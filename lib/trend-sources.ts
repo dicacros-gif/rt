@@ -1,3 +1,5 @@
+import { isMatchupKeyword } from "./keyword-filter.mjs";
+
 export type PortalId = "naver" | "google" | "daum" | "signal";
 export type CollectedItem = { portal: PortalId; keyword: string; link: string };
 
@@ -15,6 +17,7 @@ const unique = (values: string[]) =>
     && value.length <= 60
     && !value.includes("�")
     && !/^https?:\/\//i.test(value)
+    && !isMatchupKeyword(value)
   ))];
 
 const searchLink = (portal: PortalId, keyword: string) => {
