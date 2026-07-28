@@ -1,5 +1,6 @@
 import { isMatchupKeyword } from "./keyword-filter.mjs";
 import { extractDaumRealtimeKeywords } from "./daum-trends.mjs";
+import { extractCreatorAdvisorKeywords } from "./creator-advisor.mjs";
 
 export type PortalId = "naver" | "google" | "daum" | "signal";
 export type CollectedItem = { portal: PortalId; keyword: string; link: string };
@@ -12,14 +13,19 @@ const decode = (value: string) => value
   .replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
   .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
 
-const unique = (values: string[]) =>
-  [...new Set(values.map(decode).filter((value) =>
-    value.length > 1
-    && value.length <= 60
-    && !value.includes("�")
-    && !/^https?:\/\//i.test(value)
-    && !isMatchupKeyword(value)
-  ))];
+const comparisonKey = (value: string) => decode(value).normalize("NFKC")
+  .toLocaleLowerCase("ko-KR").replace(/[^\p{L}\p{N}]+/gu, "");
+
+const unique = (values: string[]) => {
+  const seen = new Set<string>();
+  return values.map(decode).filter((value) => {
+    const key = comparisonKey(value);
+    if (!key || value.length < 2 || value.length > 60 || value.includes("�")
+      || /^https?:\/\//i.test(value) || isMatchupKeyword(value) || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
 
 const searchLink = (portal: PortalId, keyword: string) => {
   const base = portal === "naver" ? "https://search.naver.com/search.naver?query="
@@ -53,15 +59,9 @@ async function collectGoogle(): Promise<CollectedItem[]> {
   }));
 }
 
-async function collectNaverPopular(): Promise<CollectedItem[]> {
-  const html = await fetchText("https://datalab.naver.com/");
-  const blocks = [...html.matchAll(/<ul class="rank_list">([\s\S]*?)<\/ul>/gi)];
-  const latest = [...blocks].reverse().find((block) =>
-    [...block[1].matchAll(/<span class="title">\s*([^<]+)\s*<\/span>/gi)].length === 10
-  );
-  const keywords = latest
-    ? [...latest[1].matchAll(/<span class="title">\s*([^<]+)\s*<\/span>/gi)].map((match) => match[1])
-    : [];
+async function collectCreatorAdvisor(): Promise<CollectedItem[]> {
+  const payload = await fetchText("https://adsensefarm.kr/realtime/naver.php");
+  const keywords = extractCreatorAdvisorKeywords(payload);
   return unique(keywords).map((keyword) => ({
     portal: "naver", keyword, link: searchLink("naver", keyword),
   }));
@@ -90,7 +90,7 @@ export async function collectAllTrends(): Promise<CollectedItem[]> {
     collectDaumRealtime(),
     collectGoogle(),
     collectSignal(),
-    collectNaverPopular(),
+    collectCreatorAdvisor(),
   ]);
   return results.flatMap((result) => result.status === "fulfilled" ? result.value : []);
 }

@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { extractCreatorAdvisorKeywords } from "../lib/creator-advisor.mjs";
 import { extractDaumRealtimeKeywords } from "../lib/daum-trends.mjs";
 import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
 
@@ -8,7 +9,7 @@ const dataVersion = "realtime-rank-only-v4";
 const portalInfo = {
   daum: { name: "다음", description: "다음 첫 화면 실시간 트렌드 순위", source: "다음 실시간 트렌드" },
   google: { name: "구글", description: "대한민국 실시간 급상승 검색어", source: "Google Trends 실시간 순위" },
-  naver: { name: "크리에이터 어드바이저", description: "네이버 데이터랩 인기 검색어", source: "네이버 데이터랩" },
+  naver: { name: "크리에이터 어드바이저", description: "크리에이터 어드바이저 공개 순위", source: "크리에이터 어드바이저 공개 순위" },
   signal: { name: "Signal.bz", description: "실시간 검색어 TOP 10", source: "Signal.bz" },
 };
 
@@ -65,15 +66,9 @@ async function collectGoogle() {
   return unique(keywords).slice(0, 25).map((keyword) => ({ portal: "google", keyword }));
 }
 
-async function collectNaverPopular() {
-  const html = await fetchText("https://datalab.naver.com/");
-  const blocks = [...html.matchAll(/<ul class="rank_list">([\s\S]*?)<\/ul>/gi)];
-  const latest = [...blocks].reverse().find((block) =>
-    [...block[1].matchAll(/<span class="title">\s*([^<]+)\s*<\/span>/gi)].length === 10
-  );
-  const keywords = latest
-    ? [...latest[1].matchAll(/<span class="title">\s*([^<]+)\s*<\/span>/gi)].map((match) => match[1])
-    : [];
+async function collectCreatorAdvisor() {
+  const payload = await fetchText("https://adsensefarm.kr/realtime/naver.php");
+  const keywords = extractCreatorAdvisorKeywords(payload);
   return unique(keywords).map((keyword) => ({ portal: "naver", keyword }));
 }
 
@@ -99,7 +94,7 @@ async function collectAll() {
     collectDaumRealtime(),
     collectGoogle(),
     collectSignal(),
-    collectNaverPopular(),
+    collectCreatorAdvisor(),
   ]);
   return results.flatMap((result) => result.status === "fulfilled" ? result.value : []);
 }
