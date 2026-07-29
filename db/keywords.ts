@@ -1,6 +1,6 @@
 import { env } from "cloudflare:workers";
 import { collectAllTrends, normalizeKeyword, type CollectedItem, type PortalId } from "../lib/trend-sources";
-import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
+import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
 
 type KeywordRow = {
   id: number;
@@ -12,7 +12,7 @@ type KeywordRow = {
 };
 
 const keywordSourceVersion = "realtime-rank-only-v4";
-const keywordFilterVersion = "exclude-matchups-v1";
+const keywordFilterVersion = "exclude-sensitive-sports-quiz-v2";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
@@ -69,7 +69,7 @@ async function purgeBlockedKeywords(db: D1Database) {
   const rows = await db.prepare(
     "SELECT id, normalized_keyword, keyword FROM keywords",
   ).all<{ id: number; normalized_keyword: string; keyword: string }>();
-  const blocked = rows.results.filter((row) => isMatchupKeyword(row.keyword));
+  const blocked = rows.results.filter((row) => isBlockedKeyword(row.keyword));
   const statements = blocked.flatMap((row) => [
     db.prepare(
       "INSERT OR IGNORE INTO dismissed_keywords (portal, normalized_keyword) VALUES ('all', ?)",

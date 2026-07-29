@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { isBlockedKeyword } from "../../../lib/keyword-filter.mjs";
 
 export const runtime = "edge";
 export const dynamic = "force-dynamic";
@@ -76,7 +77,7 @@ function mergeRelated(
     for (const value of items) {
       const keyword = normalize(value);
       const key = comparisonKey(keyword);
-      if (!key || key === seedKey || excluded.has(key)) continue;
+      if (!key || key === seedKey || excluded.has(key) || isBlockedKeyword(keyword)) continue;
       const existing = unique.get(key);
       if (existing) {
         if (!existing.sources.includes(source)) existing.sources.push(source);
@@ -92,6 +93,9 @@ export async function GET(request: NextRequest) {
   const seed = normalize(request.nextUrl.searchParams.get("q"));
   if (!seed || seed.length > 100) {
     return NextResponse.json({ error: "검색어가 필요합니다." }, { status: 400 });
+  }
+  if (isBlockedKeyword(seed)) {
+    return NextResponse.json({ error: "표시할 수 없는 검색어입니다." }, { status: 400 });
   }
 
   const parts = seed.split(/\s+/);

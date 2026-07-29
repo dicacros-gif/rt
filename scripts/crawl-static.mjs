@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { extractCreatorAdvisorKeywords } from "../lib/creator-advisor.mjs";
 import { extractDaumRealtimeKeywords } from "../lib/daum-trends.mjs";
-import { isMatchupKeyword } from "../lib/keyword-filter.mjs";
+import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
 
 const outputPath = resolve("data/trends.json");
 const dataVersion = "realtime-rank-only-v4";
@@ -29,7 +29,7 @@ const unique = (values) => {
   return values.map(decode).filter((value) => {
     const key = comparisonKey(value);
     if (!key || value.length < 2 || value.length > 60 || value.includes("�")
-      || /^https?:\/\//i.test(value) || isMatchupKeyword(value) || seen.has(key)) return false;
+      || /^https?:\/\//i.test(value) || isBlockedKeyword(value) || seen.has(key)) return false;
     seen.add(key);
     return true;
   });
@@ -211,7 +211,7 @@ const removedItemIds = new Set();
 const sanitizedPortals = (existing.portals ?? []).map((portal) => ({
   ...portal,
   items: (portal.items ?? []).filter((item) => {
-    if (!isMatchupKeyword(item.keyword)) return true;
+    if (!isBlockedKeyword(item.keyword)) return true;
     removedItemIds.add(String(item.id));
     return false;
   }),
@@ -249,8 +249,19 @@ const portals = Object.entries(portalInfo).map(([id, info]) => {
   };
 });
 
+const sanitizeRelatedItems = (items) => Array.isArray(items)
+  ? items.filter((item) => item?.keyword && !isBlockedKeyword(item.keyword))
+  : [];
 const related = Object.fromEntries(
-  Object.entries(existing.related ?? {}).filter(([id]) => !removedItemIds.has(id)),
+  Object.entries(existing.related ?? {})
+    .filter(([id]) => !removedItemIds.has(id))
+    .map(([id, value]) => [id, Array.isArray(value)
+      ? sanitizeRelatedItems(value)
+      : {
+        ...value,
+        fullItems: sanitizeRelatedItems(value?.fullItems),
+        prefixItems: sanitizeRelatedItems(value?.prefixItems),
+      }]),
 );
 const allItems = portals.flatMap((portal) => portal.items);
 const relatedTargets = allItems.filter((item) => {

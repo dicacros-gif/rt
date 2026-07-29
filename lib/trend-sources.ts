@@ -1,4 +1,4 @@
-import { isMatchupKeyword } from "./keyword-filter.mjs";
+import { isBlockedKeyword } from "./keyword-filter.mjs";
 import { extractDaumRealtimeKeywords } from "./daum-trends.mjs";
 import { extractCreatorAdvisorKeywords } from "./creator-advisor.mjs";
 
@@ -21,7 +21,7 @@ const unique = (values: string[]) => {
   return values.map(decode).filter((value) => {
     const key = comparisonKey(value);
     if (!key || value.length < 2 || value.length > 60 || value.includes("�")
-      || /^https?:\/\//i.test(value) || isMatchupKeyword(value) || seen.has(key)) return false;
+      || /^https?:\/\//i.test(value) || isBlockedKeyword(value) || seen.has(key)) return false;
     seen.add(key);
     return true;
   });

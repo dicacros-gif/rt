@@ -81,6 +81,12 @@
     const LOCAL_DELETE_PASSWORD_HASH="5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9";
     const escapeHtml=value=>{const node=document.createElement("span");node.textContent=value;return node.innerHTML};
     const escapeAttr=value=>escapeHtml(value).replace(/"/g,"&quot;");
+    const isBlockedRelatedKeyword=value=>{
+      const keyword=String(value||"").normalize("NFKC").replace(/\s+/g," ").trim();
+      return /사망|숨진|숨져|별세|살인|살해|피살|시신|극단적\s*선택|19금|야동|음란|포르노|성관계|성폭력|성추행|강간|이혼|파경|혐오|극혐|비하(?!인드)|차별(?!화)|로또|복권|당첨\s*번호|행운\s*번호|퀴즈|정답|캐시워크|오퀴즈|야구|축구|농구|배구(?!조)|골프|테니스|배드민턴|탁구|수영(?!복)|육상|복싱|격투기|올림픽|월드컵|아시안게임|선수|투수|타자|포수|외야수|내야수|구단|트레이드|홈런|이닝|무실점|원정\s*경기|선발\s*등판|완봉|승점|첼시|아스널|리버풀|맨유|맨시티|토트넘|바르셀로나|레알마드리드|바이에른/i.test(keyword)
+        || /(?:^|[^가-힣])성인(?:$|[^가-힣])|성인(?:물|영상|사이트|콘텐츠|방송|만화|용품|인증|게임)/i.test(keyword)
+        || /\b(?:ssg|kia|kbo|mlb|epl|nba|nfl|nhl|ufc|fifa|afc|fc)\b/i.test(keyword);
+    };
     const localKeywordKey=value=>String(value||"").normalize("NFKC").toLocaleLowerCase("ko-KR").replace(/[^\p{L}\p{N}]+/gu,"");
     const readLocalDismissed=()=>{
       try{return new Set(JSON.parse(localStorage.getItem(LOCAL_DISMISSED_STORAGE)||"[]"))}catch{return new Set()}
@@ -104,7 +110,7 @@
     const portalViews=portals=>{
       const byId=new Map(portals.map(portal=>[portal.id,portal]));
       return VIEW_ORDER.map(viewId=>{
-        const meta=META[viewId],portal=byId.get(meta.portalId),allItems=(portal?.items||[]).filter(item=>!localDismissed.has(localKeywordKey(item.keyword)));
+        const meta=META[viewId],portal=byId.get(meta.portalId),allItems=(portal?.items||[]).filter(item=>!localDismissed.has(localKeywordKey(item.keyword))&&!isBlockedRelatedKeyword(item.keyword));
         const items=viewId==="daumMore"||viewId==="googleMore"?allItems.slice(10):viewId==="daum"||viewId==="google"?allItems.slice(0,10):allItems;
         return{viewId,...meta,items};
       });
@@ -120,7 +126,7 @@
       const seen=new Set();
       return (Array.isArray(items)?items:[]).filter(item=>{
         const key=String(item?.keyword||"").normalize("NFKC").toLocaleLowerCase("ko-KR").replace(/[^\p{L}\p{N}]+/gu,"");
-        if(!key||seen.has(key))return false;
+        if(!key||seen.has(key)||isBlockedRelatedKeyword(item.keyword))return false;
         seen.add(key);return true;
       });
     };
@@ -170,6 +176,10 @@
       activeRelatedId=requestId;
       relatedDrawer.classList.add("open");relatedBackdrop.classList.add("open");
       relatedDrawer.innerHTML=`<div class="related-drawer-title"><div><span>선택한 검색어</span><strong>${escapeHtml(keyword)}</strong></div><button class="close-related" aria-label="연관 검색어 닫기">×</button></div><p class="related-status">네이버·다음·구글에서 찾는 중…</p>`;
+      if(isBlockedRelatedKeyword(keyword)){
+        relatedDrawer.innerHTML=`<div class="related-drawer-title"><div><span>선택한 검색어</span><strong>${escapeHtml(keyword)}</strong></div><button class="close-related" aria-label="연관 검색어 닫기">×</button></div><p class="related-status error">표시할 수 없는 검색어입니다.</p>`;
+        return;
+      }
       try{
         let result;
         const response=await fetch(`/api/related?q=${encodeURIComponent(keyword)}`);
