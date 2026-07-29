@@ -102,6 +102,7 @@ export default function TrendsDashboard() {
   const [activeRelated, setActiveRelated] = useState<{ key: string; keyword: string } | null>(null);
   const [copiedKey, setCopiedKey] = useState("");
   const [searchKeyword, setSearchKeyword] = useState("");
+  const [collapsedViews, setCollapsedViews] = useState<Set<ViewId>>(() => new Set());
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -126,7 +127,7 @@ export default function TrendsDashboard() {
   const portals = useMemo(() => data?.portals ?? [], [data]);
   const portalViews = useMemo(() => {
     const byId = new Map(portals.map((portal) => [portal.id, portal]));
-    return (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => {
+    return (["daum", "google", "signal", "naver", "daumMore", "googleMore"] as ViewId[]).map((viewId) => {
       const meta = portalMeta[viewId];
       const portal = byId.get(meta.portalId);
       const items = portal?.items ?? [];
@@ -254,6 +255,15 @@ export default function TrendsDashboard() {
     void openRelated(`manual-${keyword.normalize("NFKC").toLocaleLowerCase("ko-KR")}`, keyword);
   };
 
+  const toggleCollapsed = (viewId: ViewId) => {
+    setCollapsedViews((current) => {
+      const next = new Set(current);
+      if (next.has(viewId)) next.delete(viewId);
+      else next.add(viewId);
+      return next;
+    });
+  };
+
   const copyText = async (text: string) => {
     if (navigator.clipboard?.writeText) {
       try {
@@ -308,17 +318,26 @@ export default function TrendsDashboard() {
       <div className="dashboard-layout">
         <section className="cards-grid">
           {loading && !data
-            ? (["daum", "google", "naver", "signal", "daumMore", "googleMore"] as ViewId[]).map((viewId) => (
+            ? (["daum", "google", "signal", "naver", "daumMore", "googleMore"] as ViewId[]).map((viewId) => (
               <LoadingCard key={viewId} viewId={viewId} />
             ))
             : portalViews.map((view) => {
               const collectedGroups = groupByCollectedAt(view.items);
+              const isCollapsed = collapsedViews.has(view.viewId);
               return (
-                <section className={`ranking-card ${view.portalId}`} key={view.viewId}>
-                <div className="card-title">
+                <section className={`ranking-card ${view.portalId} ${isCollapsed ? "collapsed" : ""}`} key={view.viewId}>
+                <button
+                  type="button"
+                  className="card-title"
+                  aria-expanded={!isCollapsed}
+                  aria-label={`${view.title} ${isCollapsed ? "펼치기" : "접기"}`}
+                  onClick={() => toggleCollapsed(view.viewId)}
+                >
                   <span className="portal-mark">{view.mark}</span>
                   <h2>{view.title}</h2>
-                </div>
+                  <span className="collapse-indicator" aria-hidden="true">⌃</span>
+                </button>
+                <div className="card-body" hidden={isCollapsed}>
                 <p className="updated-text">실시간 순위 {view.items.length}개 · {data ? formatDate(data.updatedAt) : ""} 확인</p>
 
                 <div className="collection-groups">
@@ -366,6 +385,7 @@ export default function TrendsDashboard() {
                       </ol>
                     </section>
                   ))}
+                </div>
                 </div>
                 </section>
               );

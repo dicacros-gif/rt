@@ -12,7 +12,7 @@
     .keyword-search{display:grid;grid-template-columns:minmax(0,1fr) auto;width:min(680px,calc(100% - 28px));margin:16px auto 8px;overflow:hidden;border:2px solid var(--navy);border-radius:10px;background:#fff;box-shadow:0 5px 18px rgba(20,53,91,.1)}.keyword-search label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.keyword-search input{min-width:0;height:50px;padding:0 17px;border:0;outline:0;background:transparent;color:#142033;font-size:16px;font-weight:750}.keyword-search input::placeholder{color:#8b96a5;font-weight:650}.keyword-search button{min-width:74px;border:0;background:var(--navy);color:#fff;font-size:14px;font-weight:900}.keyword-search:focus-within{box-shadow:0 0 0 4px rgba(6,41,95,.12),0 5px 18px rgba(20,53,91,.1)}
     .dashboard-layout{display:grid;grid-template-columns:minmax(0,1fr) clamp(320px,24vw,390px);gap:clamp(16px,1.6vw,28px);align-items:start;width:100%;padding:24px 2vw 50px}main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,1.4vw,26px);width:100%;max-width:100%;margin:0 auto;align-items:start}
     .card{width:100%;max-width:100%;min-width:0;overflow:hidden;padding:34px 22px 28px;border:1px solid #e3eaf2;border-radius:9px;background:#fff;box-shadow:0 5px 20px rgba(43,81,120,.11)}
-    .card-head{display:flex;align-items:center;justify-content:center;gap:10px}.logo{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;color:#fff;font-weight:950}
+    .card-head{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:0 36px;border:0;background:transparent}.collapse-icon{position:absolute;top:50%;right:4px;color:#718096;font-size:22px;font-weight:900;line-height:1;transform:translateY(-50%);transition:transform .18s ease}.card.collapsed{padding-bottom:34px}.card.collapsed .card-body{display:none}.card.collapsed .collapse-icon{transform:translateY(-50%) rotate(180deg)}.logo{display:grid;place-items:center;width:31px;height:31px;flex:0 0 auto;border-radius:50%;color:#fff;font-weight:950}
     [data-portal=daum] .logo{border-radius:4px;background:linear-gradient(135deg,#ffbf00,#4e8cff,#f15c5c)}[data-portal=google] .logo{background:conic-gradient(#4285f4 0 25%,#34a853 0 50%,#fbbc05 0 72%,#ea4335 0)}[data-portal=naver] .logo{background:#13c965}[data-portal=signal] .logo{background:#03c75a;color:#fff}
     h2{max-width:100%;margin:0;color:var(--navy);font-size:clamp(18px,1.35vw,27px);font-weight:950;letter-spacing:-2px;text-align:center;overflow-wrap:anywhere;word-break:keep-all}.date{margin:23px 0 18px;color:var(--muted);text-align:center;font-size:14px;font-weight:800}
     .collection-groups{display:grid;gap:18px}.collection-group h3{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 4px;padding:8px 10px;border-radius:6px;background:#eef3f8;color:var(--navy);font-size:12px;font-weight:900}.collection-group h3 small{color:#76869a;font-size:10px}
@@ -64,7 +64,7 @@
       daumMore:{portalId:"daum",title:"다음 추가 실시간 순위",mark:"D"},
       googleMore:{portalId:"google",title:"구글 추가 실시간 순위",mark:"G"}
     };
-    const VIEW_ORDER=["daum","google","naver","signal","daumMore","googleMore"];
+    const VIEW_ORDER=["daum","google","signal","naver","daumMore","googleMore"];
     const grid=document.getElementById("grid");
     const relatedDrawer=document.getElementById("related-drawer");
     const relatedBackdrop=document.getElementById("related-backdrop");
@@ -77,8 +77,23 @@
     let staticRelated={};
     let activeRelatedId="";
     let activeRelatedResult=null;
+    const LOCAL_DISMISSED_STORAGE="trend-now-dismissed-keywords";
+    const LOCAL_DELETE_PASSWORD_HASH="5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9";
     const escapeHtml=value=>{const node=document.createElement("span");node.textContent=value;return node.innerHTML};
     const escapeAttr=value=>escapeHtml(value).replace(/"/g,"&quot;");
+    const localKeywordKey=value=>String(value||"").normalize("NFKC").toLocaleLowerCase("ko-KR").replace(/[^\p{L}\p{N}]+/gu,"");
+    const readLocalDismissed=()=>{
+      try{return new Set(JSON.parse(localStorage.getItem(LOCAL_DISMISSED_STORAGE)||"[]"))}catch{return new Set()}
+    };
+    const localDismissed=readLocalDismissed();
+    const saveLocalDismissed=()=>{
+      try{localStorage.setItem(LOCAL_DISMISSED_STORAGE,JSON.stringify([...localDismissed]))}catch{}
+    };
+    const verifyLocalDeletePassword=async value=>{
+      const digest=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(value));
+      const hash=[...new Uint8Array(digest)].map(byte=>byte.toString(16).padStart(2,"0")).join("");
+      return hash===LOCAL_DELETE_PASSWORD_HASH;
+    };
     const date=value=>new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
     const collectedDate=value=>new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date(value));
     const groupedItems=items=>{
@@ -89,7 +104,7 @@
     const portalViews=portals=>{
       const byId=new Map(portals.map(portal=>[portal.id,portal]));
       return VIEW_ORDER.map(viewId=>{
-        const meta=META[viewId],portal=byId.get(meta.portalId),allItems=portal?.items||[];
+        const meta=META[viewId],portal=byId.get(meta.portalId),allItems=(portal?.items||[]).filter(item=>!localDismissed.has(localKeywordKey(item.keyword)));
         const items=viewId==="daumMore"||viewId==="googleMore"?allItems.slice(10):viewId==="daum"||viewId==="google"?allItems.slice(0,10):allItems;
         return{viewId,...meta,items};
       });
@@ -185,16 +200,27 @@
     function render(portals,updatedAt){
       closeRelatedDrawer();
       grid.innerHTML=portalViews(portals).map(view=>`<section class="card" data-portal="${view.portalId}">
-        <div class="card-head"><span class="logo">${view.mark}</span><h2>${view.title}</h2></div>
+        <button type="button" class="card-head card-title-toggle" aria-expanded="true" aria-label="${escapeAttr(view.title)} 접기"><span class="logo">${view.mark}</span><h2>${view.title}</h2><span class="collapse-icon" aria-hidden="true">⌃</span></button>
+        <div class="card-body">
         <p class="date">실시간 순위 ${view.items.length}개 · ${date(updatedAt)} 확인</p>
         <div class="collection-groups">${view.items.length?"":'<p class="rank-empty">새 실시간 순위가 수집되면 이 칸에 표시됩니다.</p>'}${groupedItems(view.items).map(([collectedAt,items])=>`<section class="collection-group"><h3><span>${collectedAt} 수집</span><small>${items.length}개</small></h3><ol>${items.map(item=>`<li class="keyword-entry"><div class="keyword-row"><button class="related-toggle" role="checkbox" aria-checked="false" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 연관 검색어 보기" title="네이버·다음·구글 연관 검색어 보기"><span></span></button><span class="rank">${item.rank}</span><a href="${item.link}" target="_blank" rel="noreferrer">${escapeHtml(item.keyword)}</a><button class="remove" data-id="${item.id}" data-keyword="${escapeAttr(item.keyword)}" aria-label="${escapeAttr(item.keyword)} 삭제">×</button></div></li>`).join("")}</ol></section>`).join("")}</div>
+        </div>
       </section>`).join("");
     }
 
     grid.addEventListener("click",async event=>{
+      const cardToggle=event.target.closest(".card-title-toggle");
+      if(cardToggle){
+        const card=cardToggle.closest(".card");
+        const collapsed=card.classList.toggle("collapsed");
+        cardToggle.setAttribute("aria-expanded",String(!collapsed));
+        cardToggle.setAttribute("aria-label",`${cardToggle.querySelector("h2").textContent} ${collapsed?"펼치기":"접기"}`);
+        return;
+      }
+
       const removeButton=event.target.closest(".remove");
       if(removeButton){
-        pendingDelete={id:Number(removeButton.dataset.id),entry:removeButton.closest(".keyword-entry")};
+        pendingDelete={id:Number(removeButton.dataset.id),keyword:removeButton.dataset.keyword,entry:removeButton.closest(".keyword-entry")};
         document.getElementById("delete-keyword").textContent=removeButton.dataset.keyword;
         deletePassword.value="";deleteError.textContent="";deleteModal.hidden=false;deletePassword.focus();
         return;
@@ -241,9 +267,19 @@
       if(!pendingDelete)return;
       const submit=event.currentTarget.querySelector('[type="submit"]');submit.disabled=true;deleteError.textContent="";
       try{
-        const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:pendingDelete.id,password:deletePassword.value})});
-        const result=await response.json().catch(()=>({}));
-        if(!response.ok)throw new Error(result.error||"삭제하지 못했습니다.");
+        let deletedFromServer=false;
+        try{
+          const response=await fetch("/api/trends",{method:"DELETE",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:pendingDelete.id,password:deletePassword.value})});
+          const result=await response.json().catch(()=>({}));
+          if(response.ok)deletedFromServer=true;
+          else if(response.status===401)throw new Error(result.error||"비밀번호가 올바르지 않습니다.");
+        }catch(error){
+          if(error instanceof Error&&error.message.includes("비밀번호"))throw error;
+        }
+        if(!deletedFromServer){
+          if(!await verifyLocalDeletePassword(deletePassword.value))throw new Error("비밀번호가 올바르지 않습니다.");
+          localDismissed.add(localKeywordKey(pendingDelete.keyword));saveLocalDismissed();
+        }
         if(activeRelatedId===String(pendingDelete.id))closeRelatedDrawer();
         pendingDelete.entry.remove();deleteModal.hidden=true;pendingDelete=null;
       }catch(error){

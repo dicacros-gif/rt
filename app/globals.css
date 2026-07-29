@@ -107,10 +107,15 @@ button { cursor: pointer; }
 }
 
 .card-title {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+  padding: 0 36px;
+  border: 0;
+  background: transparent;
 }
 
 .card-title h2 {
@@ -122,6 +127,26 @@ button { cursor: pointer; }
   letter-spacing: -.055em;
   text-align: center;
   overflow-wrap: anywhere;
+}
+
+.collapse-indicator {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  color: #718096;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-50%);
+  transition: transform .18s ease;
+}
+
+.ranking-card.collapsed {
+  padding-bottom: 34px;
+}
+
+.ranking-card.collapsed .collapse-indicator {
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .portal-mark {
