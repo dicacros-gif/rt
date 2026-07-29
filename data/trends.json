@@ -1,6 +1,6 @@
 {
   "dataVersion": "realtime-rank-only-v4",
-  "updatedAt": "2026-07-28T23:13:17.842Z",
+  "updatedAt": "2026-07-29T03:32:11.355Z",
   "portals": [
     {
       "id": "daum",
@@ -9,12 +9,84 @@
       "source": "다음 실시간 트렌드",
       "items": [
         {
+          "id": 153,
+          "keyword": "정평 배우",
+          "link": "https://search.daum.net/search?q=%EC%A0%95%ED%8F%89%20%EB%B0%B0%EC%9A%B0",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 1
+        },
+        {
+          "id": 154,
+          "keyword": "문근영 결혼",
+          "link": "https://search.daum.net/search?q=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EA%B2%B0%ED%98%BC",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 2
+        },
+        {
+          "id": 155,
+          "keyword": "조정식 연임 발언",
+          "link": "https://search.daum.net/search?q=%EC%A1%B0%EC%A0%95%EC%8B%9D%20%EC%97%B0%EC%9E%84%20%EB%B0%9C%EC%96%B8",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 3
+        },
+        {
+          "id": 156,
+          "keyword": "이관희 유시은 열애",
+          "link": "https://search.daum.net/search?q=%EC%9D%B4%EA%B4%80%ED%9D%AC%20%EC%9C%A0%EC%8B%9C%EC%9D%80%20%EC%97%B4%EC%95%A0",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 4
+        },
+        {
+          "id": 157,
+          "keyword": "5월 출생아 증가",
+          "link": "https://search.daum.net/search?q=5%EC%9B%94%20%EC%B6%9C%EC%83%9D%EC%95%84%20%EC%A6%9D%EA%B0%80",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 5
+        },
+        {
+          "id": 158,
+          "keyword": "이사회 최종 책임",
+          "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%82%AC%ED%9A%8C%20%EC%B5%9C%EC%A2%85%20%EC%B1%85%EC%9E%84",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 6
+        },
+        {
+          "id": 159,
+          "keyword": "코스피 급락",
+          "link": "https://search.daum.net/search?q=%EC%BD%94%EC%8A%A4%ED%94%BC%20%EA%B8%89%EB%9D%BD",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 7
+        },
+        {
+          "id": 160,
+          "keyword": "고지용 이혼",
+          "link": "https://search.daum.net/search?q=%EA%B3%A0%EC%A7%80%EC%9A%A9%20%EC%9D%B4%ED%98%BC",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 8
+        },
+        {
+          "id": 161,
+          "keyword": "레버리지 ETF 56조 손실",
+          "link": "https://search.daum.net/search?q=%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%20ETF%2056%EC%A1%B0%20%EC%86%90%EC%8B%A4",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 9
+        },
+        {
           "id": 138,
           "keyword": "이란 탄도미사일 발사",
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EB%9E%80%20%ED%83%84%EB%8F%84%EB%AF%B8%EC%82%AC%EC%9D%BC%20%EB%B0%9C%EC%82%AC",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 1
+          "rank": 10
         },
         {
           "id": 139,
@@ -22,7 +94,7 @@
           "link": "https://search.daum.net/search?q=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%98%81%EC%97%85%EC%9D%B5%20%EC%B5%9C%EB%8C%80",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 2
+          "rank": 11
         },
         {
           "id": 140,
@@ -30,7 +102,7 @@
           "link": "https://search.daum.net/search?q=%EC%9E%84%EB%AF%B8%EC%95%A0%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 3
+          "rank": 12
         },
         {
           "id": 141,
@@ -38,7 +110,7 @@
           "link": "https://search.daum.net/search?q=%EB%B3%B4%EB%A0%B9%20%EB%A8%B8%EB%93%9C%EC%B6%95%EC%A0%9C",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 4
+          "rank": 13
         },
         {
           "id": 126,
@@ -46,7 +118,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%C2%B7%EB%B8%8C%EB%9D%BC%EC%A7%88%20%ED%98%91%EB%A0%A5",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 5
+          "rank": 14
         },
         {
           "id": 127,
@@ -54,7 +126,7 @@
           "link": "https://search.daum.net/search?q=%ED%8A%B8%EB%9F%BC%ED%94%84%20%EB%B9%84%EA%B3%B5%EA%B0%9C%20%ED%9A%8C%EB%8B%B4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 6
+          "rank": 15
         },
         {
           "id": 128,
@@ -62,7 +134,7 @@
           "link": "https://search.daum.net/search?q=%ED%8A%B8%EB%9F%BC%ED%94%84%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%97%84%20%EC%B6%94%EB%8F%84",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 7
+          "rank": 16
         },
         {
           "id": 101,
@@ -70,7 +142,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%8F%99%ED%8F%AC%EA%B0%84%EB%8B%B4%ED%9A%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 8
+          "rank": 17
         },
         {
           "id": 102,
@@ -78,7 +150,7 @@
           "link": "https://search.daum.net/search?q=pba",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 9
+          "rank": 18
         },
         {
           "id": 103,
@@ -86,7 +158,7 @@
           "link": "https://search.daum.net/search?q=%EC%8B%A0%EC%B2%9C%EC%A7%80",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 10
+          "rank": 19
         },
         {
           "id": 104,
@@ -94,7 +166,7 @@
           "link": "https://search.daum.net/search?q=%EB%AF%B8%EA%B5%AD%20%EC%9D%B4%EB%9E%80",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 11
+          "rank": 20
         },
         {
           "id": 105,
@@ -102,7 +174,7 @@
           "link": "https://search.daum.net/search?q=%EC%86%90%ED%9D%A5%EB%AF%BC%20%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 12
+          "rank": 21
         },
         {
           "id": 106,
@@ -110,7 +182,7 @@
           "link": "https://search.daum.net/search?q=sk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20adr",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 13
+          "rank": 22
         },
         {
           "id": 107,
@@ -118,7 +190,7 @@
           "link": "https://search.daum.net/search?q=%EB%B6%80%EC%82%B0%20%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 14
+          "rank": 23
         },
         {
           "id": 85,
@@ -126,7 +198,7 @@
           "link": "https://search.daum.net/search?q=%EB%B0%95%EC%86%8C%EC%9C%A8%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 15
+          "rank": 24
         },
         {
           "id": 86,
@@ -134,7 +206,7 @@
           "link": "https://search.daum.net/search?q=%EB%B2%95%EC%82%AC%EC%9C%84%20%ED%98%95%EC%86%8C%EB%B2%95%20%EA%B0%9C%EC%A0%95%EC%95%88",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 16
+          "rank": 25
         },
         {
           "id": 87,
@@ -142,7 +214,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%8B%A4%EC%A0%81%EB%B0%9C%ED%91%9C",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 17
+          "rank": 26
         },
         {
           "id": 88,
@@ -150,7 +222,7 @@
           "link": "https://search.daum.net/search?q=%ED%82%AC%EC%9E%87%20%EC%8A%A4%ED%83%80%EC%9D%BC%20%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0%20%EB%8C%80%EC%A0%84%EC%9F%81",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 18
+          "rank": 27
         },
         {
           "id": 89,
@@ -158,7 +230,7 @@
           "link": "https://search.daum.net/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%ED%98%84%20%EC%A7%80%EB%8F%84",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 19
+          "rank": 28
         },
         {
           "id": 90,
@@ -166,7 +238,7 @@
           "link": "https://search.daum.net/search?q=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EC%95%84%EB%82%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 20
+          "rank": 29
         },
         {
           "id": 73,
@@ -174,7 +246,7 @@
           "link": "https://search.daum.net/search?q=%ED%8F%AC%ED%95%AD%20%EB%B3%B4%EB%A6%BF%EB%8F%8C%EA%B5%90",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 21
+          "rank": 30
         },
         {
           "id": 74,
@@ -182,7 +254,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%B0%EA%B3%A8%EC%B4%9D%EA%B0%81%20%EC%98%81%EC%9B%85",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 22
+          "rank": 31
         },
         {
           "id": 56,
@@ -190,7 +262,7 @@
           "link": "https://search.daum.net/search?q=%EC%98%A4%EC%82%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 23
+          "rank": 32
         },
         {
           "id": 57,
@@ -198,7 +270,7 @@
           "link": "https://search.daum.net/search?q=%EC%A7%80%EB%8B%A8%20%ED%94%84%EB%9E%91%EC%8A%A4%20%EA%B0%90%EB%8F%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 24
+          "rank": 33
         },
         {
           "id": 58,
@@ -206,7 +278,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%ED%83%9C%EC%96%91%20%EC%95%BC%EA%B5%AC%EC%84%A0%EC%88%98",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 25
+          "rank": 34
         },
         {
           "id": 59,
@@ -214,7 +286,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%ED%98%84%ED%83%9C%20707%ED%8A%B9%EC%9E%84%EB%8B%A8%EC%9E%A5",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 26
+          "rank": 35
         },
         {
           "id": 60,
@@ -222,7 +294,7 @@
           "link": "https://search.daum.net/search?q=%EC%8A%A4%EB%AA%A8%ED%82%B9%20%EA%B1%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 27
+          "rank": 36
         },
         {
           "id": 61,
@@ -230,7 +302,7 @@
           "link": "https://search.daum.net/search?q=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EB%89%B4%20%EB%8D%B0%EC%9D%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 28
+          "rank": 37
         },
         {
           "id": 1,
@@ -238,7 +310,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 29
+          "rank": 38
         },
         {
           "id": 2,
@@ -246,7 +318,7 @@
           "link": "https://search.daum.net/search?q=%EC%A1%B0%EC%A0%95%EC%8B%9D%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 30
+          "rank": 39
         },
         {
           "id": 3,
@@ -254,7 +326,7 @@
           "link": "https://search.daum.net/search?q=%ED%86%B5%EC%98%81%20%EC%82%B4%EC%9D%B8%EC%82%AC%EA%B1%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 31
+          "rank": 40
         },
         {
           "id": 4,
@@ -262,7 +334,7 @@
           "link": "https://search.daum.net/search?q=%ED%94%84%EB%A6%AC%ED%95%9C%2019",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 32
+          "rank": 41
         },
         {
           "id": 5,
@@ -270,7 +342,7 @@
           "link": "https://search.daum.net/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 33
+          "rank": 42
         },
         {
           "id": 6,
@@ -278,7 +350,7 @@
           "link": "https://search.daum.net/search?q=%ED%83%9C%ED%92%8D%20%EA%B2%BD%EB%A1%9C",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 34
+          "rank": 43
         },
         {
           "id": 7,
@@ -286,7 +358,7 @@
           "link": "https://search.daum.net/search?q=%EB%82%B4%EC%9D%BC%EB%8F%84%20%EC%B6%9C%EA%B7%BC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 35
+          "rank": 44
         },
         {
           "id": 8,
@@ -294,7 +366,7 @@
           "link": "https://search.daum.net/search?q=%ED%8F%AC%ED%95%AD%EB%8B%A4%EB%A6%AC%EB%B6%95%EA%B4%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 36
+          "rank": 45
         },
         {
           "id": 9,
@@ -302,7 +374,7 @@
           "link": "https://search.daum.net/search?q=%EC%9C%84%EB%8C%80%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C3",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 37
+          "rank": 46
         },
         {
           "id": 10,
@@ -310,7 +382,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%B4%EB%A1%B1%EB%93%9C%EB%A6%BD",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 38
+          "rank": 47
         }
       ]
     },
@@ -321,12 +393,60 @@
       "source": "Google Trends 실시간 순위",
       "items": [
         {
+          "id": 162,
+          "keyword": "강서구",
+          "link": "https://www.google.com/search?q=%EA%B0%95%EC%84%9C%EA%B5%AC",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 1
+        },
+        {
+          "id": 163,
+          "keyword": "정평",
+          "link": "https://www.google.com/search?q=%EC%A0%95%ED%8F%89",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 2
+        },
+        {
+          "id": 164,
+          "keyword": "티엔엔터테인먼트",
+          "link": "https://www.google.com/search?q=%ED%8B%B0%EC%97%94%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 3
+        },
+        {
+          "id": 165,
+          "keyword": "백승호",
+          "link": "https://www.google.com/search?q=%EB%B0%B1%EC%8A%B9%ED%98%B8",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 4
+        },
+        {
+          "id": 166,
+          "keyword": "신도시",
+          "link": "https://www.google.com/search?q=%EC%8B%A0%EB%8F%84%EC%8B%9C",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 5
+        },
+        {
+          "id": 167,
+          "keyword": "코너 맥그리거",
+          "link": "https://www.google.com/search?q=%EC%BD%94%EB%84%88%20%EB%A7%A5%EA%B7%B8%EB%A6%AC%EA%B1%B0",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 6
+        },
+        {
           "id": 142,
           "keyword": "삼성전자",
           "link": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 1
+          "rank": 7
         },
         {
           "id": 143,
@@ -334,7 +454,7 @@
           "link": "https://www.google.com/search?q=%EC%83%9D%EA%B3%84",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 2
+          "rank": 8
         },
         {
           "id": 144,
@@ -342,7 +462,7 @@
           "link": "https://www.google.com/search?q=%EC%B9%B4%ED%8E%98",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 3
+          "rank": 9
         },
         {
           "id": 117,
@@ -350,7 +470,7 @@
           "link": "https://www.google.com/search?q=%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 4
+          "rank": 10
         },
         {
           "id": 118,
@@ -358,7 +478,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%8C%EC%8B%9D%EB%AC%BC%20%EC%93%B0%EB%A0%88%EA%B8%B0",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 5
+          "rank": 11
         },
         {
           "id": 108,
@@ -366,7 +486,7 @@
           "link": "https://www.google.com/search?q=%EC%9E%AC%ED%98%BC",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 6
+          "rank": 12
         },
         {
           "id": 109,
@@ -374,7 +494,7 @@
           "link": "https://www.google.com/search?q=%EC%B1%84%EA%B6%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 7
+          "rank": 13
         },
         {
           "id": 91,
@@ -382,7 +502,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%EC%A0%95%EB%82%9C",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 8
+          "rank": 14
         },
         {
           "id": 92,
@@ -390,7 +510,7 @@
           "link": "https://www.google.com/search?q=%EB%A1%9C%EB%B2%84%ED%8A%B8%20%EA%B8%B0%EC%9A%94%EC%82%AC%ED%82%A4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 9
+          "rank": 15
         },
         {
           "id": 75,
@@ -398,7 +518,7 @@
           "link": "https://www.google.com/search?q=%ED%97%88%EB%B2%94%EC%9A%B1",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 10
+          "rank": 16
         },
         {
           "id": 62,
@@ -406,7 +526,7 @@
           "link": "https://www.google.com/search?q=%EC%82%B0%EB%B6%88",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 11
+          "rank": 17
         },
         {
           "id": 12,
@@ -414,7 +534,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 12
+          "rank": 18
         },
         {
           "id": 13,
@@ -422,7 +542,7 @@
           "link": "https://www.google.com/search?q=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 13
+          "rank": 19
         },
         {
           "id": 14,
@@ -430,7 +550,7 @@
           "link": "https://www.google.com/search?q=%EA%B7%B8%EB%9E%98%20%EC%9D%B4%ED%98%BC%20%ED%95%98%EC%9E%90",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 14
+          "rank": 20
         },
         {
           "id": 16,
@@ -438,7 +558,7 @@
           "link": "https://www.google.com/search?q=%EA%B1%B4%EA%B0%95%EB%B3%B4%ED%97%98",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 15
+          "rank": 21
         },
         {
           "id": 17,
@@ -446,7 +566,7 @@
           "link": "https://www.google.com/search?q=%EC%B5%9C%EC%88%98%EC%A2%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 16
+          "rank": 22
         },
         {
           "id": 18,
@@ -454,7 +574,7 @@
           "link": "https://www.google.com/search?q=%EB%B0%B1%EB%A6%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 17
+          "rank": 23
         },
         {
           "id": 19,
@@ -462,7 +582,7 @@
           "link": "https://www.google.com/search?q=%EC%95%84%EB%93%A4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 18
+          "rank": 24
         },
         {
           "id": 20,
@@ -470,7 +590,7 @@
           "link": "https://www.google.com/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 19
+          "rank": 25
         },
         {
           "id": 23,
@@ -478,7 +598,7 @@
           "link": "https://www.google.com/search?q=%EC%B2%A0%EA%B5%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 20
+          "rank": 26
         },
         {
           "id": 24,
@@ -486,7 +606,7 @@
           "link": "https://www.google.com/search?q=%EA%B0%95%EC%8A%B5%EC%83%81%EB%A5%99%ED%95%A8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 21
+          "rank": 27
         },
         {
           "id": 25,
@@ -494,7 +614,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%ED%98%B8%EC%A4%91",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 22
+          "rank": 28
         },
         {
           "id": 27,
@@ -502,7 +622,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%84%EC%84%B1%EB%B0%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 23
+          "rank": 29
         },
         {
           "id": 29,
@@ -510,7 +630,7 @@
           "link": "https://www.google.com/search?q=%EC%B7%A8%EB%AF%B8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 24
+          "rank": 30
         },
         {
           "id": 30,
@@ -518,7 +638,7 @@
           "link": "https://www.google.com/search?q=%EC%A1%B0%ED%98%9C%EB%A0%A8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 25
+          "rank": 31
         },
         {
           "id": 31,
@@ -526,7 +646,7 @@
           "link": "https://www.google.com/search?q=%EC%9C%A4%EB%8F%99%ED%9D%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 26
+          "rank": 32
         },
         {
           "id": 32,
@@ -534,7 +654,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%AD%EA%B0%80%EA%B8%B0%EC%88%A0%EC%9E%90%EA%B2%A9",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 27
+          "rank": 33
         },
         {
           "id": 33,
@@ -542,7 +662,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%ED%98%84%ED%83%9C",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 28
+          "rank": 34
         },
         {
           "id": 35,
@@ -550,7 +670,7 @@
           "link": "https://www.google.com/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 29
+          "rank": 35
         }
       ]
     },
@@ -721,12 +841,92 @@
       "source": "네이버 실시간 검색어",
       "items": [
         {
+          "id": 168,
+          "keyword": "정평 수능 설명회 개최",
+          "link": "https://search.naver.com/search.naver?query=%EC%A0%95%ED%8F%89%20%EC%88%98%EB%8A%A5%20%EC%84%A4%EB%AA%85%ED%9A%8C%20%EA%B0%9C%EC%B5%9C",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 1
+        },
+        {
+          "id": 169,
+          "keyword": "문근영 남편 누구?",
+          "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EB%82%A8%ED%8E%B8%20%EB%88%84%EA%B5%AC%3F",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 2
+        },
+        {
+          "id": 170,
+          "keyword": "코스피 매도 사이드카 발동",
+          "link": "https://search.naver.com/search.naver?query=%EC%BD%94%EC%8A%A4%ED%94%BC%20%EB%A7%A4%EB%8F%84%20%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4%20%EB%B0%9C%EB%8F%99",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 3
+        },
+        {
+          "id": 171,
+          "keyword": "mc몽",
+          "link": "https://search.naver.com/search.naver?query=mc%EB%AA%BD",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 4
+        },
+        {
+          "id": 172,
+          "keyword": "고지용, 10년 전 합류 거절 후 복귀 준비",
+          "link": "https://search.naver.com/search.naver?query=%EA%B3%A0%EC%A7%80%EC%9A%A9%2C%2010%EB%85%84%20%EC%A0%84%20%ED%95%A9%EB%A5%98%20%EA%B1%B0%EC%A0%88%20%ED%9B%84%20%EB%B3%B5%EA%B7%80%20%EC%A4%80%EB%B9%84",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 5
+        },
+        {
+          "id": 173,
+          "keyword": "최준용",
+          "link": "https://search.naver.com/search.naver?query=%EC%B5%9C%EC%A4%80%EC%9A%A9",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 6
+        },
+        {
+          "id": 174,
+          "keyword": "기념메달 든 안세영",
+          "link": "https://search.naver.com/search.naver?query=%EA%B8%B0%EB%85%90%EB%A9%94%EB%8B%AC%20%EB%93%A0%20%EC%95%88%EC%84%B8%EC%98%81",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 7
+        },
+        {
+          "id": 175,
+          "keyword": "구자현",
+          "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EC%9E%90%ED%98%84",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 8
+        },
+        {
+          "id": 176,
+          "keyword": "구마모토 지진 사망 13명",
+          "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%A7%80%EC%A7%84%20%EC%82%AC%EB%A7%9D%2013%EB%AA%85",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 9
+        },
+        {
+          "id": 177,
+          "keyword": "인버스",
+          "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EB%B2%84%EC%8A%A4",
+          "firstSeenAt": "2026-07-29T03:32:11.355Z",
+          "lastSeenAt": "2026-07-29T03:32:11.355Z",
+          "rank": 10
+        },
+        {
           "id": 145,
           "keyword": "이재명, 상파울루 방문",
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%2C%20%EC%83%81%ED%8C%8C%EC%9A%B8%EB%A3%A8%20%EB%B0%A9%EB%AC%B8",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 1
+          "rank": 11
         },
         {
           "id": 146,
@@ -734,7 +934,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%98%9C%EA%B2%BD%C2%B7%EB%8B%A4%EC%8B%9C%EC%9A%B0%EB%B0%94%20%EC%97%AC%EC%82%AC",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 2
+          "rank": 12
         },
         {
           "id": 147,
@@ -742,7 +942,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80%20%EC%9D%BC%EB%B3%B8%20%EA%B0%84%EB%8B%A4",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 3
+          "rank": 13
         },
         {
           "id": 148,
@@ -750,7 +950,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%2030%EC%A3%BC%EB%85%84%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 4
+          "rank": 14
         },
         {
           "id": 149,
@@ -758,7 +958,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%9A%B0%20%EC%A1%B4%EC%8A%A4%20%EC%82%B0%EC%97%85%ED%8F%89%EA%B7%A0%EC%A7%80%EC%88%98",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 5
+          "rank": 15
         },
         {
           "id": 150,
@@ -766,7 +966,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A7%8C%EC%B9%98%EB%8B%88%20%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84%20%EB%B3%B5%EA%B7%80",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 6
+          "rank": 16
         },
         {
           "id": 151,
@@ -774,7 +974,7 @@
           "link": "https://search.naver.com/search.naver?query=24%EA%B8%B0%20%EC%98%A5%EC%88%9C",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 7
+          "rank": 17
         },
         {
           "id": 152,
@@ -782,7 +982,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%8F%AD%EB%B0%9C%20%EC%82%AC%EA%B1%B4",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 8
+          "rank": 18
         },
         {
           "id": 129,
@@ -790,7 +990,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%B8%8C%EB%9D%BC%EC%A7%88%20%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 9
+          "rank": 19
         },
         {
           "id": 130,
@@ -798,7 +998,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%A4%80%EC%88%9C%20%EC%97%AD%EC%A0%84%20%EC%86%94%EB%A1%9C%ED%8F%AC",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 10
+          "rank": 20
         },
         {
           "id": 131,
@@ -806,7 +1006,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%99%8D%EB%AA%85%EB%B3%B4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 11
+          "rank": 21
         },
         {
           "id": 132,
@@ -814,7 +1014,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8%20%EB%AA%A9%ED%91%9C%2019KG%20%EA%B0%90%EB%9F%89",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 12
+          "rank": 22
         },
         {
           "id": 133,
@@ -822,7 +1022,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A2%85%ED%95%A9%EA%B2%A9%ED%88%AC%EA%B8%B0",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 13
+          "rank": 23
         },
         {
           "id": 134,
@@ -830,7 +1030,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B0%ED%95%A9%EB%89%B4%EC%8A%A4%EC%99%80%20%EC%9D%B8%ED%84%B0%EB%B7%B0%ED%95%98%EB%8A%94%20%EC%8B%A0%EC%A7%84%EC%84%9C",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 14
+          "rank": 24
         },
         {
           "id": 135,
@@ -838,7 +1038,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 15
+          "rank": 25
         },
         {
           "id": 136,
@@ -846,7 +1046,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%86%B5%EB%A0%B9",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 16
+          "rank": 26
         },
         {
           "id": 137,
@@ -854,7 +1054,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EA%B0%95%EC%A7%84%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4%20%EC%86%8C%EC%8B%9D",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 17
+          "rank": 27
         },
         {
           "id": 119,
@@ -862,7 +1062,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4%2010%EB%AA%85%20%EC%97%B0%EB%9D%BD%EB%91%90%EC%A0%88",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 18
+          "rank": 28
         },
         {
           "id": 120,
@@ -870,7 +1070,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%98%EC%84%B1",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 19
+          "rank": 29
         },
         {
           "id": 121,
@@ -878,7 +1078,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8%2019KG%20%EB%8F%84%EC%A0%84",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 20
+          "rank": 30
         },
         {
           "id": 122,
@@ -886,7 +1086,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%99%84%EC%88%98%EC%82%AC%EA%B6%8C%20%ED%8F%90%EC%A7%80%20%EA%B0%9C%EC%A0%95%EC%95%88%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 21
+          "rank": 31
         },
         {
           "id": 123,
@@ -894,7 +1094,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B4%EB%8C%80%EC%95%BC",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 22
+          "rank": 32
         },
         {
           "id": 124,
@@ -902,7 +1102,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A0%88%EC%95%8C%EB%A7%88%EB%93%9C%EB%A6%AC%EB%93%9C",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 23
+          "rank": 33
         },
         {
           "id": 125,
@@ -910,7 +1110,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A1%A4%EB%A0%89%EC%8A%A4",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 24
+          "rank": 34
         },
         {
           "id": 110,
@@ -918,7 +1118,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EC%83%81%ED%8C%8C%EC%9A%B8%EB%A3%A8%20%EB%8F%99%ED%8F%AC%EA%B0%84%EB%8B%B4%ED%9A%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 25
+          "rank": 35
         },
         {
           "id": 111,
@@ -926,7 +1126,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B0%9C%EC%83%9D",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 26
+          "rank": 36
         },
         {
           "id": 112,
@@ -934,7 +1134,7 @@
           "link": "https://search.naver.com/search.naver?query=SSG%20%EC%95%84%EB%B9%8C%EB%9D%BC%20%EB%AC%B4%EC%8B%A4%EC%A0%90%206%EC%9D%B4%EB%8B%9D",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 27
+          "rank": 37
         },
         {
           "id": 113,
@@ -942,7 +1142,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%8B%B8%EC%9D%B4",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 28
+          "rank": 38
         },
         {
           "id": 114,
@@ -950,7 +1150,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%B0%EC%95%84%20%EC%85%80%ED%86%A0%EC%8A%A4",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 29
+          "rank": 39
         },
         {
           "id": 115,
@@ -958,7 +1158,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%20%EC%97%84%EB%A7%88%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EB%93%9C%EB%A6%BC",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 30
+          "rank": 40
         },
         {
           "id": 116,
@@ -966,7 +1166,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EA%B7%B8%EC%98%A4%EB%B8%8C%EB%A0%88%EC%A0%84%EB%93%9C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 31
+          "rank": 41
         },
         {
           "id": 93,
@@ -974,7 +1174,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%82%B4%EB%85%84%20%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D%206.7%25%20%EC%9D%B8%EC%83%81",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 32
+          "rank": 42
         },
         {
           "id": 94,
@@ -982,7 +1182,7 @@
           "link": "https://search.naver.com/search.naver?query=%E6%97%A5%20%EA%B7%9C%EC%8A%88%20%EA%B0%95%EC%A7%84%20%EC%8B%A0%EA%B3%A0%20%ED%8F%AD%EC%A3%BC",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 33
+          "rank": 43
         },
         {
           "id": 95,
@@ -990,7 +1190,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%96%B4%EB%8F%84%EC%96%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 34
+          "rank": 44
         },
         {
           "id": 96,
@@ -998,7 +1198,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%B0%AC%ED%98%81%20%EB%8F%99%EC%A0%90%20%ED%88%AC%EB%9F%B0%ED%8F%AC",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 35
+          "rank": 45
         },
         {
           "id": 97,
@@ -1006,7 +1206,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%B2%AD%EB%B6%80%ED%84%B0%20%ED%88%AC%ED%91%9C%20%EC%8B%9C%EC%9E%91",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 36
+          "rank": 46
         },
         {
           "id": 98,
@@ -1014,7 +1214,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%A3%BC%EC%95%A0",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 37
+          "rank": 47
         },
         {
           "id": 99,
@@ -1022,7 +1222,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9E%84%EC%98%81%EC%9B%85%2C%20%EC%B0%A8%EC%8A%B9%EC%9B%90%EC%97%90%20SOS",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 38
+          "rank": 48
         },
         {
           "id": 100,
@@ -1030,7 +1230,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%8F%84%ED%9B%88",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 39
+          "rank": 49
         },
         {
           "id": 63,
@@ -1038,7 +1238,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B9%84%EC%83%81%EB%8C%80%EC%9D%91%ED%8C%80%20%ED%88%AC%EC%9E%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 40
+          "rank": 50
         },
         {
           "id": 64,
@@ -1046,7 +1246,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84%EC%9C%BC%EB%A1%9C%20%EB%B6%80%EC%82%B0%20%EC%8B%A0%EA%B3%A0%20%ED%8F%AD%EC%A3%BC",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 41
+          "rank": 51
         },
         {
           "id": 65,
@@ -1054,7 +1254,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%82%A5%ED%94%8C%EB%A6%BD%20%EB%8F%99%ED%99%94%20LG%20%EC%9D%91%EC%9B%90!",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 42
+          "rank": 52
         },
         {
           "id": 66,
@@ -1062,7 +1262,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%84%B8%EC%9B%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 43
+          "rank": 53
         },
         {
           "id": 67,
@@ -1070,7 +1270,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%EC%9D%B4%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EC%A3%BC%EA%B3%A0%20%EC%8B%B6%EC%96%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 44
+          "rank": 54
         },
         {
           "id": 68,
@@ -1078,7 +1278,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%95%A8%EC%96%91%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 45
+          "rank": 55
         },
         {
           "id": 69,
@@ -1086,7 +1286,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%86%94%EB%A1%9C%ED%8F%AC%20%EB%82%A0%EB%A6%B0%20%EB%AC%B8%EC%A0%95%EB%B9%88",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 46
+          "rank": 56
         },
         {
           "id": 70,
@@ -1094,7 +1294,7 @@
           "link": "https://search.naver.com/search.naver?query=SSG%20%EC%95%84%EB%B9%8C%EB%9D%BC%2C%203%EC%8A%B9%20%EB%8F%84%EC%A0%84!",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 47
+          "rank": 57
         },
         {
           "id": 71,
@@ -1102,7 +1302,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A0%84%EC%A4%80%ED%91%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 48
+          "rank": 58
         },
         {
           "id": 72,
@@ -1110,7 +1310,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AD%EB%AF%BC%20%EC%84%A0%ED%83%9D%20%EC%97%B0%EC%9E%84%20%EB%85%BC%EB%9E%80",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 49
+          "rank": 59
         },
         {
           "id": 36,
@@ -1118,7 +1318,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B3%B4%EB%8F%84",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 50
+          "rank": 60
         },
         {
           "id": 37,
@@ -1126,7 +1326,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%82%A5%ED%94%8C%EB%A6%BD%20%EB%8F%99%ED%99%94%20LG%20%ED%8C%8C%EC%9D%B4%ED%8C%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 51
+          "rank": 61
         },
         {
           "id": 38,
@@ -1134,7 +1334,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%EC%9D%B4%20%EC%97%84%EB%A7%88%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EC%A3%BC%EA%B3%A0%20%EC%8B%B6%EC%96%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 52
+          "rank": 62
         },
         {
           "id": 39,
@@ -1142,7 +1342,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EB%8F%99%EC%84%9D",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 53
+          "rank": 63
         },
         {
           "id": 40,
@@ -1150,7 +1350,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B0%A8%EA%B0%80%EC%9B%90%20%EA%B5%AC%EC%86%8D%EC%98%81%EC%9E%A5%20%EC%B2%AD%EA%B5%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 54
+          "rank": 64
         },
         {
           "id": 41,
@@ -1158,7 +1358,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EA%B7%B8%EB%A3%B9",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 55
+          "rank": 65
         },
         {
           "id": 42,
@@ -1166,7 +1366,7 @@
           "link": "https://search.naver.com/search.naver?query=KIA%20%ED%95%98%EC%A3%BC%EC%84%9D%20%EC%B2%AB%20%EB%8C%80%EA%B5%AC%20%EC%9B%90%EC%A0%95",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 56
+          "rank": 66
         },
         {
           "id": 43,
@@ -1174,7 +1374,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%A3%BC%EC%8B%9C%EC%9E%A5",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 57
+          "rank": 67
         },
         {
           "id": 44,
@@ -1182,7 +1382,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%97%B0%EC%9E%84%20%EA%B5%AD%EB%AF%BC%20%EC%84%A0%ED%83%9D",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 58
+          "rank": 68
         },
         {
           "id": 45,
@@ -1190,7 +1390,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%82%AC%ED%95%98%EB%8A%94%20%EC%84%A4%EC%A2%85%EC%A7%84%20%EA%B0%90%EB%8F%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 59
+          "rank": 69
         }
       ]
     }
@@ -24908,6 +25108,4037 @@
           ]
         }
       ]
+    },
+    "153": {
+      "seed": "정평 배우",
+      "prefix": "정평",
+      "fullItems": [
+        {
+          "keyword": "정연 배우",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "배우 정평",
+          "sources": [
+            "daum"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "정평탕수육",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평역",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "경산 정평 탕수육",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평당",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평현대타운",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동 맛집",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중학교",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유키니언 정평",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평초등학교",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평성당",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 미용실",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 야외돼지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 내과",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 횟집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 전원숯불갈비",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평호",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평초",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평세무컨설팅",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평원",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "154": {
+      "seed": "문근영 결혼",
+      "prefix": "문근영",
+      "fullItems": [
+        {
+          "keyword": "문근영 결혼 했나요",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 결혼 사진",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 결혼했나",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "문근영 근황",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 살",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 리즈",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "지옥 문근영",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영재산",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 상속",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 유퀴즈",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 노래",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 희귀병",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 연극",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 가족",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 지옥2",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 몸무게",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 드라마",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 급성구획 증후군",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 영화",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 고등학교",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 어린 신부",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 남편",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 병",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 투병",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "155": {
+      "seed": "조정식 연임 발언",
+      "prefix": "조정식",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "조정식 강사",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식의 FM대행진",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식국회의장",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "조정식아나운서",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 라디오",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "조정식 영어",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "조정식 연임",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "조정식 개헌",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 국회의원",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 국회의원 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 고향",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 의원",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 영어 강사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 국회의장 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 의원 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 의장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 국회의원 지역사무실",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조정식 논란",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 근황",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 의원 아들",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 의원 논란",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조정식 의원 재산",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "156": {
+      "seed": "이관희 유시은 열애",
+      "prefix": "이관희",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "이관희 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이관희 연봉",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 유시은",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최혜선 이관희",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이관희인스타",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "피의게임 이관희",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이관희 피의게임",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이관희 사주",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최혜선 이관희 현커",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이관희 농구선수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이관희 이정현",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 니콜슨",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이관희 솔로지옥",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 홍진경",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 사과",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "교회오빠 이관희",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "솔로지옥3 이관희",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이관희행정사사무소",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "교회 오빠 이관희 근황",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이관희 최혜선",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 결혼",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "이관희 키",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "157": {
+      "seed": "5월 출생아 증가",
+      "prefix": "5월",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "5월 영어로",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 달력",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 탄생석",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 모의고사",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 별자리",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 23일",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "27년 5월 달력",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 탄생화",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 영화",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "5월 축제",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 국내여행지 베스트 10",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월4일 임시공휴일",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 공모주 청약일정",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 제철음식",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 1일 근로자의 날 법정 공휴일",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 축제 가볼만한 곳",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 1일",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 인사말",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 축제 일정표",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월에 가볼만한 국내 여행지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 제철 횟감",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 인사말 모음집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "5월 공휴일",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 25일 공휴일",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 1일 공휴일",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 과일",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 달력 2026",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 연휴",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "5월 공휴일 2026",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "158": {
+      "seed": "이사회 최종 책임",
+      "prefix": "이사회",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "이사회 뜻",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "kbs 이사회",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회의사록",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 영어로",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "삼성전자 이사회",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "안전보장이사회",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "경기대학교 이사회",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이사회 의장",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 회의록",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 의사록 양식",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 서면결의서",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 위임장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 감사 의결권",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 결의사항",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 인사말",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 의사록 공증면제",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 결의 무효",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회의록 양식",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 의사록 작성방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "kt 이사회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연방준비제도 이사회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "이사회 회의록 양식",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "이사회 구성",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "159": {
+      "seed": "코스피 급락",
+      "prefix": "코스피",
+      "fullItems": [
+        {
+          "keyword": "코스피 급락 이유",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락원인",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "오늘 코스피 급락 이유",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 사이드카",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 급락일",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 대응",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "대통령실 코스피 급락",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 급락",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 5%대 급락",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 10% 급락",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 4%대 급락",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 디시",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 순위",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 가능성",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 사유",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 반도체",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 역사",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 급락 서킷브레이커",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "코스피지수",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피랩",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피200",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 야간선물",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 뜻",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 전망",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 주가",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 시가총액 순위",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 차이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 야간선물 실시간",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피란 뜻",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 시총순위",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피200 etf",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 지수란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 상승종목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피200 야간선물",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 지수 실시간",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 선물",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 지수",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "160": {
+      "seed": "고지용 이혼",
+      "prefix": "고지용",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "고지용 허양임",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "젝스키스 고지용",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 근황",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 이수경",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "고지용 샤브샤브",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 리즈",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "허양임 고지용",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "고지용 사업",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "고지용 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "고지용 아내",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 아들",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 부인",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 간경화",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 건강",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 경매",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 가게",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "가수 고지용",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 술",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "천경록 백해경 진명숙 양서영 고지용",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "고지용 아들 근황",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 사업 실패 디시",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 나이",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "161": {
+      "seed": "레버리지 ETF 56조 손실",
+      "prefix": "레버리지",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "레버리지 뜻",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "주식 레버리지 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 규제",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 교육",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 상폐",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "하이닉스 레버리지",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 예탁금",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "삼성전자 레버리지 etf",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf뜻",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 기본예탁금",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 교육 이수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 투자란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 인버스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 대책",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코덱스 레버리지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 교육",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "단일종목 레버리지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 투자 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 책",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 위험성",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 주식 뜻",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "162": {
+      "seed": "강서구",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "강서구 날씨",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구청",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 맛집",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구 카페",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "강서구 놀거리",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "부산강서구청",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "강서구 아파트",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "부산 강서구 카페",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "강서구체육회",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "강서구청 홈페이지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구청장",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 시설관리공단",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구 통합도서관",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구의회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구립 도서관",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구청 맛집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구청장 후보",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구 보건소",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구 육아종합지원센터",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구청역",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "강서구 pc방 살인사건",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 화곡동",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 아파트 시세",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 마곡동",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "강서구 등촌동",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "163": {
+      "seed": "정평",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "정평탕수육",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평역",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "경산 정평 탕수육",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평당",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평현대타운",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동 맛집",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중학교",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유키니언 정평",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평 배우",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "배우 정평",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평초등학교",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평성당",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 미용실",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 야외돼지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 내과",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 횟집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 전원숯불갈비",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평호",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평초",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평세무컨설팅",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평원",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "164": {
+      "seed": "티엔엔터테인먼트",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "티엔엔터테인먼트연예인",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 대표",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 소속",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 주가",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트소속가수",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 가수",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 매출",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 주식",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "티엔 엔터테인먼트소속연예인",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 본사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 사장",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 홈페이지",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 주가 전망",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 노진영",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "티엔엔터테인먼트 이메일",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "165": {
+      "seed": "백승호",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "백승호 연봉",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "백승환",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승화",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 이적",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "이재영 백승호",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "백승호 인스타",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "백승호 등번호",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 유니폼",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "백승호 축구선수",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 횟집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 가정의학과 의원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승홍",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "허수아비 백승환",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 골",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 소속팀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 이승우",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 부상",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승환 감독",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "백승호 결혼",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 여자친구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 이재영",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 로제",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "백승호 키",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "166": {
+      "seed": "신도시",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "신도시이진병원",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "내포신도시",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "위례신도시",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "검단신도시",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신도시이진",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "창릉신도시",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "동탄신도시",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "왕숙신도시",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "진안신도시",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "신도 시도 모도 다리개통",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신도 시도 모도 여행",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신도 시도 모도 맛집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "3기 신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "배곧신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "다산 신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "교산 신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "평택 고덕신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "경북도청 신도시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신도시 영어로",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 순위",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 마사지 탑툰",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 목록",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 배달기사",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시어부",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 마사지",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신도시 엄마들",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "167": {
+      "seed": "코너 맥그리거",
+      "prefix": "코너",
+      "fullItems": [
+        {
+          "keyword": "코너 맥그리거 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 부상",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 대전료",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 국적",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 경기",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 재산",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 무릎",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 전적",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 복귀전",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 할로웨이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 나이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 파산",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 복귀",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 경기 일정",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 키",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 근황",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 메이웨더",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 맥그리거 인스타",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "코너 수납장",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 갤러거",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너선반",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너스톤",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너장",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너비드",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "킷코너",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코너 그리핀",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 보호대",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너 시볼드",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너형 책상",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너킥",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너 서랍장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코너스톤 장로교회",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너스톤 보험",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너스톤 국제학교",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코너스톤교회",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "168": {
+      "seed": "정평 수능 설명회 개최",
+      "prefix": "정평",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "정평탕수육",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평역",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "경산 정평 탕수육",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평당",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평현대타운",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동 맛집",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중학교",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유키니언 정평",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평동",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "정평 배우",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "배우 정평",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평초등학교",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평성당",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 미용실",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 야외돼지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 내과",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 횟집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평동 전원숯불갈비",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평호",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "정평중",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평초",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평세무컨설팅",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "정평원",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "169": {
+      "seed": "문근영 남편 누구?",
+      "prefix": "문근영",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "문근영 근황",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 살",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 리즈",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "지옥 문근영",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영재산",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 상속",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 유퀴즈",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 노래",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문근영 희귀병",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 연극",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 결혼",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 가족",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 지옥2",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 몸무게",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 드라마",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 급성구획 증후군",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 영화",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 고등학교",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 어린 신부",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문근영 남편",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 병",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 결혼 했나요",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문근영 투병",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "170": {
+      "seed": "코스피 매도 사이드카 발동",
+      "prefix": "코스피",
+      "fullItems": [
+        {
+          "keyword": "코스피 매도 사이드카 발동일",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 매도 사이드카 발동 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 매도 사이드카 발동 시간",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 매도 사이드카 발동 조건",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "코스피지수",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피랩",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피200",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 야간선물",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 뜻",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 전망",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 주가",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 시가총액 순위",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 차이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 야간선물 실시간",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피란 뜻",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 시총순위",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피200 etf",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 지수란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 상승종목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피200 야간선물",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코스피 지수 실시간",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 선물",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 코스닥 지수",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "171": {
+      "seed": "mc몽",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "mc몽 콘서트",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 노래",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 작곡",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "mc몽 폭로",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 이빨",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "mc몽 근황",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "mc몽 인기",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "MC몽 차가원",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 본명",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 김민종",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 아이유",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 차가원 더팩트",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 매니저",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽기자회견",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 나이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 라이브",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 이다인",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 소속사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "mc몽 논란",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 결혼",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 재산",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "mc몽 작곡한 노래",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "172": {
+      "seed": "고지용, 10년 전 합류 거절 후 복귀 준비",
+      "prefix": "고지용,",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "고지용 근황",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 아들",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 경매",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 아들 근황",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 사업 실패 디시",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 리즈",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 허양임",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 부인",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "고지용 와이프",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "173": {
+      "seed": "최준용",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "최준용 농구",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "롯데 최준용",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최준용 안지현",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최준용배우",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 신지현",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 해외",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최준용 연봉",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 일본",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최준용 농구선수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 야구선수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 식당",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 배우자",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용코다리",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 동탄코다리찜",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 아내",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 스벅",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 부상",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 복귀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 고향",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최준용 야구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 결혼",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 농구 연봉",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 한아름",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최준용 스타벅스",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "174": {
+      "seed": "기념메달 든 안세영",
+      "prefix": "기념메달",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "기념 메달 제작",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "기념메달 매입",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "기념메달 정리 방법",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "88올림픽 기념메달",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "광복 80주년 기념메달",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "한반도 평화 기념 메달",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "평화를 꿈꾸는 동그라미 세계 기념주화·메달 컬렉션 전 展",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "평화를 꿈꾸는 동그라미 세계 기념주화·메달 컬렉션 전",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "평화를 꿈꾸는 동그라미 세계 기념주화·메달 컬렉션 展",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "평화를 꿈꾸는 동그라미 -세계 기념주화·메달 컬렉션",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 전시회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 전시",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 반기문 평화기념관 기획전",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 반기문 평화기념관 기획展",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 반기문 평화기념관",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "세계 기념주화 메달 컬렉션 展",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "페이커 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조성진 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "손흥민 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "일본 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "한국조폐공사 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "bts 기념메달",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조폐공사 기념메달",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "175": {
+      "seed": "구자현",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "구자현 검사 프로필",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 신임 검찰총장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 검사",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 검찰총장 대행",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 서울고검장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현고검장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 검사장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현대행",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 검찰총장",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현총장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현비뇨기과의원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 최승필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현패션",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구자현 교수",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 성향",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 검찰총장 직무대행",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 검찰총장 대행 프로필",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 학력",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "구자현 작가",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "176": {
+      "seed": "구마모토 지진 사망 13명",
+      "prefix": "구마모토",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "구마모토 위치",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 여행",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토 날씨",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토 지진",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 항공권",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "구마모토 아소산",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토 맛집",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토현",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토시",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토현 지도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 골프여행",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 성",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토 지도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 골프",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 tsmc",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 이온몰",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "구마모토 공항",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "구마모토 굴",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "177": {
+      "seed": "인버스",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "인버스 뜻",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "kodex 200 인버스 2x",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "kodex 인버스",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 주식",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 etf",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 교육",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코덱스 인버스",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 반대",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "코스피 인버스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "인버스란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 곱버스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 레버리지",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 투자 방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 곱버스 뜻",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 반대말",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 etf 교육",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 투자",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 etf란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 리버스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "인버스 레버리지 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 etf 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "인버스 곱버스 차이",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
     }
   }
 }
