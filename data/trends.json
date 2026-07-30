@@ -1,6 +1,6 @@
 {
   "dataVersion": "realtime-rank-only-v4",
-  "updatedAt": "2026-07-30T09:37:51.682Z",
+  "updatedAt": "2026-07-30T12:01:17.580Z",
   "portals": [
     {
       "id": "daum",
@@ -9,12 +9,60 @@
       "source": "다음 실시간 트렌드",
       "items": [
         {
+          "id": 407,
+          "keyword": "최태원 장내매수",
+          "link": "https://search.daum.net/search?q=%EC%B5%9C%ED%83%9C%EC%9B%90%20%EC%9E%A5%EB%82%B4%EB%A7%A4%EC%88%98",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 1
+        },
+        {
+          "id": 408,
+          "keyword": "칠레 지도",
+          "link": "https://search.daum.net/search?q=%EC%B9%A0%EB%A0%88%20%EC%A7%80%EB%8F%84",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 2
+        },
+        {
+          "id": 409,
+          "keyword": "김지민 김준호",
+          "link": "https://search.daum.net/search?q=%EA%B9%80%EC%A7%80%EB%AF%BC%20%EA%B9%80%EC%A4%80%ED%98%B8",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 3
+        },
+        {
+          "id": 410,
+          "keyword": "유로존 경제 성장",
+          "link": "https://search.daum.net/search?q=%EC%9C%A0%EB%A1%9C%EC%A1%B4%20%EA%B2%BD%EC%A0%9C%20%EC%84%B1%EC%9E%A5",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 4
+        },
+        {
+          "id": 411,
+          "keyword": "편스토랑",
+          "link": "https://search.daum.net/search?q=%ED%8E%B8%EC%8A%A4%ED%86%A0%EB%9E%91",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 5
+        },
+        {
+          "id": 412,
+          "keyword": "언니네 산지직송 3",
+          "link": "https://search.daum.net/search?q=%EC%96%B8%EB%8B%88%EB%84%A4%20%EC%82%B0%EC%A7%80%EC%A7%81%EC%86%A1%203",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 6
+        },
+        {
           "id": 377,
           "keyword": "윤용근 국회의원",
           "link": "https://search.daum.net/search?q=%EC%9C%A4%EC%9A%A9%EA%B7%BC%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 1
+          "rank": 7
         },
         {
           "id": 378,
@@ -22,7 +70,7 @@
           "link": "https://search.daum.net/search?q=%EB%8C%80%ED%95%9C%EC%A0%84%EC%84%A0",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 2
+          "rank": 8
         },
         {
           "id": 379,
@@ -30,7 +78,7 @@
           "link": "https://search.daum.net/search?q=%EB%B0%B0%ED%84%B0%EB%A6%AC%203%EC%82%AC%20%ED%9D%91%EC%9E%90%EC%A0%84%ED%99%98",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 3
+          "rank": 9
         },
         {
           "id": 380,
@@ -38,7 +86,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%EC%9D%80%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%EA%B3%A0%EB%9D%BC",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 4
+          "rank": 10
         },
         {
           "id": 381,
@@ -46,7 +94,7 @@
           "link": "https://search.daum.net/search?q=BTS%20%EA%B7%B8%EB%9E%98%EB%AF%B8%20%EB%B3%B4%EC%9D%B4%EC%BD%A7",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 5
+          "rank": 11
         },
         {
           "id": 382,
@@ -54,7 +102,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%84%EB%A6%AC%EB%B2%84%EC%8A%A4%ED%84%B0%20%EB%9C%BB",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 6
+          "rank": 12
         },
         {
           "id": 383,
@@ -62,7 +110,7 @@
           "link": "https://search.daum.net/search?q=%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 7
+          "rank": 13
         },
         {
           "id": 384,
@@ -70,7 +118,7 @@
           "link": "https://search.daum.net/search?q=%EB%B0%95%EC%9E%AC%EB%B2%94%20%EB%8B%A4%EC%98%81",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 8
+          "rank": 14
         },
         {
           "id": 385,
@@ -78,7 +126,7 @@
           "link": "https://search.daum.net/search?q=%EA%B8%88%ED%98%B8%ED%83%80%EC%9D%B4%EC%96%B4%20%EC%98%81%EC%97%85%EC%9D%B5%20%EC%A6%9D%EA%B0%80",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 9
+          "rank": 15
         },
         {
           "id": 356,
@@ -86,7 +134,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%EC%A7%80%EB%AF%BC%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 10
+          "rank": 16
         },
         {
           "id": 357,
@@ -94,7 +142,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%ED%99%94%203%ED%98%95%EC%A0%9C%20%EC%8A%B9%EC%A7%84",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 11
+          "rank": 17
         },
         {
           "id": 358,
@@ -102,7 +150,7 @@
           "link": "https://search.daum.net/search?q=%EC%97%AC%EC%95%BC%20%EC%9E%AC%EA%B2%80%ED%91%9C%20%ED%95%A9%EC%9D%98",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 12
+          "rank": 18
         },
         {
           "id": 359,
@@ -110,7 +158,7 @@
           "link": "https://search.daum.net/search?q=%EA%B3%B5%ED%9A%A8%EC%A7%84%20%EC%9C%A0%EB%B6%80%EB%85%80%20%ED%82%AC%EB%9F%AC",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 13
+          "rank": 19
         },
         {
           "id": 360,
@@ -118,7 +166,7 @@
           "link": "https://search.daum.net/search?q=%EC%84%9C%EC%9A%B8%EB%8C%80%20AI%20%EB%B6%80%EC%A0%95%ED%96%89%EC%9C%84",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 14
+          "rank": 20
         },
         {
           "id": 361,
@@ -126,7 +174,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%EB%A1%9C%EB%A1%9C%20%EA%B0%80%EC%88%98",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 15
+          "rank": 21
         },
         {
           "id": 362,
@@ -134,7 +182,7 @@
           "link": "https://search.daum.net/search?q=5%C2%B718%20%ED%97%88%EC%9C%84%20%EB%8C%93%EA%B8%80",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 16
+          "rank": 22
         },
         {
           "id": 332,
@@ -142,7 +190,7 @@
           "link": "https://search.daum.net/search?q=%EC%9C%A4%EB%AF%B8%EB%9D%BC%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 17
+          "rank": 23
         },
         {
           "id": 333,
@@ -150,7 +198,7 @@
           "link": "https://search.daum.net/search?q=%EC%B5%9C%ED%9C%98%EC%98%81%20%EB%AC%B8%EC%B2%B4%EB%B6%80%20%EC%9E%A5%EA%B4%80",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 18
+          "rank": 24
         },
         {
           "id": 334,
@@ -158,7 +206,7 @@
           "link": "https://search.daum.net/search?q=%EC%A0%95%EB%AA%BD%EA%B7%9C%20%ED%99%8D%EB%AA%85%EB%B3%B4%20%EC%82%AC%EA%B3%BC",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 19
+          "rank": 25
         },
         {
           "id": 335,
@@ -166,7 +214,7 @@
           "link": "https://search.daum.net/search?q=%EC%9E%84%EC%98%A4%EA%B2%BD%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 20
+          "rank": 26
         },
         {
           "id": 336,
@@ -174,7 +222,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%A7%80%EC%A7%80%EC%9C%A8%20%EC%B5%9C%EC%A0%80",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 21
+          "rank": 27
         },
         {
           "id": 337,
@@ -182,7 +230,7 @@
           "link": "https://search.daum.net/search?q=%EC%86%90%ED%9D%A5%EB%AF%BC%20%EB%A9%80%ED%8B%B0%EA%B3%A8",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 22
+          "rank": 28
         },
         {
           "id": 338,
@@ -190,7 +238,7 @@
           "link": "https://search.daum.net/search?q=%ED%98%95%EC%86%8C%EB%B2%95%20%EA%B3%B5%EC%86%8C%EA%B8%B0%EA%B0%81",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 23
+          "rank": 29
         },
         {
           "id": 339,
@@ -198,7 +246,7 @@
           "link": "https://search.daum.net/search?q=%EC%8B%A0%EC%9E%A5%EB%B6%84%EC%82%AC%EC%B9%98%EB%A3%8C",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 24
+          "rank": 30
         },
         {
           "id": 340,
@@ -206,7 +254,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EC%9E%A5%EA%B8%B0%EA%B3%84%EC%95%BD",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 25
+          "rank": 31
         },
         {
           "id": 315,
@@ -214,7 +262,7 @@
           "link": "https://search.daum.net/search?q=%EB%AF%B8%20%EC%97%B0%EC%A4%80%20%EA%B8%88%EB%A6%AC%20%EB%8F%99%EA%B2%B0",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 26
+          "rank": 32
         },
         {
           "id": 316,
@@ -222,7 +270,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%B9%A0%EB%A0%88%20%EB%B0%A9%EB%AC%B8",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 27
+          "rank": 33
         },
         {
           "id": 317,
@@ -230,7 +278,7 @@
           "link": "https://search.daum.net/search?q=%EA%B7%B8%EB%9E%98%EB%AF%B8",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 28
+          "rank": 34
         },
         {
           "id": 318,
@@ -238,7 +286,7 @@
           "link": "https://search.daum.net/search?q=%ED%8C%A8%EC%8A%A4%ED%8A%B8%20%ED%8A%B8%EB%9E%99%EC%9D%B4%EB%9E%80",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 29
+          "rank": 35
         },
         {
           "id": 319,
@@ -246,7 +294,7 @@
           "link": "https://search.daum.net/search?q=%EC%84%9C%ED%82%B7%20%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%BB%A4",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 30
+          "rank": 36
         },
         {
           "id": 320,
@@ -254,7 +302,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%B0%AC%EC%A7%84%20%EA%B8%88%EA%B0%90%EC%9B%90%EC%9E%A5",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 31
+          "rank": 37
         },
         {
           "id": 321,
@@ -262,7 +310,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%BC%EB%B3%B8",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 32
+          "rank": 38
         },
         {
           "id": 288,
@@ -270,7 +318,7 @@
           "link": "https://search.daum.net/search?q=%ED%98%84%EB%8C%80%EC%B0%A8%20%EC%A3%BC%EA%B0%80",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 33
+          "rank": 39
         },
         {
           "id": 289,
@@ -278,7 +326,7 @@
           "link": "https://search.daum.net/search?q=%ED%82%AC%EB%9F%AC%EB%93%A4%EC%9D%98%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EC%8B%9C%EC%A6%8C2",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 34
+          "rank": 40
         },
         {
           "id": 290,
@@ -286,7 +334,7 @@
           "link": "https://search.daum.net/search?q=%EB%82%98%EB%8A%94%20%EC%86%94%EB%A1%9C%2032%EA%B8%B0%EC%98%81%EC%8B%9D%20%EC%98%81%EC%88%99",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 35
+          "rank": 41
         },
         {
           "id": 291,
@@ -294,7 +342,7 @@
           "link": "https://search.daum.net/search?q=%EB%8F%8C%ED%95%80%20%ED%83%9C%ED%92%8D",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 36
+          "rank": 42
         },
         {
           "id": 270,
@@ -302,7 +350,7 @@
           "link": "https://search.daum.net/search?q=%EB%B0%95%EC%A7%80%ED%98%84%20%EA%B0%80%EC%88%98",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 37
+          "rank": 43
         },
         {
           "id": 271,
@@ -310,7 +358,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%B9%A0%EB%A0%88%20%EC%B6%9C%EA%B5%AD",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 38
+          "rank": 44
         },
         {
           "id": 272,
@@ -318,7 +366,7 @@
           "link": "https://search.daum.net/search?q=%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%20%EB%9E%A8%ED%94%84%20%EB%8B%A8%EC%B0%A8",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 39
+          "rank": 45
         },
         {
           "id": 273,
@@ -326,7 +374,7 @@
           "link": "https://search.daum.net/search?q=%EB%82%98%EB%8A%94%20%EC%86%94%EB%A1%9C%2032%EA%B8%B0",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 40
+          "rank": 46
         },
         {
           "id": 274,
@@ -334,7 +382,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%EB%8B%A4%EA%B0%90%2047%EC%84%B8%20%EC%9E%84%EC%8B%A0",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 41
+          "rank": 47
         },
         {
           "id": 275,
@@ -342,7 +390,7 @@
           "link": "https://search.daum.net/search?q=fomc%20%EB%B0%9C%ED%91%9C%20%EC%8B%9C%EA%B0%84",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 42
+          "rank": 48
         },
         {
           "id": 276,
@@ -350,7 +398,7 @@
           "link": "https://search.daum.net/search?q=%EC%9B%90%EC%8A%A4",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 43
+          "rank": 49
         },
         {
           "id": 262,
@@ -358,7 +406,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%EB%8B%A4%EA%B0%90%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 44
+          "rank": 50
         },
         {
           "id": 236,
@@ -366,7 +414,7 @@
           "link": "https://search.daum.net/search?q=%EB%B9%8C%20%EA%B2%8C%EC%9D%B4%EC%B8%A0%20%EB%B0%A9%ED%95%9C",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 45
+          "rank": 51
         },
         {
           "id": 237,
@@ -374,7 +422,7 @@
           "link": "https://search.daum.net/search?q=%ED%9B%84%ED%8B%B0%20%ED%99%8D%ED%95%B4%20%ED%86%B5%ED%96%89%EB%A3%8C",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 46
+          "rank": 52
         },
         {
           "id": 238,
@@ -382,7 +430,7 @@
           "link": "https://search.daum.net/search?q=%ED%97%88%EA%B2%BD%EB%AF%BC%20%ED%97%A4%EB%93%9C%EC%83%B7",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 47
+          "rank": 53
         },
         {
           "id": 239,
@@ -390,7 +438,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%EC%A7%80%EC%88%99%20%EC%B6%98%EC%B2%9C%EC%8B%9C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 48
+          "rank": 54
         },
         {
           "id": 240,
@@ -398,7 +446,7 @@
           "link": "https://search.daum.net/search?q=%ED%97%88%EC%96%91%EC%9E%84%20%EC%9D%98%EC%82%AC",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 49
+          "rank": 55
         },
         {
           "id": 241,
@@ -406,7 +454,7 @@
           "link": "https://search.daum.net/search?q=%ED%83%9C%EC%9B%80",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 50
+          "rank": 56
         },
         {
           "id": 206,
@@ -414,7 +462,7 @@
           "link": "https://search.daum.net/search?q=%EA%B3%A0%EC%A7%80%EC%9A%A9%20%EC%95%84%EB%82%B4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 51
+          "rank": 57
         },
         {
           "id": 207,
@@ -422,7 +470,7 @@
           "link": "https://search.daum.net/search?q=%ED%98%95%EC%86%8C%EB%B2%95%20%EA%B0%9C%EC%A0%95%EC%95%88%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 52
+          "rank": 58
         },
         {
           "id": 208,
@@ -430,7 +478,7 @@
           "link": "https://search.daum.net/search?q=1%EA%B5%B0%EB%8B%A8%EC%9E%A5",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 53
+          "rank": 59
         },
         {
           "id": 209,
@@ -438,7 +486,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%ED%83%9C%ED%9A%A8%20%EA%B5%AC%EC%86%8D%EA%B8%B0%EC%86%8C",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 54
+          "rank": 60
         },
         {
           "id": 210,
@@ -446,7 +494,7 @@
           "link": "https://search.daum.net/search?q=%EA%B3%A0%EB%A0%A4%20%EA%B1%B0%EB%9E%80%20%EC%A0%84%EC%9F%81",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 55
+          "rank": 61
         },
         {
           "id": 211,
@@ -454,7 +502,7 @@
           "link": "https://search.daum.net/search?q=%ED%81%AC%EB%9E%98%ED%94%84%ED%86%A4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 56
+          "rank": 62
         },
         {
           "id": 212,
@@ -462,7 +510,7 @@
           "link": "https://search.daum.net/search?q=%ED%83%9C%ED%92%8D%EA%B2%BD%EB%A1%9C%20%ED%98%84%EC%9E%AC%EC%9C%84%EC%B9%98",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 57
+          "rank": 63
         },
         {
           "id": 178,
@@ -470,7 +518,7 @@
           "link": "https://search.daum.net/search?q=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 58
+          "rank": 64
         },
         {
           "id": 179,
@@ -478,7 +526,7 @@
           "link": "https://search.daum.net/search?q=%ED%99%A9%EC%A0%95%EB%AF%BC%20%EC%8A%A4%ED%86%A0%ED%82%B9%20%EA%B3%A0%EC%86%8C",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 59
+          "rank": 65
         },
         {
           "id": 180,
@@ -486,7 +534,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%EC%A7%80%EC%88%99%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 60
+          "rank": 66
         },
         {
           "id": 181,
@@ -494,7 +542,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%B0%EB%9E%80%EA%B3%84%ED%98%91%ED%9A%8C%20%ED%97%88%EA%B0%80%EC%B7%A8%EC%86%8C",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 61
+          "rank": 67
         },
         {
           "id": 182,
@@ -502,7 +550,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%EC%9A%A9%EB%B2%94%20%EC%A0%95%EC%B1%85%EC%8B%A4%EC%9E%A5",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 62
+          "rank": 68
         },
         {
           "id": 183,
@@ -510,7 +558,7 @@
           "link": "https://search.daum.net/search?q=sk%20%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 63
+          "rank": 69
         },
         {
           "id": 153,
@@ -518,7 +566,7 @@
           "link": "https://search.daum.net/search?q=%EC%A0%95%ED%8F%89%20%EB%B0%B0%EC%9A%B0",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 64
+          "rank": 70
         },
         {
           "id": 154,
@@ -526,7 +574,7 @@
           "link": "https://search.daum.net/search?q=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EA%B2%B0%ED%98%BC",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 65
+          "rank": 71
         },
         {
           "id": 155,
@@ -534,7 +582,7 @@
           "link": "https://search.daum.net/search?q=%EC%A1%B0%EC%A0%95%EC%8B%9D%20%EC%97%B0%EC%9E%84%20%EB%B0%9C%EC%96%B8",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 66
+          "rank": 72
         },
         {
           "id": 156,
@@ -542,7 +590,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EA%B4%80%ED%9D%AC%20%EC%9C%A0%EC%8B%9C%EC%9D%80%20%EC%97%B4%EC%95%A0",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 67
+          "rank": 73
         },
         {
           "id": 157,
@@ -550,7 +598,7 @@
           "link": "https://search.daum.net/search?q=5%EC%9B%94%20%EC%B6%9C%EC%83%9D%EC%95%84%20%EC%A6%9D%EA%B0%80",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 68
+          "rank": 74
         },
         {
           "id": 158,
@@ -558,7 +606,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%82%AC%ED%9A%8C%20%EC%B5%9C%EC%A2%85%20%EC%B1%85%EC%9E%84",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 69
+          "rank": 75
         },
         {
           "id": 159,
@@ -566,7 +614,7 @@
           "link": "https://search.daum.net/search?q=%EC%BD%94%EC%8A%A4%ED%94%BC%20%EA%B8%89%EB%9D%BD",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 70
+          "rank": 76
         },
         {
           "id": 161,
@@ -574,7 +622,7 @@
           "link": "https://search.daum.net/search?q=%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%20ETF%2056%EC%A1%B0%20%EC%86%90%EC%8B%A4",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 71
+          "rank": 77
         },
         {
           "id": 138,
@@ -582,7 +630,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EB%9E%80%20%ED%83%84%EB%8F%84%EB%AF%B8%EC%82%AC%EC%9D%BC%20%EB%B0%9C%EC%82%AC",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 72
+          "rank": 78
         },
         {
           "id": 139,
@@ -590,7 +638,7 @@
           "link": "https://search.daum.net/search?q=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%98%81%EC%97%85%EC%9D%B5%20%EC%B5%9C%EB%8C%80",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 73
+          "rank": 79
         },
         {
           "id": 140,
@@ -598,7 +646,7 @@
           "link": "https://search.daum.net/search?q=%EC%9E%84%EB%AF%B8%EC%95%A0%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 74
+          "rank": 80
         },
         {
           "id": 141,
@@ -606,7 +654,7 @@
           "link": "https://search.daum.net/search?q=%EB%B3%B4%EB%A0%B9%20%EB%A8%B8%EB%93%9C%EC%B6%95%EC%A0%9C",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 75
+          "rank": 81
         },
         {
           "id": 126,
@@ -614,7 +662,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%9C%C2%B7%EB%B8%8C%EB%9D%BC%EC%A7%88%20%ED%98%91%EB%A0%A5",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 76
+          "rank": 82
         },
         {
           "id": 127,
@@ -622,7 +670,7 @@
           "link": "https://search.daum.net/search?q=%ED%8A%B8%EB%9F%BC%ED%94%84%20%EB%B9%84%EA%B3%B5%EA%B0%9C%20%ED%9A%8C%EB%8B%B4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 77
+          "rank": 83
         },
         {
           "id": 128,
@@ -630,7 +678,7 @@
           "link": "https://search.daum.net/search?q=%ED%8A%B8%EB%9F%BC%ED%94%84%20%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%97%84%20%EC%B6%94%EB%8F%84",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 78
+          "rank": 84
         },
         {
           "id": 101,
@@ -638,7 +686,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%8F%99%ED%8F%AC%EA%B0%84%EB%8B%B4%ED%9A%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 79
+          "rank": 85
         },
         {
           "id": 102,
@@ -646,7 +694,7 @@
           "link": "https://search.daum.net/search?q=pba",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 80
+          "rank": 86
         },
         {
           "id": 103,
@@ -654,7 +702,7 @@
           "link": "https://search.daum.net/search?q=%EC%8B%A0%EC%B2%9C%EC%A7%80",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 81
+          "rank": 87
         },
         {
           "id": 104,
@@ -662,7 +710,7 @@
           "link": "https://search.daum.net/search?q=%EB%AF%B8%EA%B5%AD%20%EC%9D%B4%EB%9E%80",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 82
+          "rank": 88
         },
         {
           "id": 105,
@@ -670,7 +718,7 @@
           "link": "https://search.daum.net/search?q=%EC%86%90%ED%9D%A5%EB%AF%BC%20%EA%B2%BD%EA%B8%B0%EC%9D%BC%EC%A0%95",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 83
+          "rank": 89
         },
         {
           "id": 106,
@@ -678,7 +726,7 @@
           "link": "https://search.daum.net/search?q=sk%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20adr",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 84
+          "rank": 90
         },
         {
           "id": 107,
@@ -686,7 +734,7 @@
           "link": "https://search.daum.net/search?q=%EB%B6%80%EC%82%B0%20%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 85
+          "rank": 91
         },
         {
           "id": 85,
@@ -694,7 +742,7 @@
           "link": "https://search.daum.net/search?q=%EB%B0%95%EC%86%8C%EC%9C%A8%20%EB%82%98%EC%9D%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 86
+          "rank": 92
         },
         {
           "id": 86,
@@ -702,7 +750,7 @@
           "link": "https://search.daum.net/search?q=%EB%B2%95%EC%82%AC%EC%9C%84%20%ED%98%95%EC%86%8C%EB%B2%95%20%EA%B0%9C%EC%A0%95%EC%95%88",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 87
+          "rank": 93
         },
         {
           "id": 87,
@@ -710,7 +758,7 @@
           "link": "https://search.daum.net/search?q=%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%8B%A4%EC%A0%81%EB%B0%9C%ED%91%9C",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 88
+          "rank": 94
         },
         {
           "id": 88,
@@ -718,7 +766,7 @@
           "link": "https://search.daum.net/search?q=%ED%82%AC%EC%9E%87%20%EC%8A%A4%ED%83%80%EC%9D%BC%20%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0%20%EB%8C%80%EC%A0%84%EC%9F%81",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 89
+          "rank": 95
         },
         {
           "id": 89,
@@ -726,7 +774,7 @@
           "link": "https://search.daum.net/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%ED%98%84%20%EC%A7%80%EB%8F%84",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 90
+          "rank": 96
         },
         {
           "id": 90,
@@ -734,7 +782,7 @@
           "link": "https://search.daum.net/search?q=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EC%95%84%EB%82%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 91
+          "rank": 97
         },
         {
           "id": 73,
@@ -742,7 +790,7 @@
           "link": "https://search.daum.net/search?q=%ED%8F%AC%ED%95%AD%20%EB%B3%B4%EB%A6%BF%EB%8F%8C%EA%B5%90",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 92
+          "rank": 98
         },
         {
           "id": 74,
@@ -750,7 +798,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%B0%EA%B3%A8%EC%B4%9D%EA%B0%81%20%EC%98%81%EC%9B%85",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 93
+          "rank": 99
         },
         {
           "id": 56,
@@ -758,7 +806,7 @@
           "link": "https://search.daum.net/search?q=%EC%98%A4%EC%82%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 94
+          "rank": 100
         },
         {
           "id": 57,
@@ -766,7 +814,7 @@
           "link": "https://search.daum.net/search?q=%EC%A7%80%EB%8B%A8%20%ED%94%84%EB%9E%91%EC%8A%A4%20%EA%B0%90%EB%8F%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 95
+          "rank": 101
         },
         {
           "id": 59,
@@ -774,7 +822,7 @@
           "link": "https://search.daum.net/search?q=%EA%B9%80%ED%98%84%ED%83%9C%20707%ED%8A%B9%EC%9E%84%EB%8B%A8%EC%9E%A5",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 96
+          "rank": 102
         },
         {
           "id": 60,
@@ -782,7 +830,7 @@
           "link": "https://search.daum.net/search?q=%EC%8A%A4%EB%AA%A8%ED%82%B9%20%EA%B1%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 97
+          "rank": 103
         },
         {
           "id": 61,
@@ -790,7 +838,7 @@
           "link": "https://search.daum.net/search?q=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EB%89%B4%20%EB%8D%B0%EC%9D%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 98
+          "rank": 104
         },
         {
           "id": 1,
@@ -798,7 +846,7 @@
           "link": "https://search.daum.net/search?q=%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 99
+          "rank": 105
         },
         {
           "id": 2,
@@ -806,7 +854,7 @@
           "link": "https://search.daum.net/search?q=%EC%A1%B0%EC%A0%95%EC%8B%9D%20%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 100
+          "rank": 106
         },
         {
           "id": 4,
@@ -814,7 +862,7 @@
           "link": "https://search.daum.net/search?q=%ED%94%84%EB%A6%AC%ED%95%9C%2019",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 101
+          "rank": 107
         },
         {
           "id": 5,
@@ -822,7 +870,7 @@
           "link": "https://search.daum.net/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 102
+          "rank": 108
         },
         {
           "id": 6,
@@ -830,7 +878,7 @@
           "link": "https://search.daum.net/search?q=%ED%83%9C%ED%92%8D%20%EA%B2%BD%EB%A1%9C",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 103
+          "rank": 109
         },
         {
           "id": 7,
@@ -838,7 +886,7 @@
           "link": "https://search.daum.net/search?q=%EB%82%B4%EC%9D%BC%EB%8F%84%20%EC%B6%9C%EA%B7%BC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 104
+          "rank": 110
         },
         {
           "id": 8,
@@ -846,7 +894,7 @@
           "link": "https://search.daum.net/search?q=%ED%8F%AC%ED%95%AD%EB%8B%A4%EB%A6%AC%EB%B6%95%EA%B4%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 105
+          "rank": 111
         },
         {
           "id": 9,
@@ -854,7 +902,7 @@
           "link": "https://search.daum.net/search?q=%EC%9C%84%EB%8C%80%ED%95%9C%20%EA%B0%80%EC%9D%B4%EB%93%9C3",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 106
+          "rank": 112
         },
         {
           "id": 10,
@@ -862,7 +910,7 @@
           "link": "https://search.daum.net/search?q=%EC%82%B4%EB%A1%B1%EB%93%9C%EB%A6%BD",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 107
+          "rank": 113
         }
       ]
     },
@@ -873,12 +921,84 @@
       "source": "Google Trends 실시간 순위",
       "items": [
         {
+          "id": 413,
+          "keyword": "레버리지",
+          "link": "https://www.google.com/search?q=%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 1
+        },
+        {
+          "id": 414,
+          "keyword": "뉴스",
+          "link": "https://www.google.com/search?q=%EB%89%B4%EC%8A%A4",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 2
+        },
+        {
+          "id": 415,
+          "keyword": "감자",
+          "link": "https://www.google.com/search?q=%EA%B0%90%EC%9E%90",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 3
+        },
+        {
+          "id": 416,
+          "keyword": "중앙일보",
+          "link": "https://www.google.com/search?q=%EC%A4%91%EC%95%99%EC%9D%BC%EB%B3%B4",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 4
+        },
+        {
+          "id": 417,
+          "keyword": "연기금",
+          "link": "https://www.google.com/search?q=%EC%97%B0%EA%B8%B0%EA%B8%88",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 5
+        },
+        {
+          "id": 418,
+          "keyword": "도쿄 바나나",
+          "link": "https://www.google.com/search?q=%EB%8F%84%EC%BF%84%20%EB%B0%94%EB%82%98%EB%82%98",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 6
+        },
+        {
+          "id": 419,
+          "keyword": "농지",
+          "link": "https://www.google.com/search?q=%EB%86%8D%EC%A7%80",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 7
+        },
+        {
+          "id": 420,
+          "keyword": "문화일보",
+          "link": "https://www.google.com/search?q=%EB%AC%B8%ED%99%94%EC%9D%BC%EB%B3%B4",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 8
+        },
+        {
+          "id": 421,
+          "keyword": "신현준",
+          "link": "https://www.google.com/search?q=%EC%8B%A0%ED%98%84%EC%A4%80",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 9
+        },
+        {
           "id": 386,
           "keyword": "남편",
           "link": "https://www.google.com/search?q=%EB%82%A8%ED%8E%B8",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 1
+          "rank": 10
         },
         {
           "id": 387,
@@ -886,7 +1006,7 @@
           "link": "https://www.google.com/search?q=%EC%9B%90%EC%88%AD%EC%9D%B4",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 2
+          "rank": 11
         },
         {
           "id": 388,
@@ -894,7 +1014,7 @@
           "link": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EB%B0%B0%EB%8B%B9",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 3
+          "rank": 12
         },
         {
           "id": 389,
@@ -902,7 +1022,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%90%EC%9E%A5",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 4
+          "rank": 13
         },
         {
           "id": 390,
@@ -910,7 +1030,7 @@
           "link": "https://www.google.com/search?q=%EA%B2%BD%EC%A0%9C%20%EC%84%B1%EC%9E%A5",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 5
+          "rank": 14
         },
         {
           "id": 391,
@@ -918,7 +1038,7 @@
           "link": "https://www.google.com/search?q=%EC%9C%A4%EC%9A%A9%EA%B7%BC",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 6
+          "rank": 15
         },
         {
           "id": 392,
@@ -926,7 +1046,7 @@
           "link": "https://www.google.com/search?q=%EC%95%84%EB%8F%99%EB%B3%B5%EC%A7%80%EB%B2%95",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 7
+          "rank": 16
         },
         {
           "id": 393,
@@ -934,7 +1054,7 @@
           "link": "https://www.google.com/search?q=%EC%A7%80%EB%B6%95",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 8
+          "rank": 17
         },
         {
           "id": 394,
@@ -942,7 +1062,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%EB%8F%99%EA%B4%80",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 9
+          "rank": 18
         },
         {
           "id": 395,
@@ -950,7 +1070,7 @@
           "link": "https://www.google.com/search?q=%EB%85%B8%EB%AC%B4%EB%9D%BC%20%EC%A6%9D%EA%B6%8C",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 10
+          "rank": 19
         },
         {
           "id": 396,
@@ -958,7 +1078,7 @@
           "link": "https://www.google.com/search?q=sk%ED%85%94%EB%A0%88%EC%BD%A4",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 11
+          "rank": 20
         },
         {
           "id": 397,
@@ -966,7 +1086,7 @@
           "link": "https://www.google.com/search?q=%EB%86%8D%ED%98%91",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 12
+          "rank": 21
         },
         {
           "id": 363,
@@ -974,7 +1094,7 @@
           "link": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%20%EC%A0%84%EC%9E%90%20%EC%BB%A8%EC%BD%9C",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 13
+          "rank": 22
         },
         {
           "id": 364,
@@ -982,7 +1102,7 @@
           "link": "https://www.google.com/search?q=%ED%95%9C%EB%8B%A4%EA%B0%90",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 14
+          "rank": 23
         },
         {
           "id": 365,
@@ -990,7 +1110,7 @@
           "link": "https://www.google.com/search?q=%EC%86%8D%EC%B4%88%EC%8B%9C",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 15
+          "rank": 24
         },
         {
           "id": 366,
@@ -998,7 +1118,7 @@
           "link": "https://www.google.com/search?q=%EC%9E%AC%EB%B2%8Cx%ED%98%95%EC%82%AC",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 16
+          "rank": 25
         },
         {
           "id": 367,
@@ -1006,7 +1126,7 @@
           "link": "https://www.google.com/search?q=%EB%B0%B0%EB%8B%B9",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 17
+          "rank": 26
         },
         {
           "id": 341,
@@ -1014,7 +1134,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%B0%EC%9D%B8",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 18
+          "rank": 27
         },
         {
           "id": 342,
@@ -1022,7 +1142,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%EC%9A%A9%EA%B1%B4",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 19
+          "rank": 28
         },
         {
           "id": 343,
@@ -1030,7 +1150,7 @@
           "link": "https://www.google.com/search?q=%EC%B0%BD%EC%8B%A0%EB%A9%94%EB%AA%A8%EB%A6%AC%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 20
+          "rank": 29
         },
         {
           "id": 344,
@@ -1038,7 +1158,7 @@
           "link": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20%EC%8B%A4%EC%A0%81%20%EB%B0%9C%ED%91%9C",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 21
+          "rank": 30
         },
         {
           "id": 345,
@@ -1046,7 +1166,7 @@
           "link": "https://www.google.com/search?q=%EB%AF%B8%EA%B5%B0",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 22
+          "rank": 31
         },
         {
           "id": 346,
@@ -1054,7 +1174,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%B4%EC%98%81%EC%9E%90",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 23
+          "rank": 32
         },
         {
           "id": 322,
@@ -1062,7 +1182,7 @@
           "link": "https://www.google.com/search?q=%EA%B0%95%EB%AF%B8%EB%82%98",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 24
+          "rank": 33
         },
         {
           "id": 323,
@@ -1070,7 +1190,7 @@
           "link": "https://www.google.com/search?q=%EA%B3%A0%EC%9A%B0%EC%84%9D",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 25
+          "rank": 34
         },
         {
           "id": 307,
@@ -1078,7 +1198,7 @@
           "link": "https://www.google.com/search?q=%EC%9E%A5%EA%B8%B0%20%EC%9A%94%EC%96%91",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 26
+          "rank": 35
         },
         {
           "id": 301,
@@ -1086,7 +1206,7 @@
           "link": "https://www.google.com/search?q=%EB%8F%84%EB%A1%9C%EA%B5%90%ED%86%B5%EB%B2%95",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 27
+          "rank": 36
         },
         {
           "id": 292,
@@ -1094,7 +1214,7 @@
           "link": "https://www.google.com/search?q=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80%20%EC%98%88%EC%83%81%20%EA%B2%BD%EB%A1%9C",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 28
+          "rank": 37
         },
         {
           "id": 293,
@@ -1102,7 +1222,7 @@
           "link": "https://www.google.com/search?q=%EC%97%90%EC%9D%B4%EB%B0%8D",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 29
+          "rank": 38
         },
         {
           "id": 277,
@@ -1110,7 +1230,7 @@
           "link": "https://www.google.com/search?q=%EC%97%AC%ED%96%89",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 30
+          "rank": 39
         },
         {
           "id": 278,
@@ -1118,7 +1238,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%B4%EC%A7%84%EC%88%99",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 31
+          "rank": 40
         },
         {
           "id": 242,
@@ -1126,7 +1246,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%84%EC%8A%B9%20%EC%9E%AC",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 32
+          "rank": 41
         },
         {
           "id": 243,
@@ -1134,7 +1254,7 @@
           "link": "https://www.google.com/search?q=%EC%96%B4%EB%A8%B8%EB%8B%88",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 33
+          "rank": 42
         },
         {
           "id": 244,
@@ -1142,7 +1262,7 @@
           "link": "https://www.google.com/search?q=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 34
+          "rank": 43
         },
         {
           "id": 245,
@@ -1150,7 +1270,7 @@
           "link": "https://www.google.com/search?q=%EC%BD%94%EC%8A%A4%ED%94%BC%20%ED%95%98%EB%9D%BD%20%EC%9D%B4%EC%9C%A0",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 35
+          "rank": 44
         },
         {
           "id": 246,
@@ -1158,7 +1278,7 @@
           "link": "https://www.google.com/search?q=%ED%83%9C%EA%B5%AD",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 36
+          "rank": 45
         },
         {
           "id": 213,
@@ -1166,7 +1286,7 @@
           "link": "https://www.google.com/search?q=%EB%8C%80%ED%98%95%20%EC%84%B8%EB%8B%A8",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 37
+          "rank": 46
         },
         {
           "id": 214,
@@ -1174,7 +1294,7 @@
           "link": "https://www.google.com/search?q=%EC%8A%88%ED%8D%BC%20%ED%83%9C%ED%92%8D",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 38
+          "rank": 47
         },
         {
           "id": 215,
@@ -1182,7 +1302,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%9C1%EA%B5%B0%EB%8B%A8",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 39
+          "rank": 48
         },
         {
           "id": 216,
@@ -1190,7 +1310,7 @@
           "link": "https://www.google.com/search?q=%EC%95%8C%20%ED%85%8C%EC%98%A4%20%EC%A0%A0",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 40
+          "rank": 49
         },
         {
           "id": 217,
@@ -1198,7 +1318,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%B4%EA%B4%80%ED%9D%AC",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 41
+          "rank": 50
         },
         {
           "id": 218,
@@ -1206,7 +1326,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%95%EC%9C%A0%20%EB%9D%BC",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 42
+          "rank": 51
         },
         {
           "id": 219,
@@ -1214,7 +1334,7 @@
           "link": "https://www.google.com/search?q=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8%20%EB%B8%8C%EB%9E%9C%EB%93%9C%20%EB%89%B4%20%EB%8D%B0%EC%9D%B4%20%EC%BF%A0%ED%82%A4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 43
+          "rank": 52
         },
         {
           "id": 220,
@@ -1222,7 +1342,7 @@
           "link": "https://www.google.com/search?q=sk%EA%B7%B8%EB%A3%B9",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 44
+          "rank": 53
         },
         {
           "id": 221,
@@ -1230,7 +1350,7 @@
           "link": "https://www.google.com/search?q=%EC%95%88%EC%A0%84%EB%B2%A8%ED%8A%B8",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 45
+          "rank": 54
         },
         {
           "id": 222,
@@ -1238,7 +1358,7 @@
           "link": "https://www.google.com/search?q=%EC%8B%9D%EC%9D%B4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 46
+          "rank": 55
         },
         {
           "id": 223,
@@ -1246,7 +1366,7 @@
           "link": "https://www.google.com/search?q=%EB%8D%A4%ED%94%84%20%ED%8A%B8%EB%9F%AD",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 47
+          "rank": 56
         },
         {
           "id": 224,
@@ -1254,7 +1374,7 @@
           "link": "https://www.google.com/search?q=%EA%B4%80%EA%B4%91",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 48
+          "rank": 57
         },
         {
           "id": 225,
@@ -1262,7 +1382,7 @@
           "link": "https://www.google.com/search?q=%EC%84%9C%EB%8F%99%EC%A3%BC",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 49
+          "rank": 58
         },
         {
           "id": 226,
@@ -1270,7 +1390,7 @@
           "link": "https://www.google.com/search?q=%EA%B3%84%EC%97%84",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 50
+          "rank": 59
         },
         {
           "id": 184,
@@ -1278,7 +1398,7 @@
           "link": "https://www.google.com/search?q=%EB%AC%B8%EA%B7%BC%EC%98%81",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 51
+          "rank": 60
         },
         {
           "id": 185,
@@ -1286,7 +1406,7 @@
           "link": "https://www.google.com/search?q=%ED%99%A9%EC%A0%95%EB%AF%BC",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 52
+          "rank": 61
         },
         {
           "id": 186,
@@ -1294,7 +1414,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EC%A7%80%EC%A7%80%EC%9C%A8",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 53
+          "rank": 62
         },
         {
           "id": 187,
@@ -1302,7 +1422,7 @@
           "link": "https://www.google.com/search?q=%EC%97%AC%EC%97%90%EC%8A%A4%EB%8D%94",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 54
+          "rank": 63
         },
         {
           "id": 188,
@@ -1310,7 +1430,7 @@
           "link": "https://www.google.com/search?q=%EC%9C%A0%EC%8B%9C%EC%9D%80",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 55
+          "rank": 64
         },
         {
           "id": 189,
@@ -1318,7 +1438,7 @@
           "link": "https://www.google.com/search?q=%EA%B3%A0%EC%A7%80%EC%9A%A9",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 56
+          "rank": 65
         },
         {
           "id": 190,
@@ -1326,7 +1446,7 @@
           "link": "https://www.google.com/search?q=%EB%AA%85%EC%98%88%ED%9B%BC%EC%86%90",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 57
+          "rank": 66
         },
         {
           "id": 191,
@@ -1334,7 +1454,7 @@
           "link": "https://www.google.com/search?q=%EC%97%90%EC%96%B4%EC%BB%A8",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 58
+          "rank": 67
         },
         {
           "id": 192,
@@ -1342,7 +1462,7 @@
           "link": "https://www.google.com/search?q=%ED%85%8C%EC%8A%AC%EB%9D%BC%20%EB%AA%A8%EB%8D%B8%20y",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 59
+          "rank": 68
         },
         {
           "id": 193,
@@ -1350,7 +1470,7 @@
           "link": "https://www.google.com/search?q=%EB%A9%94%EC%9D%B4%EC%A0%80%20%EB%A6%AC%EA%B7%B8%20%EC%82%AC%EC%BB%A4",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 60
+          "rank": 69
         },
         {
           "id": 194,
@@ -1358,7 +1478,7 @@
           "link": "https://www.google.com/search?q=%EC%85%B0%ED%94%84",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 61
+          "rank": 70
         },
         {
           "id": 195,
@@ -1366,7 +1486,7 @@
           "link": "https://www.google.com/search?q=%EA%B3%A0%EB%A0%B9%ED%99%94",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 62
+          "rank": 71
         },
         {
           "id": 162,
@@ -1374,7 +1494,7 @@
           "link": "https://www.google.com/search?q=%EA%B0%95%EC%84%9C%EA%B5%AC",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 63
+          "rank": 72
         },
         {
           "id": 163,
@@ -1382,7 +1502,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%95%ED%8F%89",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 64
+          "rank": 73
         },
         {
           "id": 164,
@@ -1390,7 +1510,7 @@
           "link": "https://www.google.com/search?q=%ED%8B%B0%EC%97%94%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 65
+          "rank": 74
         },
         {
           "id": 165,
@@ -1398,7 +1518,7 @@
           "link": "https://www.google.com/search?q=%EB%B0%B1%EC%8A%B9%ED%98%B8",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 66
+          "rank": 75
         },
         {
           "id": 166,
@@ -1406,7 +1526,7 @@
           "link": "https://www.google.com/search?q=%EC%8B%A0%EB%8F%84%EC%8B%9C",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 67
+          "rank": 76
         },
         {
           "id": 167,
@@ -1414,7 +1534,7 @@
           "link": "https://www.google.com/search?q=%EC%BD%94%EB%84%88%20%EB%A7%A5%EA%B7%B8%EB%A6%AC%EA%B1%B0",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 68
+          "rank": 77
         },
         {
           "id": 142,
@@ -1422,7 +1542,7 @@
           "link": "https://www.google.com/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 69
+          "rank": 78
         },
         {
           "id": 143,
@@ -1430,7 +1550,7 @@
           "link": "https://www.google.com/search?q=%EC%83%9D%EA%B3%84",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 70
+          "rank": 79
         },
         {
           "id": 144,
@@ -1438,7 +1558,7 @@
           "link": "https://www.google.com/search?q=%EC%B9%B4%ED%8E%98",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 71
+          "rank": 80
         },
         {
           "id": 117,
@@ -1446,7 +1566,7 @@
           "link": "https://www.google.com/search?q=%EC%A7%80%EC%A7%84",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 72
+          "rank": 81
         },
         {
           "id": 118,
@@ -1454,7 +1574,7 @@
           "link": "https://www.google.com/search?q=%EC%9D%8C%EC%8B%9D%EB%AC%BC%20%EC%93%B0%EB%A0%88%EA%B8%B0",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 73
+          "rank": 82
         },
         {
           "id": 108,
@@ -1462,7 +1582,7 @@
           "link": "https://www.google.com/search?q=%EC%9E%AC%ED%98%BC",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 74
+          "rank": 83
         },
         {
           "id": 109,
@@ -1470,7 +1590,7 @@
           "link": "https://www.google.com/search?q=%EC%B1%84%EA%B6%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 75
+          "rank": 84
         },
         {
           "id": 91,
@@ -1478,7 +1598,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%EC%A0%95%EB%82%9C",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 76
+          "rank": 85
         },
         {
           "id": 92,
@@ -1486,7 +1606,7 @@
           "link": "https://www.google.com/search?q=%EB%A1%9C%EB%B2%84%ED%8A%B8%20%EA%B8%B0%EC%9A%94%EC%82%AC%ED%82%A4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 77
+          "rank": 86
         },
         {
           "id": 75,
@@ -1494,7 +1614,7 @@
           "link": "https://www.google.com/search?q=%ED%97%88%EB%B2%94%EC%9A%B1",
           "firstSeenAt": "2026-07-28T12:16:19.768Z",
           "lastSeenAt": "2026-07-28T12:16:19.768Z",
-          "rank": 78
+          "rank": 87
         },
         {
           "id": 62,
@@ -1502,7 +1622,7 @@
           "link": "https://www.google.com/search?q=%EC%82%B0%EB%B6%88",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 79
+          "rank": 88
         },
         {
           "id": 12,
@@ -1510,7 +1630,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 80
+          "rank": 89
         },
         {
           "id": 13,
@@ -1518,7 +1638,7 @@
           "link": "https://www.google.com/search?q=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 81
+          "rank": 90
         },
         {
           "id": 16,
@@ -1526,7 +1646,7 @@
           "link": "https://www.google.com/search?q=%EA%B1%B4%EA%B0%95%EB%B3%B4%ED%97%98",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 82
+          "rank": 91
         },
         {
           "id": 17,
@@ -1534,7 +1654,7 @@
           "link": "https://www.google.com/search?q=%EC%B5%9C%EC%88%98%EC%A2%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 83
+          "rank": 92
         },
         {
           "id": 18,
@@ -1542,7 +1662,7 @@
           "link": "https://www.google.com/search?q=%EB%B0%B1%EB%A6%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 84
+          "rank": 93
         },
         {
           "id": 19,
@@ -1550,7 +1670,7 @@
           "link": "https://www.google.com/search?q=%EC%95%84%EB%93%A4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 85
+          "rank": 94
         },
         {
           "id": 20,
@@ -1558,7 +1678,7 @@
           "link": "https://www.google.com/search?q=%EC%86%8C%EB%AC%B8%EB%82%9C%20%EC%B9%A0%EA%B3%B5%EC%A3%BC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 86
+          "rank": 95
         },
         {
           "id": 23,
@@ -1566,7 +1686,7 @@
           "link": "https://www.google.com/search?q=%EC%B2%A0%EA%B5%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 87
+          "rank": 96
         },
         {
           "id": 24,
@@ -1574,7 +1694,7 @@
           "link": "https://www.google.com/search?q=%EA%B0%95%EC%8A%B5%EC%83%81%EB%A5%99%ED%95%A8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 88
+          "rank": 97
         },
         {
           "id": 25,
@@ -1582,7 +1702,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%ED%98%B8%EC%A4%91",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 89
+          "rank": 98
         },
         {
           "id": 27,
@@ -1590,7 +1710,7 @@
           "link": "https://www.google.com/search?q=%EC%A0%84%EC%84%B1%EB%B0%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 90
+          "rank": 99
         },
         {
           "id": 29,
@@ -1598,7 +1718,7 @@
           "link": "https://www.google.com/search?q=%EC%B7%A8%EB%AF%B8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 91
+          "rank": 100
         },
         {
           "id": 30,
@@ -1606,7 +1726,7 @@
           "link": "https://www.google.com/search?q=%EC%A1%B0%ED%98%9C%EB%A0%A8",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 92
+          "rank": 101
         },
         {
           "id": 31,
@@ -1614,7 +1734,7 @@
           "link": "https://www.google.com/search?q=%EC%9C%A4%EB%8F%99%ED%9D%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 93
+          "rank": 102
         },
         {
           "id": 32,
@@ -1622,7 +1742,7 @@
           "link": "https://www.google.com/search?q=%EA%B5%AD%EA%B0%80%EA%B8%B0%EC%88%A0%EC%9E%90%EA%B2%A9",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 94
+          "rank": 103
         },
         {
           "id": 33,
@@ -1630,7 +1750,7 @@
           "link": "https://www.google.com/search?q=%EA%B9%80%ED%98%84%ED%83%9C",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 95
+          "rank": 104
         },
         {
           "id": 35,
@@ -1638,7 +1758,7 @@
           "link": "https://www.google.com/search?q=%ED%95%B5%EB%AC%B4%EA%B8%B0",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 96
+          "rank": 105
         }
       ]
     },
@@ -1849,12 +1969,68 @@
       "source": "네이버 실시간 검색어",
       "items": [
         {
+          "id": 422,
+          "keyword": "최태원 SK하이닉스 48억 매수",
+          "link": "https://search.naver.com/search.naver?query=%EC%B5%9C%ED%83%9C%EC%9B%90%20SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%2048%EC%96%B5%20%EB%A7%A4%EC%88%98",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 1
+        },
+        {
+          "id": 423,
+          "keyword": "성매매 최영중 구속",
+          "link": "https://search.naver.com/search.naver?query=%EC%84%B1%EB%A7%A4%EB%A7%A4%20%EC%B5%9C%EC%98%81%EC%A4%91%20%EA%B5%AC%EC%86%8D",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 2
+        },
+        {
+          "id": 424,
+          "keyword": "진태현, 박시은과 동반 MC",
+          "link": "https://search.naver.com/search.naver?query=%EC%A7%84%ED%83%9C%ED%98%84%2C%20%EB%B0%95%EC%8B%9C%EC%9D%80%EA%B3%BC%20%EB%8F%99%EB%B0%98%20MC",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 3
+        },
+        {
+          "id": 425,
+          "keyword": "미셸 스틸",
+          "link": "https://search.naver.com/search.naver?query=%EB%AF%B8%EC%85%B8%20%EC%8A%A4%ED%8B%B8",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 4
+        },
+        {
+          "id": 426,
+          "keyword": "정몽규-윤용근 문자 연락",
+          "link": "https://search.naver.com/search.naver?query=%EC%A0%95%EB%AA%BD%EA%B7%9C-%EC%9C%A4%EC%9A%A9%EA%B7%BC%20%EB%AC%B8%EC%9E%90%20%EC%97%B0%EB%9D%BD",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 5
+        },
+        {
+          "id": 427,
+          "keyword": "조계원",
+          "link": "https://search.naver.com/search.naver?query=%EC%A1%B0%EA%B3%84%EC%9B%90",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 6
+        },
+        {
+          "id": 428,
+          "keyword": "태풍 돌핀 북상 중폭염 주의",
+          "link": "https://search.naver.com/search.naver?query=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80%20%EB%B6%81%EC%83%81%20%EC%A4%91%ED%8F%AD%EC%97%BC%20%EC%A3%BC%EC%9D%98",
+          "firstSeenAt": "2026-07-30T12:01:17.580Z",
+          "lastSeenAt": "2026-07-30T12:01:17.580Z",
+          "rank": 7
+        },
+        {
           "id": 398,
           "keyword": "미셸 스틸 대사 입국 및 성명",
           "link": "https://search.naver.com/search.naver?query=%EB%AF%B8%EC%85%B8%20%EC%8A%A4%ED%8B%B8%20%EB%8C%80%EC%82%AC%20%EC%9E%85%EA%B5%AD%20%EB%B0%8F%20%EC%84%B1%EB%AA%85",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 1
+          "rank": 8
         },
         {
           "id": 399,
@@ -1862,7 +2038,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%84%A0%EA%B4%80%EC%9C%84%20%ED%8A%B9%EA%B2%80%EB%B2%95%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 2
+          "rank": 9
         },
         {
           "id": 400,
@@ -1870,7 +2046,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A1%AF%EB%8D%B0%20%EC%9E%90%EC%9D%B4%EC%96%B8%EC%B8%A0",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 3
+          "rank": 10
         },
         {
           "id": 401,
@@ -1878,7 +2054,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%2C%20%EC%9A%B0%EB%A6%AC%EB%93%A4%EC%9D%98%20%EB%B0%9C%EB%9D%BC%EB%93%9C2%20%ED%95%A9%EB%A5%98",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 4
+          "rank": 11
         },
         {
           "id": 402,
@@ -1886,7 +2062,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%BC%80%EC%9D%B4%EB%B1%85%ED%81%AC%20%EC%83%81%EB%B0%98%EA%B8%B0%20%EC%88%9C%EC%9D%B5%20%EA%B0%90%EC%86%8C",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 5
+          "rank": 12
         },
         {
           "id": 403,
@@ -1894,7 +2070,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%94%BC%EC%86%8C",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 6
+          "rank": 13
         },
         {
           "id": 404,
@@ -1902,7 +2078,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%95%98%ED%95%9C%EA%B0%80",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 7
+          "rank": 14
         },
         {
           "id": 405,
@@ -1910,7 +2086,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8%20100%EB%A7%8C%20%EB%8F%8C%ED%8C%8C",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 8
+          "rank": 15
         },
         {
           "id": 406,
@@ -1918,7 +2094,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EB%B3%84%20%ED%9B%84%20%ED%8F%AD%EB%A0%A5%20%EC%9C%84%ED%97%98%20%EC%97%AC%EC%84%B1",
           "firstSeenAt": "2026-07-30T09:37:51.682Z",
           "lastSeenAt": "2026-07-30T09:37:51.682Z",
-          "rank": 9
+          "rank": 16
         },
         {
           "id": 368,
@@ -1926,7 +2102,7 @@
           "link": "https://search.naver.com/search.naver?query=LG%EC%A0%84%EC%9E%90%202%EB%B6%84%EA%B8%B0%20%EC%98%81%EC%97%85%EC%9D%B5%20%EC%B5%9C%EB%8C%80",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 10
+          "rank": 17
         },
         {
           "id": 369,
@@ -1934,7 +2110,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B3%B5%ED%9A%A8%EC%A7%84%2C%20%EC%8B%A0%ED%98%BC%EC%83%9D%ED%99%9C%20%EC%A4%91",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 11
+          "rank": 18
         },
         {
           "id": 370,
@@ -1942,7 +2118,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%8F%99%EA%B4%80%20%EC%88%98%EC%84%9D%EB%B6%80%ED%9A%8C%EC%9E%A5%20%EC%8A%B9%EC%A7%84",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 12
+          "rank": 19
         },
         {
           "id": 371,
@@ -1950,7 +2126,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%84%B1%EC%88%99%20%EC%B4%9D%EB%A6%AC%2C%20%EB%B0%98%EB%8F%84%EC%B2%B4%20%EA%B0%84%EB%8B%B4%ED%9A%8C%20%EC%B0%B8%EC%84%9D",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 13
+          "rank": 20
         },
         {
           "id": 372,
@@ -1958,7 +2134,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A1%B4%20%EC%A1%B4%EC%8A%A4",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 14
+          "rank": 21
         },
         {
           "id": 373,
@@ -1966,7 +2142,7 @@
           "link": "https://search.naver.com/search.naver?query=KT%20%EB%8C%80%EB%8B%88%EC%97%98%20%EC%98%81%EC%9E%85",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 15
+          "rank": 22
         },
         {
           "id": 374,
@@ -1974,7 +2150,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%94%94%EC%8A%A4%ED%8C%A8%EC%B9%98%20%ED%99%A9%EC%A0%95%EB%AF%BC",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 16
+          "rank": 23
         },
         {
           "id": 375,
@@ -1982,7 +2158,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%AC%EC%95%BC%2C%20%EC%84%A0%EA%B4%80%EC%9C%84%20%ED%8A%B9%EA%B2%80%20%ED%95%A9%EC%9D%98",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 17
+          "rank": 24
         },
         {
           "id": 376,
@@ -1990,7 +2166,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%98%84%EB%8C%80%20%EC%95%84%EB%B0%98%EB%96%BC",
           "firstSeenAt": "2026-07-30T06:38:06.533Z",
           "lastSeenAt": "2026-07-30T06:38:06.533Z",
-          "rank": 18
+          "rank": 25
         },
         {
           "id": 347,
@@ -1998,7 +2174,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%202%EB%B6%84%EA%B8%B0%20%EC%98%81%EC%97%85%EC%9D%B5%2089%EC%A1%B0%20%EC%B5%9C%EB%8C%80",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 19
+          "rank": 26
         },
         {
           "id": 348,
@@ -2006,7 +2182,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%99%8D%EB%AA%85%EB%B3%B4%20%EC%B2%AD%EB%AC%B8%ED%9A%8C%20%EC%B0%B8%EC%84%9D",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 20
+          "rank": 27
         },
         {
           "id": 349,
@@ -2014,7 +2190,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%ED%95%B4%EC%96%91%EA%B2%BD%EC%B0%B0%EC%84%9C",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 21
+          "rank": 28
         },
         {
           "id": 350,
@@ -2022,7 +2198,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%93%A4",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 22
+          "rank": 29
         },
         {
           "id": 351,
@@ -2030,7 +2206,7 @@
           "link": "https://search.naver.com/search.naver?query=KT%20%EA%B3%BC%EC%A7%95%EA%B8%88%20539%EC%96%B5",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 23
+          "rank": 30
         },
         {
           "id": 352,
@@ -2038,7 +2214,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%AF%BC%EC%84%9D",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 24
+          "rank": 31
         },
         {
           "id": 353,
@@ -2046,7 +2222,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A0%95%EC%9D%98%EC%84%A0%20%EB%B8%8C%EB%9D%BC%EC%A7%88%EA%B3%B5%EC%9E%A5%20%EB%B0%A9%EB%AC%B8",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 25
+          "rank": 32
         },
         {
           "id": 354,
@@ -2054,7 +2230,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EC%A0%95",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 26
+          "rank": 33
         },
         {
           "id": 355,
@@ -2062,7 +2238,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%A4%80%ED%98%B8%20%EA%B9%80%EC%A7%80%EB%AF%BC%20%EC%9E%84%EC%8B%A0%20%EC%86%8C%EC%8B%9D",
           "firstSeenAt": "2026-07-30T03:20:38.961Z",
           "lastSeenAt": "2026-07-30T03:20:38.961Z",
-          "rank": 27
+          "rank": 34
         },
         {
           "id": 324,
@@ -2070,7 +2246,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AF%B8%20%EC%97%B0%EC%A4%80%20%EA%B8%88%EB%A6%AC%20%EB%8F%99%EA%B2%B0%205%ED%9A%8C",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 28
+          "rank": 35
         },
         {
           "id": 325,
@@ -2078,7 +2254,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80%20%EB%B6%81%EC%83%81%20%EA%B2%BD%EB%A1%9C%20%EC%A3%BC%EC%8B%9C",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 29
+          "rank": 36
         },
         {
           "id": 326,
@@ -2086,7 +2262,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%B9%A0%EB%A0%88%20%EB%B0%A9%EB%AC%B8",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 30
+          "rank": 37
         },
         {
           "id": 327,
@@ -2094,7 +2270,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A9%94%ED%83%80%20%EC%A3%BC%EA%B0%80",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 31
+          "rank": 38
         },
         {
           "id": 328,
@@ -2102,7 +2278,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EC%A0%95%EB%B9%88%20%EB%8B%AC%EC%95%84%EB%82%98%EB%8A%94%20%EC%86%94%EB%A1%9C",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 32
+          "rank": 39
         },
         {
           "id": 329,
@@ -2110,7 +2286,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%86%A1%EB%8F%84%EB%8F%99",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 33
+          "rank": 40
         },
         {
           "id": 330,
@@ -2118,7 +2294,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%98%B8%EC%98%81%2C%20%EB%AC%B8%EA%B7%BC%EC%98%81%20%EA%B2%B0%ED%98%BC%20%EC%B6%95%ED%95%98%ED%95%B4",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 34
+          "rank": 41
         },
         {
           "id": 331,
@@ -2126,7 +2302,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9E%84%EC%9A%B0%EC%9D%BC",
           "firstSeenAt": "2026-07-29T23:09:51.546Z",
           "lastSeenAt": "2026-07-29T23:09:51.546Z",
-          "rank": 35
+          "rank": 42
         },
         {
           "id": 308,
@@ -2134,7 +2310,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B8%ED%9B%88%2C%20%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%20%EC%8B%9C%ED%97%98",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 36
+          "rank": 43
         },
         {
           "id": 309,
@@ -2142,7 +2318,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EC%A0%95%EB%B9%88%EC%9D%98%20%EC%86%94%EB%A1%9C%ED%8F%AC",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 37
+          "rank": 44
         },
         {
           "id": 310,
@@ -2150,7 +2326,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A3%BC%EA%B0%80%20%EB%8C%80%ED%8F%AD%EB%9D%BD",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 38
+          "rank": 45
         },
         {
           "id": 311,
@@ -2158,7 +2334,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8A%B8%EB%9F%BC%ED%94%84",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 39
+          "rank": 46
         },
         {
           "id": 312,
@@ -2166,7 +2342,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%86%8D%EC%84%B1",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 40
+          "rank": 47
         },
         {
           "id": 313,
@@ -2174,7 +2350,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%AF%BC%EC%84%9D%EA%B3%BC%20%EC%A0%95%EC%B2%AD%EB%9E%98%20%EC%A0%95%EC%B9%98%20%EC%B6%A9%EB%8F%8C",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 41
+          "rank": 48
         },
         {
           "id": 314,
@@ -2182,7 +2358,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B0%EC%A4%80%205%EC%97%B0%EC%86%8D%20%EA%B8%88%EB%A6%AC%20%EB%8F%99%EA%B2%B0",
           "firstSeenAt": "2026-07-29T21:09:30.325Z",
           "lastSeenAt": "2026-07-29T21:09:30.325Z",
-          "rank": 42
+          "rank": 49
         },
         {
           "id": 302,
@@ -2190,7 +2366,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%AF%BC%EC%84%9D%EA%B3%BC%20%EC%A0%95%EC%B2%AD%EB%9E%98%20%EA%B0%88%EB%93%B1%20%EC%8B%AC%ED%99%94",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 43
+          "rank": 50
         },
         {
           "id": 303,
@@ -2198,7 +2374,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%88%EB%A6%AC",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 44
+          "rank": 51
         },
         {
           "id": 304,
@@ -2206,7 +2382,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B8%ED%9B%88%20%EC%8B%9C%EC%9E%A5%2C%20%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%20%EC%8B%9C%ED%97%98",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 45
+          "rank": 52
         },
         {
           "id": 305,
@@ -2214,7 +2390,7 @@
           "link": "https://search.naver.com/search.naver?query=47%EC%84%B8%20%EC%9E%84%EC%8B%A0%20%EC%A4%91%20%EC%95%84%EB%93%A4%20%EA%B3%B5%EA%B0%9C",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 46
+          "rank": 53
         },
         {
           "id": 306,
@@ -2222,7 +2398,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EC%A0%95%EB%B9%88%20%EC%86%94%EB%A1%9C%EB%A1%9C%20%EB%8B%AC%EC%95%84%EB%82%98%EB%84%A4",
           "firstSeenAt": "2026-07-29T19:39:25.191Z",
           "lastSeenAt": "2026-07-29T19:39:25.191Z",
-          "rank": 47
+          "rank": 54
         },
         {
           "id": 294,
@@ -2230,7 +2406,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%20%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%20%EA%B0%9C%EC%9D%B8%ED%95%9C%EB%8F%84%20%EC%84%A4%EC%A0%95",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 48
+          "rank": 55
         },
         {
           "id": 295,
@@ -2238,7 +2414,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B0%A8%EC%98%81%ED%98%84",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 49
+          "rank": 56
         },
         {
           "id": 296,
@@ -2246,7 +2422,7 @@
           "link": "https://search.naver.com/search.naver?query=47%EC%84%B8%20%EC%9E%84%EC%8B%A0%2C%20%EC%95%84%EB%93%A4%20%EC%96%BC%EA%B5%B4%20%EA%B3%B5%EA%B0%9C",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 50
+          "rank": 57
         },
         {
           "id": 297,
@@ -2254,7 +2430,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%97%88%EA%B2%BD%EB%AF%BC",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 51
+          "rank": 58
         },
         {
           "id": 298,
@@ -2262,7 +2438,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B8%ED%9B%88%20%EC%8B%9C%EC%9E%A5%2C%20%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%20%EC%A0%90%EA%B2%80",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 52
+          "rank": 59
         },
         {
           "id": 299,
@@ -2270,7 +2446,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%80%EB%A0%8C%20%ED%95%9C%EC%82%AC%EB%93%9C",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 53
+          "rank": 60
         },
         {
           "id": 300,
@@ -2278,7 +2454,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%84%9C%EC%9D%B8%EC%98%81%2C%20%EC%9B%8C%ED%84%B0%EB%B0%A4%20%EC%95%9E%EB%91%90%EA%B3%A0%20%ED%8C%8C%EA%B2%A9%20%EA%B4%80%EB%A6%AC",
           "firstSeenAt": "2026-07-29T17:32:23.216Z",
           "lastSeenAt": "2026-07-29T17:32:23.216Z",
-          "rank": 54
+          "rank": 61
         },
         {
           "id": 279,
@@ -2286,7 +2462,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B0%EC%9E%84%20%EB%B6%88%EA%B0%80%EB%8A%A5%20%EA%B0%9C%ED%97%8C",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 55
+          "rank": 62
         },
         {
           "id": 280,
@@ -2294,7 +2470,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EC%A0%95%ED%8F%89%20%EA%B7%B9%EB%B9%84%20%EA%B2%B0%ED%98%BC",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 56
+          "rank": 63
         },
         {
           "id": 281,
@@ -2302,7 +2478,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8B%A8%EC%9D%BC%EC%A2%85%EB%AA%A9%20%EB%A0%88%EB%B2%84%EB%A6%AC%EC%A7%80%20%ED%88%AC%EC%9E%90%ED%95%9C%EB%8F%84%20%EC%84%A4%EC%A0%95",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 57
+          "rank": 64
         },
         {
           "id": 282,
@@ -2310,7 +2486,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A0%84%EB%B6%81%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%EC%A7%80%EC%82%AC",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 58
+          "rank": 65
         },
         {
           "id": 283,
@@ -2318,7 +2494,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9E%A5%EC%9C%A4%EC%A0%95%20%EB%AA%A8%EC%B9%9C%20%EC%82%AC%EA%B8%B0%20%EA%B8%B0%EC%86%8C",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 59
+          "rank": 66
         },
         {
           "id": 284,
@@ -2326,7 +2502,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B5%9C%EC%A0%95%EC%9B%90",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 60
+          "rank": 67
         },
         {
           "id": 285,
@@ -2334,7 +2510,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%AF%BC%EC%84%9D%20%EC%A0%95%EC%B2%AD%EB%9E%98%20%EB%8C%80%EA%B2%B0%20%EA%B5%AC%EB%8F%84",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 61
+          "rank": 68
         },
         {
           "id": 286,
@@ -2342,7 +2518,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9E%84%EA%B8%88",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 62
+          "rank": 69
         },
         {
           "id": 287,
@@ -2350,7 +2526,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%84%A0%EA%B1%B0%EB%B2%95",
           "firstSeenAt": "2026-07-29T15:17:35.103Z",
           "lastSeenAt": "2026-07-29T15:17:35.103Z",
-          "rank": 63
+          "rank": 70
         },
         {
           "id": 263,
@@ -2358,7 +2534,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%EA%B3%BC%20%EC%A0%95%ED%8F%89%20%EA%B2%B0%ED%98%BC",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 64
+          "rank": 71
         },
         {
           "id": 264,
@@ -2366,7 +2542,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%B4%EA%B8%89%20%EC%8B%9C%EC%9E%A5%EC%83%81%ED%99%A9%EC%A0%90%EA%B2%80%ED%9A%8C%EC%9D%98%20%EA%B5%AC%EC%9C%A4%EC%B2%A0",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 65
+          "rank": 72
         },
         {
           "id": 265,
@@ -2374,7 +2550,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%A3%BC%EA%B0%80%20%ED%8F%AD%EB%9D%BD",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 66
+          "rank": 73
         },
         {
           "id": 266,
@@ -2382,7 +2558,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%88%98%EC%9D%98%EC%82%AC",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 67
+          "rank": 74
         },
         {
           "id": 267,
@@ -2390,7 +2566,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%99%84%EC%88%98%EC%82%AC%EA%B6%8C%20%ED%8F%90%EC%A7%80%EC%95%88%20%EB%B2%95%EC%82%AC%EC%9C%84%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 68
+          "rank": 75
         },
         {
           "id": 268,
@@ -2398,7 +2574,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9C%A4%EA%B2%BD%ED%98%B8",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 69
+          "rank": 76
         },
         {
           "id": 269,
@@ -2406,7 +2582,7 @@
           "link": "https://search.naver.com/search.naver?query=LG%20%EC%9B%B0%EC%8A%A4%20%EC%84%A0%EB%B0%9C",
           "firstSeenAt": "2026-07-29T12:14:27.205Z",
           "lastSeenAt": "2026-07-29T12:14:27.205Z",
-          "rank": 70
+          "rank": 77
         },
         {
           "id": 247,
@@ -2414,7 +2590,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%99%84%EC%88%98%EC%82%AC%EA%B6%8C%20%ED%8F%90%EC%A7%80%20%EB%B2%95%EC%82%AC%EC%9C%84%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 71
+          "rank": 78
         },
         {
           "id": 248,
@@ -2422,7 +2598,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EC%A0%95%ED%8F%89%20%EA%B2%B0%ED%98%BC",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 72
+          "rank": 79
         },
         {
           "id": 249,
@@ -2430,7 +2606,7 @@
           "link": "https://search.naver.com/search.naver?query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%A3%BC%EA%B0%80%20%EA%B8%89%EB%9D%BD",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 73
+          "rank": 80
         },
         {
           "id": 250,
@@ -2438,7 +2614,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%82%A5%EB%B3%B4%EB%93%9C",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 74
+          "rank": 81
         },
         {
           "id": 251,
@@ -2446,7 +2622,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%98%B8%ED%94%84%20%EC%B8%A1%2C%20%ED%99%A9%EC%A0%95%EB%AF%BC%20%EC%9D%98%EB%8F%84%EC%A0%81%20%EA%B0%80%ED%95%B4%20%EB%B2%95%EC%A0%81%20%EC%A1%B0%EC%B9%98",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 75
+          "rank": 82
         },
         {
           "id": 252,
@@ -2454,7 +2630,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%82%AC%EA%B2%A9%20%EA%B5%AD%EA%B0%80%EB%8C%80%ED%91%9C%2C%20%EC%8B%A4%ED%83%84%20%EB%B3%B4%EA%B4%80%20%EC%A0%81%EB%B0%9C",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 76
+          "rank": 83
         },
         {
           "id": 253,
@@ -2462,7 +2638,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8F%88%EC%84%A0%ED%83%9C",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 77
+          "rank": 84
         },
         {
           "id": 254,
@@ -2470,7 +2646,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8C%8C%ED%82%A4%EC%8A%A4%ED%83%84",
           "firstSeenAt": "2026-07-29T11:54:42.708Z",
           "lastSeenAt": "2026-07-29T11:54:42.708Z",
-          "rank": 78
+          "rank": 85
         },
         {
           "id": 227,
@@ -2478,7 +2654,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%94%94%20%EC%98%AC%20%EB%89%B4%20%EC%95%84%EB%B0%98%EB%96%BC%20%ED%85%8C%ED%81%AC%20%EB%8D%B0%EC%9D%B4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 79
+          "rank": 86
         },
         {
           "id": 228,
@@ -2486,7 +2662,7 @@
           "link": "https://search.naver.com/search.naver?query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%A3%BC%EA%B0%80%20%ED%95%98%EB%9D%BD",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 80
+          "rank": 87
         },
         {
           "id": 229,
@@ -2494,7 +2670,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 81
+          "rank": 88
         },
         {
           "id": 230,
@@ -2502,7 +2678,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%99%A9%EC%A0%95%EB%AF%BC%20%EC%82%AC%EC%83%9D%ED%99%9C%20%EC%9D%98%ED%98%B9%EC%97%90",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 82
+          "rank": 89
         },
         {
           "id": 231,
@@ -2510,7 +2686,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AD%EB%AF%BC%EC%9D%BC%EB%B3%B4",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 83
+          "rank": 90
         },
         {
           "id": 232,
@@ -2518,7 +2694,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EB%AC%BC%EC%A7%88%20%ED%87%B4%EC%9E%A5%20%EA%B9%80%EA%B8%B0%EC%A4%91",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 84
+          "rank": 91
         },
         {
           "id": 233,
@@ -2526,7 +2702,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A7%95%EC%97%AD%ED%98%95",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 85
+          "rank": 92
         },
         {
           "id": 234,
@@ -2534,7 +2710,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EB%AC%BC%EC%82%B0%202%EB%B6%84%EA%B8%B0%20%EC%98%81%EC%97%85%EC%9D%B5%20%EC%83%81%EC%8A%B9",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 86
+          "rank": 93
         },
         {
           "id": 235,
@@ -2542,7 +2718,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B0%80%EB%8D%95%EB%8F%84%EC%8B%A0%EA%B3%B5%ED%95%AD",
           "firstSeenAt": "2026-07-29T09:46:38.559Z",
           "lastSeenAt": "2026-07-29T09:46:38.559Z",
-          "rank": 87
+          "rank": 94
         },
         {
           "id": 197,
@@ -2550,7 +2726,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%99%A9%EC%A0%95%EB%AF%BC%20%EB%B6%88%EB%A5%9C",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 88
+          "rank": 95
         },
         {
           "id": 198,
@@ -2558,7 +2734,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A7%80%ED%95%98%EC%B2%A0",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 89
+          "rank": 96
         },
         {
           "id": 199,
@@ -2566,7 +2742,7 @@
           "link": "https://search.naver.com/search.naver?query=SK%ED%95%98%EC%9D%B4%EB%8B%89%EC%8A%A4%20%EC%A3%BC%EA%B0%80%20%EA%B8%89%EB%9D%BD%20%EC%9D%B4%EC%9C%A0%EB%8A%94%3F",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 90
+          "rank": 97
         },
         {
           "id": 200,
@@ -2574,7 +2750,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%95%A0%ED%94%8C",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 91
+          "rank": 98
         },
         {
           "id": 201,
@@ -2582,7 +2758,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%86%A1%EA%B2%BD%ED%9D%AC%20%EC%9C%84%EC%9B%90%EC%9E%A5%20%EC%A0%84%EC%B2%B4%ED%9A%8C%EC%9D%98",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 92
+          "rank": 99
         },
         {
           "id": 202,
@@ -2590,7 +2766,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%96%91%EC%A0%95%EC%9B%90",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 93
+          "rank": 100
         },
         {
           "id": 203,
@@ -2598,7 +2774,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%8B%9C%EC%9D%80%20%EC%97%B4%EC%95%A0%20%EB%B0%9C%ED%91%9C",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 94
+          "rank": 101
         },
         {
           "id": 204,
@@ -2606,7 +2782,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A5%B4%EB%85%B8%20%EC%BD%9C%EB%A0%88%EC%98%A4%EC%8A%A4",
           "firstSeenAt": "2026-07-29T06:42:02.417Z",
           "lastSeenAt": "2026-07-29T06:42:02.417Z",
-          "rank": 95
+          "rank": 102
         },
         {
           "id": 168,
@@ -2614,7 +2790,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A0%95%ED%8F%89%20%EC%88%98%EB%8A%A5%20%EC%84%A4%EB%AA%85%ED%9A%8C%20%EA%B0%9C%EC%B5%9C",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 96
+          "rank": 103
         },
         {
           "id": 169,
@@ -2622,7 +2798,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%EA%B7%BC%EC%98%81%20%EB%82%A8%ED%8E%B8%20%EB%88%84%EA%B5%AC%3F",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 97
+          "rank": 104
         },
         {
           "id": 170,
@@ -2630,7 +2806,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%BD%94%EC%8A%A4%ED%94%BC%20%EB%A7%A4%EB%8F%84%20%EC%82%AC%EC%9D%B4%EB%93%9C%EC%B9%B4%20%EB%B0%9C%EB%8F%99",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 98
+          "rank": 105
         },
         {
           "id": 171,
@@ -2638,7 +2814,7 @@
           "link": "https://search.naver.com/search.naver?query=mc%EB%AA%BD",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 99
+          "rank": 106
         },
         {
           "id": 172,
@@ -2646,7 +2822,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B3%A0%EC%A7%80%EC%9A%A9%2C%2010%EB%85%84%20%EC%A0%84%20%ED%95%A9%EB%A5%98%20%EA%B1%B0%EC%A0%88%20%ED%9B%84%20%EB%B3%B5%EA%B7%80%20%EC%A4%80%EB%B9%84",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 100
+          "rank": 107
         },
         {
           "id": 173,
@@ -2654,7 +2830,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B5%9C%EC%A4%80%EC%9A%A9",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 101
+          "rank": 108
         },
         {
           "id": 174,
@@ -2662,7 +2838,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%B0%EB%85%90%EB%A9%94%EB%8B%AC%20%EB%93%A0%20%EC%95%88%EC%84%B8%EC%98%81",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 102
+          "rank": 109
         },
         {
           "id": 175,
@@ -2670,7 +2846,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EC%9E%90%ED%98%84",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 103
+          "rank": 110
         },
         {
           "id": 177,
@@ -2678,7 +2854,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EB%B2%84%EC%8A%A4",
           "firstSeenAt": "2026-07-29T03:32:11.355Z",
           "lastSeenAt": "2026-07-29T03:32:11.355Z",
-          "rank": 104
+          "rank": 111
         },
         {
           "id": 145,
@@ -2686,7 +2862,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%2C%20%EC%83%81%ED%8C%8C%EC%9A%B8%EB%A3%A8%20%EB%B0%A9%EB%AC%B8",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 105
+          "rank": 112
         },
         {
           "id": 146,
@@ -2694,7 +2870,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%98%9C%EA%B2%BD%C2%B7%EB%8B%A4%EC%8B%9C%EC%9A%B0%EB%B0%94%20%EC%97%AC%EC%82%AC",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 106
+          "rank": 113
         },
         {
           "id": 147,
@@ -2702,7 +2878,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%83%9C%ED%92%8D%20%EB%8F%8C%ED%95%80%20%EC%9D%BC%EB%B3%B8%20%EA%B0%84%EB%8B%A4",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 107
+          "rank": 114
         },
         {
           "id": 148,
@@ -2710,7 +2886,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%2030%EC%A3%BC%EB%85%84%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 108
+          "rank": 115
         },
         {
           "id": 149,
@@ -2718,7 +2894,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%9A%B0%20%EC%A1%B4%EC%8A%A4%20%EC%82%B0%EC%97%85%ED%8F%89%EA%B7%A0%EC%A7%80%EC%88%98",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 109
+          "rank": 116
         },
         {
           "id": 150,
@@ -2726,7 +2902,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A7%8C%EC%B9%98%EB%8B%88%20%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84%20%EB%B3%B5%EA%B7%80",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 110
+          "rank": 117
         },
         {
           "id": 151,
@@ -2734,7 +2910,7 @@
           "link": "https://search.naver.com/search.naver?query=24%EA%B8%B0%20%EC%98%A5%EC%88%9C",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 111
+          "rank": 118
         },
         {
           "id": 152,
@@ -2742,7 +2918,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%ED%8F%AD%EB%B0%9C%20%EC%82%AC%EA%B1%B4",
           "firstSeenAt": "2026-07-28T23:13:17.842Z",
           "lastSeenAt": "2026-07-28T23:13:17.842Z",
-          "rank": 112
+          "rank": 119
         },
         {
           "id": 129,
@@ -2750,7 +2926,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EB%B8%8C%EB%9D%BC%EC%A7%88%20%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 113
+          "rank": 120
         },
         {
           "id": 130,
@@ -2758,7 +2934,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%A4%80%EC%88%9C%20%EC%97%AD%EC%A0%84%20%EC%86%94%EB%A1%9C%ED%8F%AC",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 114
+          "rank": 121
         },
         {
           "id": 131,
@@ -2766,7 +2942,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%99%8D%EB%AA%85%EB%B3%B4",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 115
+          "rank": 122
         },
         {
           "id": 132,
@@ -2774,7 +2950,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8%20%EB%AA%A9%ED%91%9C%2019KG%20%EA%B0%90%EB%9F%89",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 116
+          "rank": 123
         },
         {
           "id": 134,
@@ -2782,7 +2958,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B0%ED%95%A9%EB%89%B4%EC%8A%A4%EC%99%80%20%EC%9D%B8%ED%84%B0%EB%B7%B0%ED%95%98%EB%8A%94%20%EC%8B%A0%EC%A7%84%EC%84%9C",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 117
+          "rank": 124
         },
         {
           "id": 135,
@@ -2790,7 +2966,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 118
+          "rank": 125
         },
         {
           "id": 136,
@@ -2798,7 +2974,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%86%B5%EB%A0%B9",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 119
+          "rank": 126
         },
         {
           "id": 137,
@@ -2806,7 +2982,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EA%B0%95%EC%A7%84%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4%20%EC%86%8C%EC%8B%9D",
           "firstSeenAt": "2026-07-28T21:18:30.876Z",
           "lastSeenAt": "2026-07-28T21:18:30.876Z",
-          "rank": 120
+          "rank": 127
         },
         {
           "id": 119,
@@ -2814,7 +2990,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AC%EB%A7%88%EB%AA%A8%ED%86%A0%20%EC%87%BC%ED%95%91%EB%AA%B0%20%EB%B6%95%EA%B4%B4%2010%EB%AA%85%20%EC%97%B0%EB%9D%BD%EB%91%90%EC%A0%88",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 121
+          "rank": 128
         },
         {
           "id": 120,
@@ -2822,7 +2998,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%ED%95%98%EC%84%B1",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 122
+          "rank": 129
         },
         {
           "id": 121,
@@ -2830,7 +3006,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%AC%B8%ED%9D%AC%EC%A4%80%20%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8%2019KG%20%EB%8F%84%EC%A0%84",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 123
+          "rank": 130
         },
         {
           "id": 122,
@@ -2838,7 +3014,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B3%B4%EC%99%84%EC%88%98%EC%82%AC%EA%B6%8C%20%ED%8F%90%EC%A7%80%20%EA%B0%9C%EC%A0%95%EC%95%88%20%ED%86%B5%EA%B3%BC",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 124
+          "rank": 131
         },
         {
           "id": 123,
@@ -2846,7 +3022,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%97%B4%EB%8C%80%EC%95%BC",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 125
+          "rank": 132
         },
         {
           "id": 125,
@@ -2854,7 +3030,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A1%A4%EB%A0%89%EC%8A%A4",
           "firstSeenAt": "2026-07-28T19:48:25.222Z",
           "lastSeenAt": "2026-07-28T19:48:25.222Z",
-          "rank": 126
+          "rank": 133
         },
         {
           "id": 110,
@@ -2862,7 +3038,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EC%9E%AC%EB%AA%85%20%EC%83%81%ED%8C%8C%EC%9A%B8%EB%A3%A8%20%EB%8F%99%ED%8F%AC%EA%B0%84%EB%8B%B4%ED%9A%8C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 127
+          "rank": 134
         },
         {
           "id": 111,
@@ -2870,7 +3046,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B0%9C%EC%83%9D",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 128
+          "rank": 135
         },
         {
           "id": 113,
@@ -2878,7 +3054,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%8B%B8%EC%9D%B4",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 129
+          "rank": 136
         },
         {
           "id": 114,
@@ -2886,7 +3062,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B8%B0%EC%95%84%20%EC%85%80%ED%86%A0%EC%8A%A4",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 130
+          "rank": 137
         },
         {
           "id": 115,
@@ -2894,7 +3070,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%20%EC%97%84%EB%A7%88%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EB%93%9C%EB%A6%BC",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 131
+          "rank": 138
         },
         {
           "id": 116,
@@ -2902,7 +3078,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EA%B7%B8%EC%98%A4%EB%B8%8C%EB%A0%88%EC%A0%84%EB%93%9C",
           "firstSeenAt": "2026-07-28T17:43:40.630Z",
           "lastSeenAt": "2026-07-28T17:43:40.630Z",
-          "rank": 132
+          "rank": 139
         },
         {
           "id": 93,
@@ -2910,7 +3086,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%82%B4%EB%85%84%20%EC%A4%91%EC%9C%84%EC%86%8C%EB%93%9D%206.7%25%20%EC%9D%B8%EC%83%81",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 133
+          "rank": 140
         },
         {
           "id": 94,
@@ -2918,7 +3094,7 @@
           "link": "https://search.naver.com/search.naver?query=%E6%97%A5%20%EA%B7%9C%EC%8A%88%20%EA%B0%95%EC%A7%84%20%EC%8B%A0%EA%B3%A0%20%ED%8F%AD%EC%A3%BC",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 134
+          "rank": 141
         },
         {
           "id": 95,
@@ -2926,7 +3102,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%96%B4%EB%8F%84%EC%96%B4",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 135
+          "rank": 142
         },
         {
           "id": 96,
@@ -2934,7 +3110,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%B0%AC%ED%98%81%20%EB%8F%99%EC%A0%90%20%ED%88%AC%EB%9F%B0%ED%8F%AC",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 136
+          "rank": 143
         },
         {
           "id": 97,
@@ -2942,7 +3118,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%B2%AD%EB%B6%80%ED%84%B0%20%ED%88%AC%ED%91%9C%20%EC%8B%9C%EC%9E%91",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 137
+          "rank": 144
         },
         {
           "id": 98,
@@ -2950,7 +3126,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EC%A3%BC%EC%95%A0",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 138
+          "rank": 145
         },
         {
           "id": 99,
@@ -2958,7 +3134,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9E%84%EC%98%81%EC%9B%85%2C%20%EC%B0%A8%EC%8A%B9%EC%9B%90%EC%97%90%20SOS",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 139
+          "rank": 146
         },
         {
           "id": 100,
@@ -2966,7 +3142,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B9%80%EB%8F%84%ED%9B%88",
           "firstSeenAt": "2026-07-28T15:29:37.958Z",
           "lastSeenAt": "2026-07-28T15:29:37.958Z",
-          "rank": 140
+          "rank": 147
         },
         {
           "id": 63,
@@ -2974,7 +3150,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B9%84%EC%83%81%EB%8C%80%EC%9D%91%ED%8C%80%20%ED%88%AC%EC%9E%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 141
+          "rank": 148
         },
         {
           "id": 64,
@@ -2982,7 +3158,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%BC%EB%B3%B8%20%EC%A7%80%EC%A7%84%EC%9C%BC%EB%A1%9C%20%EB%B6%80%EC%82%B0%20%EC%8B%A0%EA%B3%A0%20%ED%8F%AD%EC%A3%BC",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 142
+          "rank": 149
         },
         {
           "id": 65,
@@ -2990,7 +3166,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%82%A5%ED%94%8C%EB%A6%BD%20%EB%8F%99%ED%99%94%20LG%20%EC%9D%91%EC%9B%90!",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 143
+          "rank": 150
         },
         {
           "id": 66,
@@ -2998,7 +3174,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%B0%95%EC%84%B8%EC%9B%85",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 144
+          "rank": 151
         },
         {
           "id": 67,
@@ -3006,7 +3182,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%EC%9D%B4%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EC%A3%BC%EA%B3%A0%20%EC%8B%B6%EC%96%B4",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 145
+          "rank": 152
         },
         {
           "id": 68,
@@ -3014,7 +3190,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%95%A8%EC%96%91%EC%9A%B8%EC%82%B0%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 146
+          "rank": 153
         },
         {
           "id": 69,
@@ -3022,7 +3198,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%86%94%EB%A1%9C%ED%8F%AC%20%EB%82%A0%EB%A6%B0%20%EB%AC%B8%EC%A0%95%EB%B9%88",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 147
+          "rank": 154
         },
         {
           "id": 71,
@@ -3030,7 +3206,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%A0%84%EC%A4%80%ED%91%9C",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 148
+          "rank": 155
         },
         {
           "id": 72,
@@ -3038,7 +3214,7 @@
           "link": "https://search.naver.com/search.naver?query=%EA%B5%AD%EB%AF%BC%20%EC%84%A0%ED%83%9D%20%EC%97%B0%EC%9E%84%20%EB%85%BC%EB%9E%80",
           "firstSeenAt": "2026-07-28T12:08:10.975Z",
           "lastSeenAt": "2026-07-28T12:08:10.975Z",
-          "rank": 149
+          "rank": 156
         },
         {
           "id": 36,
@@ -3046,7 +3222,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%8F%89%ED%83%9D%20%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80%20%EB%B0%B1%EB%A6%B0%20%EB%88%84%EC%B6%9C%20%EB%B3%B4%EB%8F%84",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 150
+          "rank": 157
         },
         {
           "id": 37,
@@ -3054,7 +3230,7 @@
           "link": "https://search.naver.com/search.naver?query=%ED%82%A5%ED%94%8C%EB%A6%BD%20%EB%8F%99%ED%99%94%20LG%20%ED%8C%8C%EC%9D%B4%ED%8C%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 151
+          "rank": 158
         },
         {
           "id": 38,
@@ -3062,7 +3238,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%A6%AC%EC%84%BC%EB%8A%90%20%EC%9B%90%EC%9D%B4%20%EC%97%84%EB%A7%88%20%EC%86%8C%EA%B3%A0%EA%B8%B0%20%EC%82%AC%EC%A3%BC%EA%B3%A0%20%EC%8B%B6%EC%96%B4",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 152
+          "rank": 159
         },
         {
           "id": 39,
@@ -3070,7 +3246,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B4%EB%8F%99%EC%84%9D",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 153
+          "rank": 160
         },
         {
           "id": 40,
@@ -3078,7 +3254,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B0%A8%EA%B0%80%EC%9B%90%20%EA%B5%AC%EC%86%8D%EC%98%81%EC%9E%A5%20%EC%B2%AD%EA%B5%AC",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 154
+          "rank": 161
         },
         {
           "id": 41,
@@ -3086,7 +3262,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%84%B1%EA%B7%B8%EB%A3%B9",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 155
+          "rank": 162
         },
         {
           "id": 43,
@@ -3094,7 +3270,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%B6%A9%EC%A3%BC%EC%8B%9C%EC%9E%A5",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 156
+          "rank": 163
         },
         {
           "id": 44,
@@ -3102,7 +3278,7 @@
           "link": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%97%B0%EC%9E%84%20%EA%B5%AD%EB%AF%BC%20%EC%84%A0%ED%83%9D",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 157
+          "rank": 164
         },
         {
           "id": 45,
@@ -3110,7 +3286,7 @@
           "link": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%82%AC%ED%95%98%EB%8A%94%20%EC%84%A4%EC%A2%85%EC%A7%84%20%EA%B0%90%EB%8F%85",
           "firstSeenAt": "2026-07-28T11:45:14.999Z",
           "lastSeenAt": "2026-07-28T11:45:14.999Z",
-          "rank": 158
+          "rank": 165
         }
       ]
     }
@@ -65037,6 +65213,3405 @@
         },
         {
           "keyword": "이별하는 방법을 몰라서",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "407": {
+      "seed": "최태원 장내매수",
+      "prefix": "최태원",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "최태원 노소영",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 김희영 자녀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 동거인",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 자녀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 와이프",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 위자료",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 회장",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 재산",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 김희영",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 나이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 가족관계",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 자녀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 아들",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 대법원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 회장 나이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 재산분할",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 동거인 김희영 나이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 부인",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 혼외자",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 학력",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "408": {
+      "seed": "칠레 지도",
+      "prefix": "칠레",
+      "fullItems": [
+        {
+          "keyword": "칠레 지도 위치",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 지도 모양",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "칠레 지도 보기",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "아르헨티나 칠레 지도",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 지도자",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 산티아고 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 기후 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 와인 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 아타카마 사막 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "페루 칠레 지도",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "세계 지도 칠레",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "칠레수도",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 시간",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "칠레 bts",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 여행",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠렉스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "칠레 산티아고",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠렌탈",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "모칠레로",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "칠레 라마",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레라마 영화",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 bts공연",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 대통령",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레산 체리 묘목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 피파랭킹",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 잠수함",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 날씨",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 체리 묘목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레산 냉동 블루베리",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "칠레 국기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 언어",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 영어로",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 산티아고 여행",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "칠레 인구",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "409": {
+      "seed": "김지민 김준호",
+      "prefix": "김지민",
+      "fullItems": [
+        {
+          "keyword": "김지민 김준호 집",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호신혼집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 신혼여행",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 각방",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 결혼",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 한의원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 2세",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민유튜브",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 파혼",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 결혼식",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 침대",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 경주",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조선의 사랑꾼 김준호 김지민",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민 미우새",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 임신",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 나이 차이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 시험관",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 더쿠",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 김준호 사주",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "김지민 시험관",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "하트시그널 김지민",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "김지민 착상",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "김지민 하트시그널",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 인스타",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "김준호 김지민",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "김지미 낙서",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "김지민 나이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 재생크림",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지미 나훈아",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 개그우먼",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민사고",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 엄마",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 박나래",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 전 남자친구",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 변호사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "김지민 박희선",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 남자친구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지미나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "김지민 결혼",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "410": {
+      "seed": "유로존 경제 성장",
+      "prefix": "유로존",
+      "fullItems": [
+        {
+          "keyword": "유로존 경제 성장률",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 경제 성장률 전망",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "유로존 국가",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 뜻",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 금리",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 회원국",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "유로존 가입",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "유로존 위기",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 cpi",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 gdp",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 pmi",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 기준금리",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "유로존 제조업 pmi",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "411": {
+      "seed": "편스토랑",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "신상출시 편스토랑",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 출연진",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "편스토랑 야노시호",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "편스토랑 재방송",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "편스토랑 김용빈",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 레시피",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 이정현",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 ott",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "편스토랑 김강우",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 문정희",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 문정희 쾌변주스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 김재중",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 쑥두유",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 손태진",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 김강우 떡볶이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 무우조림",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 이정현 보리된장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 이정현 전복곰탕",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "편스토랑 출연자",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 다시보기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "편스토랑 시청률",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "412": {
+      "seed": "언니네 산지직송 3",
+      "prefix": "언니네",
+      "fullItems": [
+        {
+          "keyword": "언니네산지직송3 박준면",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송3 촬영지",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네산지직송3 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송3 후속",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네산지직송3 1회",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네산지직송3 레시피",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3 출연진",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3시청률",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3편성표",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3재방송",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3 강유석",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 시즌3",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 3 다시 보기",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "언니네산지직송",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네산지직송2",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 필라테스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네텃밭",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네살롱",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네닭",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "미자언니네",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네김밥",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 in 칼라페",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 1",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 김혜윤 모자",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 in 칼라페 김혜윤 모자",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 스핀오프",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 옷가게",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 이발관",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 해물손칼국수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 1 출연진",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송 다시보기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "언니네 산지직송2 출연진",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "413": {
+      "seed": "레버리지",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "레버리지 뜻",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 규제",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "주식 레버리지 뜻",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 교육",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 상폐",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 예탁금",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "하이닉스 레버리지",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "삼성전자 레버리지 etf",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf뜻",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 기본예탁금",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 교육 이수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 투자란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 인버스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 대책",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "단일종목 레버리지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "코덱스 레버리지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 교육",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 란",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "레버리지 투자 뜻",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 책",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 etf 위험성",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "레버리지 주식 뜻",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "414": {
+      "seed": "뉴스",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "네이버뉴스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "뉴스속보",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스케일파워",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연합뉴스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "뉴스 네이버",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "경제뉴스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "굿뉴스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "뉴스1",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스앤조이",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스타파",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스데스크",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스 헌터스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스 하이킥",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스프링빌 2 컨트리 클럽",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스프링빌 cc",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스케일파워 주가",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "ytn 실시간 뉴스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스사천",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스핌",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "뉴스공장",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스킨",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "뉴스킨 갈바닉",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "415": {
+      "seed": "감자",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "감자 삶는법",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자 요리",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자 보관방법",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자조림",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자볶음",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자 찌는법",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자 효능",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자 칼로리",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자전",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "감자조림 맛있게 만드는법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자 삶는 방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자전 만드는방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자 심는 시기",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자탕",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자볶음 맛있게 만드는법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자탕 황금레시피",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자샐러드 만들기",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자 보관법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자 보관하는 방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자 수확시기",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자국 끓이는법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자채전",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "감자탕 레시피",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자튀김",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자탕 양념",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자전 레시피",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자티비",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자채볶음",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "감자샐러드",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "416": {
+      "seed": "중앙일보",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "중앙일보 부도",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 매각",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 구독",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "중앙일보 jtbc",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "미주중앙일보",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "중앙일보 워크아웃",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 인수",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "중앙일보 오늘의 운세",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 채권",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 회장",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 대학평가 2025",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 주가",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 홍정도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 홍석현",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 신문",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 계열사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 사장",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 삼성",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "중앙일보 핫딜",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 미주",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 미주판",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 지면보기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 삼성 관계",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "중앙일보 업소록",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "417": {
+      "seed": "연기금",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "연기금 주식",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 매수종목",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 매수",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "일본 연기금",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "주식 연기금",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "코스피 연기금",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "연기금 매도",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 비중",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "연기금 수익률",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "연기금 이란?",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 순매수 상위종목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 리밸런싱",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 국내주식 비중",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 주식 매도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금코스닥 투자",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 코스닥",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 의결권 민간양도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 투자종목",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 뜻",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 발표",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 의결권 민간기업양도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "연기금 포트폴리오",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 순매수",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 매수 종목 확인 방법",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "연기금 매수 실시간",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "418": {
+      "seed": "도쿄 바나나",
+      "prefix": "도쿄",
+      "fullItems": [
+        {
+          "keyword": "도쿄 바나나빵",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 브륄레",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나빵 보관",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나빵 유통기한",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나빵 파는 곳",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 몬치치 정품",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나빵 가격",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 브륄레 가격",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 킷캣 가격",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 나리타 공항",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 파이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 몬치치",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 유통기한",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 보관",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 가격",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 커스터드 크림",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "프라하의 도쿄바나나",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 파는 곳",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 바나나 크림 브륄 레",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "도쿄 날씨",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 항공권",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 가볼만한곳",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 여행",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 디즈니랜드",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 쇼핑",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄 맛집",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 리벤저스",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "도쿄베리",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 여행 3박4일 코스",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 지하철 노선도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 날씨예보",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 타워",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 지도",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 지진",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄돔",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 스카이트리",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄일렉트론 코리아",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄 디즈니씨",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "도쿄구울",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "도쿄 여행 필수 코스",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "419": {
+      "seed": "농지",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "농지은행",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지 전수조사",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지연금",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지법",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지 매매",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "농지 양도소득세",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "농지연금 조건",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "농진청",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "농지대장",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지법 개정 내용",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지은행 홈페이지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지연금 가입조건",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지취득자격증명 요건",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지 전수조사 대상",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지 임대차계약서",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지대장 신청방법",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지대장 인터넷발급",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지원부 자격조건",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "농지법 개정",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지연금이란",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지은행 임대",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지은행 매매",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "농지개혁법",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "420": {
+      "seed": "문화일보",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "문화일보 성향",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 채용",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 연봉",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문화일보 구독",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문화일보서유기",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 신춘문예",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 사주",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 석간",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문화일보 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "문화일보 여론조사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 안진용",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 이현종",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 사장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 신춘문예 공모",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 장석범",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 신문",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보홀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 정치성향",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 신춘문예 당선작",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "문화일보 사설",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 통일교",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 허민",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "문화일보 종교",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "421": {
+      "seed": "신현준",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "신현준 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "신현준 교수",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 와이프",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "신현준 영화",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 짤",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "신현준 자녀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 집안",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "즐라탄 신현준",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "신현준프로필",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 아내",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 아버지",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 대학교수",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 은행나무 침대",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 대학",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 집",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 영양제",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 현상수배",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 학력",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 정준호",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신현준 부인",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 재산",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 즐라탄",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 부인 나이",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "신현준 아버지 직업",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "422": {
+      "seed": "최태원 SK하이닉스 48억 매수",
+      "prefix": "최태원",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "최태원 노소영",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 김희영 자녀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 동거인",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 자녀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 와이프",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 나무위키",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 위자료",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "최태원 회장",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 재산",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 김희영",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 나이",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 가족관계",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 자녀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 아들",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 대법원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 회장 나이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 노소영 재산분할",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 동거인 김희영 나이",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "최태원 부인",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 혼외자",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "최태원 학력",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "423": {
+      "seed": "성매매 최영중 구속",
+      "prefix": "성매매",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "성매매 피해 지원금",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 피해자",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "성매매자 처벌",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 합법화",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "울산 성매매피해상담소",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 예방교육",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 뿌리 뽑기",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매근절을위한 한소리회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 상식의 블랙홀",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 경험 당사자 무한발설",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성매매 안 하는 남자들 1",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성범죄 성매매 성희롱",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "달수, 성매매특별법에 걸리다",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "성노동 성매매가 아니라 성착취",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "페이드 포: 성매매를 지나온 나의 여정",
+          "sources": [
+            "daum"
+          ]
+        }
+      ]
+    },
+    "424": {
+      "seed": "진태현, 박시은과 동반 MC",
+      "prefix": "진태현,",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "진태현 박시은 아기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 아기",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 하차",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 하차 이유",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 논란",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 박시은",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 부인",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "진태현 박시은 입양",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "425": {
+      "seed": "미셸 스틸",
+      "prefix": "미셸",
+      "fullItems": [
+        {
+          "keyword": "미셸 스틸 입국",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 박",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 주한 미국대사",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸부모",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 남편",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 부정선거",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 대사",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 박 스틸 나무위키",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 이재명",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 주한미대사",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 성향",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 주한대사",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 박 남편",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 스틸 주한 미대사 남편",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": [
+        {
+          "keyword": "미셸앙리",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 강",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "몽생미셸",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "르몽생미셸",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "그로미셸 바나나",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "미셰린",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "미셸위",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 푸코",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 박 스틸",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 앙리 전시회",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 강 코그노상트 회장",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 파이퍼",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 윌리엄스",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 박",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 모나한",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 리",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 강 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "미셸 오바마",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "미셸 박 스틸 남편",
+          "sources": [
+            "google"
+          ]
+        }
+      ]
+    },
+    "426": {
+      "seed": "정몽규-윤용근 문자 연락",
+      "prefix": "정몽규-윤용근",
+      "fullItems": [],
+      "prefixItems": []
+    },
+    "427": {
+      "seed": "조계원",
+      "prefix": "",
+      "fullItems": [
+        {
+          "keyword": "조계원 국회의원",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 프로필",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조계원 국회의원 사무실",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "여수 조계원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조계원 의원",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원의 여수 생각",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "마사 누스바움 마사 너스바움 조계원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "신상범 조계원",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "조계원 교수",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 의원실",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 이재명",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 친명",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 페이스북",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 지역구",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "조계원 아청법",
+          "sources": [
+            "google"
+          ]
+        }
+      ],
+      "prefixItems": []
+    },
+    "428": {
+      "seed": "태풍 돌핀 북상 중폭염 주의",
+      "prefix": "태풍",
+      "fullItems": [],
+      "prefixItems": [
+        {
+          "keyword": "태풍경로",
+          "sources": [
+            "naver",
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍 바비",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍 돌핀",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 11호",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "태풍 바비 경로",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 9호",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "태풍 노을",
+          "sources": [
+            "naver",
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 매미",
+          "sources": [
+            "naver",
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍 8호",
+          "sources": [
+            "naver"
+          ]
+        },
+        {
+          "keyword": "태풍경로 현재위치",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 바비예상경로",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 장미",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍상사",
+          "sources": [
+            "daum",
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍정보",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 장미 경로",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍경로 예상경로",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 돌핀 경로",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 바비 경로 현재 위치",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍 진로",
+          "sources": [
+            "daum"
+          ]
+        },
+        {
+          "keyword": "태풍상사 출연진",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍 영어로",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍 실시간",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍상사 시청률",
+          "sources": [
+            "google"
+          ]
+        },
+        {
+          "keyword": "태풍상사 줄거리",
           "sources": [
             "google"
           ]
