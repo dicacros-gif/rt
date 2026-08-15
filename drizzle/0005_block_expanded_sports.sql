@@ -41,8 +41,12 @@ WHERE LOWER(`keyword`) LIKE 'nc %'
    OR `keyword` LIKE '%득점%'
    OR `keyword` LIKE '%실점%'
    OR `keyword` LIKE '%완투%'
-   OR `keyword` LIKE '%승부차기%'
-   OR `keyword` LIKE '%리그스컵%'
+   OR `keyword` LIKE '%승부차기%';--> statement-breakpoint
+
+INSERT OR IGNORE INTO `dismissed_keywords` (`portal`, `normalized_keyword`)
+SELECT 'all', `normalized_keyword`
+FROM `keywords`
+WHERE `keyword` LIKE '%리그스컵%'
    OR `keyword` LIKE '%메이저리그%'
    OR `keyword` LIKE '%메이저 리그%'
    OR `keyword` LIKE '%K리그%'
@@ -85,8 +89,12 @@ WHERE LOWER(`keyword`) LIKE 'nc %'
    OR `keyword` LIKE '%SSG전%'
    OR `keyword` GLOB '*[0-9]승*'
    OR `keyword` GLOB '*[0-9]패*'
-   OR `keyword` GLOB '*[0-9]경기*'
-   OR `keyword` LIKE '%임지민%'
+   OR `keyword` GLOB '*[0-9]경기*';--> statement-breakpoint
+
+INSERT OR IGNORE INTO `dismissed_keywords` (`portal`, `normalized_keyword`)
+SELECT 'all', `normalized_keyword`
+FROM `keywords`
+WHERE `keyword` LIKE '%임지민%'
    OR `keyword` LIKE '%이정후%'
    OR `keyword` LIKE '%최혜진%'
    OR `keyword` LIKE '%고영표%'
