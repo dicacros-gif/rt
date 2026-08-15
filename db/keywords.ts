@@ -12,7 +12,7 @@ type KeywordRow = {
 };
 
 const keywordSourceVersion = "realtime-rank-only-v4";
-const keywordFilterVersion = "exclude-sensitive-sports-quiz-v2";
+const keywordFilterVersion = "exclude-sensitive-sports-quiz-v3";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (

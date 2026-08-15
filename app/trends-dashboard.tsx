@@ -13,6 +13,7 @@ type TrendItem = {
   firstSeenAt: string;
   lastSeenAt: string;
 };
+type DeleteTarget = { portalId: Portal; item: TrendItem };
 type RelatedItem = { keyword: string; sources: RelatedSource[] };
 type RelatedState = {
   loading: boolean;
@@ -95,7 +96,7 @@ export default function TrendsDashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [deleting, setDeleting] = useState<number | null>(null);
-  const [deleteTarget, setDeleteTarget] = useState<{ portalId: Portal; item: TrendItem } | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<DeleteTarget | null>(null);
   const [deletePassword, setDeletePassword] = useState("");
   const [deleteError, setDeleteError] = useState("");
   const [related, setRelated] = useState<Record<string, RelatedState>>({});
@@ -143,19 +144,31 @@ export default function TrendsDashboard() {
     });
   }, [portals]);
 
-  const removeKeyword = async () => {
-    if (!deleteTarget) return;
-    const { portalId, item } = deleteTarget;
+  const removeKeyword = async (
+    target: DeleteTarget | null = deleteTarget,
+    password = deletePassword,
+  ) => {
+    if (!target) return;
+    const { portalId, item } = target;
     setDeleting(item.id);
     setDeleteError("");
     try {
       const response = await fetch("/api/trends", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ id: item.id, password: deletePassword }),
+        body: JSON.stringify(password ? { id: item.id, password } : { id: item.id }),
       });
+      const result = await response.json().catch(() => null) as {
+        error?: string;
+        requiresPassword?: boolean;
+      } | null;
       if (!response.ok) {
-        const result = await response.json().catch(() => null) as { error?: string } | null;
+        if (response.status === 401 && !password && result?.requiresPassword) {
+          setDeleteTarget(target);
+          setDeletePassword("");
+          setDeleteError("");
+          return;
+        }
         throw new Error(result?.error ?? "삭제하지 못했습니다.");
       }
       setData((current) => current ? {
@@ -178,6 +191,7 @@ export default function TrendsDashboard() {
       setDeleteTarget(null);
       setDeletePassword("");
     } catch (reason) {
+      setDeleteTarget(target);
       setDeleteError(reason instanceof Error ? reason.message : "삭제하지 못했습니다.");
     } finally {
       setDeleting(null);
@@ -369,11 +383,7 @@ export default function TrendsDashboard() {
                             aria-label={`${item.keyword} 삭제`}
                             title="이 키워드를 삭제하고 다시 수집하지 않기"
                             disabled={deleting === item.id}
-                            onClick={() => {
-                              setDeleteTarget({ portalId: view.portalId, item });
-                              setDeletePassword("");
-                              setDeleteError("");
-                            }}
+                            onClick={() => void removeKeyword({ portalId: view.portalId, item }, "")}
                           >
                             ×
                           </button>

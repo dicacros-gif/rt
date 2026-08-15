@@ -28,6 +28,29 @@ test("blocks sports keywords", () => {
   assert.equal(isBlockedKeyword("KIA 하주석 첫 대구 원정"), true);
   assert.equal(isBlockedKeyword("첼시 감독"), true);
   assert.equal(isBlockedKeyword("프로야구 개막"), true);
+  assert.equal(isBlockedKeyword("NC 임지민 수술 예정"), true);
+  assert.equal(isBlockedKeyword("NC 임지민 턱뼈 분쇄골절"), true);
+  assert.equal(isBlockedKeyword("임지민 타구 맞아 수술 예정"), true);
+  assert.equal(isBlockedKeyword("이정후 3경기 무안타"), true);
+  assert.equal(isBlockedKeyword("최혜진 포틀랜드 2위 유지"), true);
+  assert.equal(isBlockedKeyword("KT 고영표 승리!"), true);
+  assert.equal(isBlockedKeyword("이숭용 감독, 승리의 주역"), true);
+  assert.equal(isBlockedKeyword("하영민 KT전 복귀 예정"), true);
+  assert.equal(isBlockedKeyword("류중일"), true);
+  assert.equal(isBlockedKeyword("김민솔 KLPGA 2R 단독 선두"), true);
+  assert.equal(isBlockedKeyword("최민석 10승 달성!"), true);
+  assert.equal(isBlockedKeyword("손흥민 LAFC 리그스컵"), true);
+  assert.equal(isBlockedKeyword("백인천 감독"), true);
+  assert.equal(isBlockedKeyword("유연정 시구"), true);
+  assert.equal(isBlockedKeyword("추신수 메이저리그 연금"), true);
+  assert.equal(isBlockedKeyword("KT 힐리어드 MVP"), true);
+  assert.equal(isBlockedKeyword("팀 K리그 패배"), true);
+  assert.equal(isBlockedKeyword("두산 LG 승리"), true);
+  assert.equal(isBlockedKeyword("사격 국가대표 실탄 보관 적발"), true);
+  assert.equal(isBlockedKeyword("한국여자바둑리그"), true);
+  assert.equal(isBlockedKeyword("리그오브레전드"), true);
+  assert.equal(isBlockedKeyword("지단 프랑스 감독"), true);
+  assert.equal(isBlockedKeyword("김수지 오로라월드 선두"), true);
 });
 
 test("blocks lottery and quiz keywords", () => {
@@ -43,4 +66,13 @@ test("keeps unrelated ordinary keywords", () => {
   assert.equal(isBlockedKeyword("스모킹 비하인드"), false);
   assert.equal(isBlockedKeyword("성인병 예방 방법"), false);
   assert.equal(isBlockedKeyword("기후동행카드 신청"), false);
+  assert.equal(isBlockedKeyword("경기 침체 우려"), false);
+  assert.equal(isBlockedKeyword("NC소프트 신작 발표"), false);
+  assert.equal(isBlockedKeyword("KT 실적 발표"), false);
+  assert.equal(isBlockedKeyword("영화감독 신작 공개"), false);
+  assert.equal(isBlockedKeyword("김민석 경선 승리"), false);
+  assert.equal(isBlockedKeyword("경기도교육청 교권보호"), false);
+  assert.equal(isBlockedKeyword("양평 식당 붕괴 14명 부상"), false);
+  assert.equal(isBlockedKeyword("볼로디미르 젤렌스키"), false);
+  assert.equal(isBlockedKeyword("이승영 감독 신작"), false);
 });

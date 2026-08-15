@@ -36,6 +36,13 @@
       "when": 1785326400000,
       "tag": "0004_block_sensitive_sports_quiz",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1786766400000,
+      "tag": "0005_block_expanded_sports",
+      "breakpoints": true
     }
   ]
 }
