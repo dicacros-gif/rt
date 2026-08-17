@@ -12,6 +12,7 @@ export const keywords = sqliteTable("keywords", {
 }, (table) => [
   uniqueIndex("keywords_portal_normalized_idx").on(table.portal, table.normalizedKeyword),
   index("keywords_portal_seen_idx").on(table.portal, table.firstSeenAt),
+  index("keywords_first_seen_idx").on(table.firstSeenAt),
 ]);
 
 export const dismissedKeywords = sqliteTable("dismissed_keywords", {

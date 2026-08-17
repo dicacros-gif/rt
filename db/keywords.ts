@@ -1,6 +1,7 @@
 import { env } from "cloudflare:workers";
 import { collectAllTrends, normalizeKeyword, type CollectedItem, type PortalId } from "../lib/trend-sources";
 import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
+import { keywordRetentionCutoffIso } from "../lib/keyword-retention.mjs";
 
 type KeywordRow = {
   id: number;
@@ -12,7 +13,7 @@ type KeywordRow = {
 };
 
 const keywordSourceVersion = "realtime-rank-only-v4";
-const keywordFilterVersion = "exclude-sensitive-sports-quiz-v3";
+const keywordFilterVersion = "exclude-sensitive-sports-quiz-v4";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
@@ -40,6 +41,7 @@ const schemaStatements = [
     value TEXT NOT NULL
   )`,
   "CREATE INDEX IF NOT EXISTS keywords_portal_seen_idx ON keywords(portal, first_seen_at DESC)",
+  "CREATE INDEX IF NOT EXISTS keywords_first_seen_idx ON keywords(first_seen_at)",
 ];
 
 export async function ensureSchema(db: D1Database = env.DB) {
@@ -86,10 +88,18 @@ async function purgeBlockedKeywords(db: D1Database) {
   return blocked.length;
 }
 
+export async function pruneExpiredKeywords(db: D1Database = env.DB) {
+  const result = await db.prepare(
+    "DELETE FROM keywords WHERE first_seen_at < ?",
+  ).bind(keywordRetentionCutoffIso()).run();
+  return result.meta.changes;
+}
+
 export async function crawlAndStore(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
+  await pruneExpiredKeywords(db);
   const collected = await collectAllTrends();
   const now = new Date().toISOString();
   if (!collected.length) {
@@ -124,6 +134,7 @@ export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 *
   await ensureSchema(db);
   const reset = await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
+  await pruneExpiredKeywords(db);
   const state = await db.prepare(
     "SELECT last_crawled_at FROM crawl_state WHERE id = 1",
   ).first<{ last_crawled_at: string }>();
@@ -138,6 +149,7 @@ export async function listKeywords(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
+  await pruneExpiredKeywords(db);
   const result = await db.prepare(
     `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
      FROM keywords

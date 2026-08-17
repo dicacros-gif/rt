@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { extractCreatorAdvisorKeywords } from "../lib/creator-advisor.mjs";
 import { extractDaumRealtimeKeywords } from "../lib/daum-trends.mjs";
 import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
+import { isExpiredKeywordDate } from "../lib/keyword-retention.mjs";
 
 const outputPath = resolve("data/trends.json");
 const dataVersion = "realtime-rank-only-v4";
@@ -211,7 +212,7 @@ const removedItemIds = new Set();
 const sanitizedPortals = (existing.portals ?? []).map((portal) => ({
   ...portal,
   items: (portal.items ?? []).filter((item) => {
-    if (!isBlockedKeyword(item.keyword)) return true;
+    if (!isBlockedKeyword(item.keyword) && !isExpiredKeywordDate(item.firstSeenAt)) return true;
     removedItemIds.add(String(item.id));
     return false;
   }),

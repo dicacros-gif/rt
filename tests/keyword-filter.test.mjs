@@ -51,6 +51,10 @@ test("blocks sports keywords", () => {
   assert.equal(isBlockedKeyword("리그오브레전드"), true);
   assert.equal(isBlockedKeyword("지단 프랑스 감독"), true);
   assert.equal(isBlockedKeyword("김수지 오로라월드 선두"), true);
+  assert.equal(isBlockedKeyword("김시우 1차전 준우승"), true);
+  assert.equal(isBlockedKeyword("KT 키움 경기"), true);
+  assert.equal(isBlockedKeyword("황희찬 챔피언십 개막전"), true);
+  assert.equal(isBlockedKeyword("LG 스켈레톤 아이스하키 후원"), true);
 });
 
 test("blocks lottery and quiz keywords", () => {
@@ -75,4 +79,5 @@ test("keeps unrelated ordinary keywords", () => {
   assert.equal(isBlockedKeyword("양평 식당 붕괴 14명 부상"), false);
   assert.equal(isBlockedKeyword("볼로디미르 젤렌스키"), false);
   assert.equal(isBlockedKeyword("이승영 감독 신작"), false);
+  assert.equal(isBlockedKeyword("LG유플러스 토스 페이스페이"), false);
 });
