@@ -3,7 +3,7 @@ import { dirname, resolve } from "node:path";
 import { extractCreatorAdvisorKeywords } from "../lib/creator-advisor.mjs";
 import { extractDaumRealtimeKeywords } from "../lib/daum-trends.mjs";
 import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
-import { isExpiredKeywordDate } from "../lib/keyword-retention.mjs";
+import { selectAgedKeywordIdsToDelete } from "../lib/keyword-retention.mjs";
 
 const outputPath = resolve("data/trends.json");
 const dataVersion = "realtime-rank-only-v4";
@@ -208,11 +208,14 @@ async function readExisting() {
 const existing = await readExisting();
 const collected = await collectAll();
 const now = new Date().toISOString();
-const removedItemIds = new Set();
+const removedItemIds = selectAgedKeywordIdsToDelete(
+  (existing.portals ?? []).flatMap((portal) => portal.items ?? []),
+  Date.parse(now),
+);
 const sanitizedPortals = (existing.portals ?? []).map((portal) => ({
   ...portal,
   items: (portal.items ?? []).filter((item) => {
-    if (!isBlockedKeyword(item.keyword) && !isExpiredKeywordDate(item.firstSeenAt)) return true;
+    if (!isBlockedKeyword(item.keyword) && !removedItemIds.has(String(item.id))) return true;
     removedItemIds.add(String(item.id));
     return false;
   }),

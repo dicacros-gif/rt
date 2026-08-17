@@ -1,7 +1,10 @@
 import { env } from "cloudflare:workers";
 import { collectAllTrends, normalizeKeyword, type CollectedItem, type PortalId } from "../lib/trend-sources";
 import { isBlockedKeyword } from "../lib/keyword-filter.mjs";
-import { keywordRetentionCutoffIso } from "../lib/keyword-retention.mjs";
+import {
+  keywordRetentionCutoffIso,
+  selectAgedKeywordIdsToDelete,
+} from "../lib/keyword-retention.mjs";
 
 type KeywordRow = {
   id: number;
@@ -14,6 +17,7 @@ type KeywordRow = {
 
 const keywordSourceVersion = "realtime-rank-only-v4";
 const keywordFilterVersion = "exclude-sensitive-sports-quiz-v4";
+const agedCleanupVersion = "similar-after-7-days-retain-20-days-v1";
 
 const schemaStatements = [
   `CREATE TABLE IF NOT EXISTS keywords (
@@ -88,18 +92,40 @@ async function purgeBlockedKeywords(db: D1Database) {
   return blocked.length;
 }
 
-export async function pruneExpiredKeywords(db: D1Database = env.DB) {
-  const result = await db.prepare(
+async function pruneAgedKeywords(db: D1Database) {
+  const expiredResult = await db.prepare(
     "DELETE FROM keywords WHERE first_seen_at < ?",
   ).bind(keywordRetentionCutoffIso()).run();
-  return result.meta.changes;
+  const cleanupMarker = `${agedCleanupVersion}:${new Date().toISOString().slice(0, 10)}`;
+  const current = await db.prepare(
+    "SELECT value FROM app_meta WHERE key = 'aged_keyword_cleanup'",
+  ).first<{ value: string }>();
+  if (current?.value === cleanupMarker) {
+    return { expired: expiredResult.meta.changes, similar: 0 };
+  }
+
+  const rows = await db.prepare(
+    "SELECT id, keyword, first_seen_at FROM keywords",
+  ).all<{ id: number; keyword: string; first_seen_at: string }>();
+  const deleteIds = [...selectAgedKeywordIdsToDelete(rows.results)]
+    .map(Number)
+    .filter(Number.isInteger);
+  for (let index = 0; index < deleteIds.length; index += 100) {
+    await db.batch(deleteIds.slice(index, index + 100).map((id) =>
+      db.prepare("DELETE FROM keywords WHERE id = ?").bind(id)));
+  }
+  await db.prepare(
+    `INSERT INTO app_meta (key, value) VALUES ('aged_keyword_cleanup', ?)
+     ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
+  ).bind(cleanupMarker).run();
+  return { expired: expiredResult.meta.changes, similar: deleteIds.length };
 }
 
 export async function crawlAndStore(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
-  await pruneExpiredKeywords(db);
+  await pruneAgedKeywords(db);
   const collected = await collectAllTrends();
   const now = new Date().toISOString();
   if (!collected.length) {
@@ -134,7 +160,7 @@ export async function crawlIfDue(db: D1Database = env.DB, intervalMs = 55 * 60 *
   await ensureSchema(db);
   const reset = await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
-  await pruneExpiredKeywords(db);
+  await pruneAgedKeywords(db);
   const state = await db.prepare(
     "SELECT last_crawled_at FROM crawl_state WHERE id = 1",
   ).first<{ last_crawled_at: string }>();
@@ -149,7 +175,7 @@ export async function listKeywords(db: D1Database = env.DB) {
   await ensureSchema(db);
   await ensureKeywordSourceVersion(db);
   await purgeBlockedKeywords(db);
-  await pruneExpiredKeywords(db);
+  await pruneAgedKeywords(db);
   const result = await db.prepare(
     `SELECT id, portal, keyword, link, first_seen_at, last_seen_at
      FROM keywords
